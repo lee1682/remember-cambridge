@@ -1,0 +1,405 @@
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.flex-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-grid .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+.flex-grid-thirds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .flex-grid-thirds {
+    display: block;
+  }
+}
+
+.flex-grid-thirds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+.flex-grid-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-grid-half .col {
+  width: 48%;
+}
+
+.flex-row {
+  margin-bottom: 3rem;
+}
+
+.row {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1160px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 56.35em) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.container:after, .container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-large {
+  margin: auto;
+  max-width: 1460px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 56.35em) {
+  .container-large {
+    max-width: 100%;
+  }
+}
+
+.container-large:after, .container-large:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-small {
+  position: relative;
+  margin: auto;
+  max-width: 850px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 56.35em) {
+  .container-small {
+    max-width: 100%;
+  }
+}
+
+.container-small:after, .container-small:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.default-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.default-padding-top {
+  padding-top: 6rem;
+}
+
+.default-padding-bottom {
+  padding-bottom: 6rem;
+}
+
+.default-margin {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.default-margin-top {
+  margin-top: 6rem;
+}
+
+.default-margin-bottom {
+  margin-bottom: 6rem;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.custom-padding {
+  padding: 2px;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #0a1830;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  text-align: center;
+}
+
+a.svg {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  border: none !important;
+  text-align: center;
+  color: #0a1830;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+  border: none !important;
+  text-align: center;
+  color: #0a1830;
+}
+
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+  border: none !important;
+  text-align: center;
+  color: #0a1830;
+}
+
+div.wpcf7-response-output {
+  padding: 0 !important;
+  margin: 0;
+  margin-top: 15px;
+}
+
+ul li {
+  font-size: 1.6rem;
+}
+
+a {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+a:hover {
+  color: #aad7ca !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 500;
+}
+
+span.text,
+p,
+a,
+ul,
+li {
+  font-size: 2.2rem;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+}
+
+ul li {
+  font-size: 1.6rem !important;
+}
+
+ul li span {
+  font-size: 1.9rem;
+}
+
+ul li p {
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+
+li {
+  font-size: 1.6rem;
+}
+
+li span {
+  font-size: 1.9rem;
+}
+
+li p {
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 56.35em) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background: #aad7ca;
+}
+
+::selection {
+  background: #aad7ca;
+}
+
+a img {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+a:hover img {
+  -webkit-filter: opacity(0.2);
+          filter: opacity(0.2);
+}
+
+ul li p:before {
+  display: none;
+}
+
+.single .col-4 img {
+  width: 100%;
+}
+
+.single h1 a {
+  color: #0a1830;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.intro-text {
+  height: 50vh;
+  width: 100vw;
+  background-color: red;
+}
+
+.intro-text {
+  height: 50vh;
+  width: 100vw;
+  background-color: red;
+}
