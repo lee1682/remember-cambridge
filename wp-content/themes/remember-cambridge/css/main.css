@@ -403,3 +403,11 @@ ul li p:before {
   width: 100vw;
   background-color: red;
 }
+
+.intro-text h2 {
+  color: red;
+}
+
+* {
+  background-color: red;
+}

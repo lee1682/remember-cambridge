@@ -110,6 +110,9 @@ function html5blank_styles()
     wp_register_style('styles', get_template_directory_uri() . '/css/styles.css', array(), '1.0', 'all');
     wp_enqueue_style('styles'); // Enqueue it!
 
+    wp_register_style('main-styles', get_template_directory_uri() . '/css/main.css', array(), '1.0', 'all');
+    wp_enqueue_style('main-styles'); // Enqueue it!
+
     wp_register_style('owlmin', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), '1.0', 'all');
     wp_enqueue_style('owlmin'); // Enqueue it!
 
