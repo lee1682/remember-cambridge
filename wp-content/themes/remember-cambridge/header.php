@@ -26,6 +26,6 @@
 	<body <?php body_class(); ?>>
 		<div class="wrapper">
 			<header class="header clear" role="banner">
-
+                <h1> Remember Cambridge </h1>
 			</header>
 
