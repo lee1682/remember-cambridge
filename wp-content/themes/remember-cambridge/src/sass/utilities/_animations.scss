@@ -1,0 +1,7 @@
+a {
+    transition: all .4s ease;
+
+    &:hover {
+        color: $color-secondary !important;
+    }
+}

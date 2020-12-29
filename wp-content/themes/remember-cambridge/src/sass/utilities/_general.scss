@@ -1,0 +1,59 @@
+.heading-primary {
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color-primary;
+}
+
+.heading-secondary {
+    font-size: 4rem;
+    text-align: center;
+}
+
+a.svg {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.svg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+//Contact form 7 erros
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: none !important;
+    text-align: center;
+    color: $color-primary;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+    border: none !important;
+    text-align: center;
+    color: $color-primary;
+}
+
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+    border: none !important;
+    text-align: center;
+    color: $color-primary;
+}
+
+div.wpcf7-response-output {
+    padding: 0 !important;
+    margin: 0;
+    margin-top: 15px;
+}
+
+ul {
+    li {
+        font-size: 1.6rem;
+    }
+}
