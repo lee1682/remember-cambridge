@@ -1,5 +1,31 @@
-@import 'utilities/mixins';
+//COLOURS
+$color-primary:#03526A;
+$primary-2:#CBE0E0;
+$primary-3:#F2F2F2;
+$color-secondary:#FF9999;
+$dark-grey:#333333;
+
+//FONTS
+$title-font:80px solid black;
+$paragraph-font:1px solid black;
+
+@font-face {
+  font-family: 'futura-pt';
+  src: url('\fonts\FuturaPTBold.otf');
+}
+
+h1, h2, h3, h4 , h5{
+    color: $color-primary;
+    font-family: 'futura-pt';
+}
+
+h1{
+    font-size: 72px;
+}
+
+//IMPORTS
 @import 'utilities/variables';
+@import 'utilities/mixins';
 @import 'utilities/grid';
 @import 'utilities/general';
 @import 'utilities/animations';

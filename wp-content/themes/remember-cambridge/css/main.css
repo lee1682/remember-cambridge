@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'futura-pt';
+  src: url("ontsuturaPTBold.otf");
+}
+
+h1, h2, h3, h4, h5 {
+  color: #03526A;
+  font-family: 'futura-pt';
+}
+
+h1 {
+  font-size: 72px;
+}
+
 .col-1 {
   width: 8.33%;
 }
@@ -221,7 +235,7 @@
 .heading-primary {
   font-size: 4rem;
   font-weight: 300;
-  color: #0a1830;
+  color: #03526A;
 }
 
 .heading-secondary {
@@ -248,20 +262,20 @@ div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
   border: none !important;
   text-align: center;
-  color: #0a1830;
+  color: #03526A;
 }
 
 .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
   border: none !important;
   text-align: center;
-  color: #0a1830;
+  color: #03526A;
 }
 
 div.wpcf7-mail-sent-ng,
 div.wpcf7-aborted {
   border: none !important;
   text-align: center;
-  color: #0a1830;
+  color: #03526A;
 }
 
 div.wpcf7-response-output {
@@ -280,7 +294,7 @@ a {
 }
 
 a:hover {
-  color: #aad7ca !important;
+  color: #FF9999 !important;
 }
 
 h1,
@@ -289,7 +303,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: 80px solid black;
   font-weight: 500;
 }
 
@@ -299,7 +313,7 @@ a,
 ul,
 li {
   font-size: 2.2rem;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: 1px solid black;
   font-weight: 400;
 }
 
@@ -361,11 +375,11 @@ body {
 }
 
 ::-moz-selection {
-  background: #aad7ca;
+  background: #FF9999;
 }
 
 ::selection {
-  background: #aad7ca;
+  background: #FF9999;
 }
 
 a img {
@@ -387,13 +401,15 @@ ul li p:before {
 }
 
 .single h1 a {
-  color: #0a1830;
+  color: #03526A;
   font-weight: 500;
   font-size: 3.5rem;
 }
 
+.header {
+  height: 50vh;
+}
+
 .intro-text {
   height: 50vh;
-  width: 100vw;
-  background-color: red;
 }
