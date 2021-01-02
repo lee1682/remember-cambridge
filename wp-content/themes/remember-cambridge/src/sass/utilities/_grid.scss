@@ -58,14 +58,11 @@
 //FLEX GRID
 .flex-grid {
     display: flex;
-}
 
-.flex-grid {
-    .col {
+    col {
         flex: 1;
     }
 }
-
 
 @include respond (phone) {
     .flex-grid {
@@ -77,17 +74,12 @@
     display: flex;
     justify-content: space-between;
 
-    @include respond(phone) {
-        display: block;
-    }
-}
-
-.flex-grid-thirds {
-    display: flex;
-    justify-content: space-between;
-
     .col {
         width: 32%;
+    }
+
+    @include respond(phone) {
+        display: block;
     }
 }
 
@@ -100,16 +92,24 @@
     }
 }
 
-.flex-row {
-    margin-bottom: 3rem;
-}
-
 .row {
     display: block;
     float: left;
     width: 100%;
 }
 
+//alignment
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+
+
+//containers
 .container {
     margin: auto;
     max-width: 1160px;
@@ -146,7 +146,6 @@
     }
 }
 
-
 .container-small {
     position: relative;
     margin: auto;
@@ -166,6 +165,7 @@
     }
 }
 
+//padding and margin
 .default-padding {
     padding-top: 6rem;
     padding-bottom: 6rem;
