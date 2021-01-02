@@ -15,9 +15,9 @@ font-family: 'futura-pt-medium';
 src: url(../fonts/FuturaPTmedium.otf);
 }
 
-$title-font:'futura-pt-medium';
+$title-font:'futura-pt-medium';     
 
-h1, h2, h3, h4 , h5{
+h1, h2, h3, h4 , h5, p, li, a{
     color: $color-primary;
     font-family: $title-font;
 }
@@ -36,6 +36,7 @@ h1{
 
 //PARTS
 @import 'parts/header';
+@import 'parts/nav';
 
 //SECTIONS
 @import 'sections/intro-text';

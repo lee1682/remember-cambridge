@@ -27,10 +27,30 @@
 	<body <?php body_class(); ?>>
 		<div class="wrapper">
         
-			<header class="header flex-center" role="banner">
+			<header class="header flex-column" role="banner">
 
 
-                <nav>
+                <nav class="flex-row">
+
+                    <a href="#"> Remember Cambridge</a>
+                    
+                    <ul class="flex-row">
+                        <li>
+                            <a href="#"> Icecream</a>
+                        </li>
+
+                        <li>
+                            <a href="#"> Icecream</a>
+                        </li>
+
+                        <li>
+                            <a href="#"> Icecream</a>
+                        </li>
+
+                        <li>
+                            <a href="#"> Icecream</a>
+                        </li>
+                    </ul>
                 </nav>
 
                 <h1> Remember Cambridge </h1>

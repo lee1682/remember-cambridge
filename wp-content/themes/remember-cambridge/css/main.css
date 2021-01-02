@@ -3,7 +3,7 @@
   src: url(../fonts/FuturaPTmedium.otf);
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p, li, a {
   color: #03526A;
   font-family: "futura-pt-medium";
 }
@@ -127,7 +127,7 @@ h1 {
   width: 100%;
 }
 
-.flex-center {
+.flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +135,19 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -406,8 +419,32 @@ ul li p:before {
   font-size: 3.5rem;
 }
 
+ul li {
+  list-style: none;
+}
+
+li, a {
+  text-decoration: none;
+}
+
 .header {
   height: auto;
+}
+
+.header p {
+  text-align: center;
+  width: 40%;
+}
+
+nav {
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul li {
+  margin-left: 4rem;
 }
 
 .intro-text {
