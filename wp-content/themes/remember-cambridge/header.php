@@ -23,9 +23,19 @@
         </script>
 
 	</head>
+
 	<body <?php body_class(); ?>>
 		<div class="wrapper">
-			<header class="header clear" role="banner">
+        
+			<header class="header flex-center" role="banner">
+
+
+                <nav>
+                </nav>
+
                 <h1> Remember Cambridge </h1>
-			</header>
+
+                <P> Cookie croissant carrot cake sesame snaps chocolate bar. Cheesecake cupcake cotton candy biscuit dragée caramels wafer cupcake toffee</P>
+		
+            </header>
 

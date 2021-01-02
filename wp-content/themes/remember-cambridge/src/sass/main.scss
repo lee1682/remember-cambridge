@@ -9,14 +9,17 @@ $dark-grey:#333333;
 $title-font:80px solid black;
 $paragraph-font:1px solid black;
 
-@font-face {
-  font-family: 'futura-pt';
-  src: url('\fonts\FuturaPTBold.otf');
+
+@font-face { 
+font-family: 'futura-pt-medium';
+src: url(../fonts/FuturaPTmedium.otf);
 }
+
+$title-font:'futura-pt-medium';
 
 h1, h2, h3, h4 , h5{
     color: $color-primary;
-    font-family: 'futura-pt';
+    font-family: $title-font;
 }
 
 h1{
