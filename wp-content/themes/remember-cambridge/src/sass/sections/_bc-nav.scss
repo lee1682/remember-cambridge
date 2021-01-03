@@ -1,0 +1,13 @@
+.bc-nav{
+    background-color: $color-primary;
+
+    ul{
+        justify-content: space-around;
+
+        li{
+            a{
+                color: white;
+            }
+        }
+    }
+}

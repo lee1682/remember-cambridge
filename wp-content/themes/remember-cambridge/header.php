@@ -28,12 +28,10 @@
 		<div class="wrapper">
         
 			<header class="header flex-column" role="banner">
-
-
                 <nav class="flex-row">
 
                     <a href="#"> Remember Cambridge</a>
-                    
+
                     <ul class="flex-row">
                         <li>
                             <a href="#"> Icecream</a>
@@ -56,6 +54,6 @@
                 <h1> Remember Cambridge </h1>
 
                 <P> Cookie croissant carrot cake sesame snaps chocolate bar. Cheesecake cupcake cotton candy biscuit dragée caramels wafer cupcake toffee</P>
-		
+
             </header>
 

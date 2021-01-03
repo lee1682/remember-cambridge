@@ -169,7 +169,12 @@
     }
 }
 
-//padding and margin
+//padding
+
+.no-padding {
+    padding: 0 !important;
+}
+
 .default-padding {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -182,6 +187,13 @@
 .default-padding-bottom {
     padding-bottom: 6rem;
 }
+
+
+.p-m{
+    padding: 2rem;
+}
+
+//margins
 
 .default-margin {
     margin-top: 6rem;
@@ -196,10 +208,4 @@
     margin-bottom: 6rem;
 }
 
-.no-padding {
-    padding: 0 !important;
-}
 
-.custom-padding {
-    padding: 2px;
-}

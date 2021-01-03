@@ -26,6 +26,9 @@ h1{
     font-size: 72px;
 }
 
+
+
+
 //IMPORTS
 @import 'utilities/variables';
 @import 'utilities/mixins';
@@ -38,5 +41,8 @@ h1{
 @import 'parts/header';
 @import 'parts/nav';
 
+
 //SECTIONS
 @import 'sections/intro-text';
+@import 'sections/bc-nav';
+
