@@ -1,15 +1,27 @@
 .header{
     height: auto;
-    padding: 2rem;
-    h1{
-        margin-bottom: 0;
+
+    nav{
+
     }
 
-    p{
-        text-align: center;
-        margin-top: 1rem;
-        width: 50%;
-    }
+    .hero{
+        justify-content: center;
+        height: 45vh;  
 
+        h1{
+            padding: 0;
+            margin: 0;
+        }
 
+        p{
+            text-align: center;
+            margin-top: 1rem;
+            width: 50%;
+        }
+    }   
 }
+  
+ 
+
+

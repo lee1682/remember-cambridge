@@ -12,6 +12,14 @@ h1 {
   font-size: 72px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
 .col-1 {
   width: 8.33%;
 }
@@ -203,7 +211,13 @@ h1 {
 }
 
 .p-m {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-l {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .default-margin {
@@ -396,30 +410,31 @@ li, a {
 
 .header {
   height: auto;
-  padding: 2rem;
 }
 
-.header h1 {
-  margin-bottom: 0;
+.header .hero {
+  justify-content: center;
+  height: 45vh;
 }
 
-.header p {
+.header .hero h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.header .hero p {
   text-align: center;
   margin-top: 1rem;
   width: 50%;
 }
 
 nav {
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
 }
 
 nav ul li {
   margin-left: 4rem;
-}
-
-.intro-text {
-  height: 50vh;
 }
 
 .bc-nav {

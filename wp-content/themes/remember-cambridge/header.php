@@ -27,7 +27,7 @@
 	<body <?php body_class(); ?>>
 		<div class="wrapper">
         
-			<header class="header flex-column" role="banner">
+			<header class="header container-large" role="banner">
                 <nav class="flex-row">
 
                     <a href="#"> Remember Cambridge</a>
@@ -50,10 +50,11 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="hero flex-column">
+                    <h1> Remember Cambridge </h1>
 
-                <h1> Remember Cambridge </h1>
-
-                <P> Cookie croissant carrot cake sesame snaps chocolate bar. Cheesecake cupcake cotton candy biscuit dragée caramels wafer cupcake toffee</P>
-
+                     <P> Cookie croissant carrot cake sesame snaps chocolate bar. Cheesecake cupcake cotton candy biscuit dragée caramels wafer cupcake toffee</P>
+                
+                </div>
             </header>
 
