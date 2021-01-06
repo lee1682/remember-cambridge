@@ -452,6 +452,12 @@ nav ul li a:active {
   font-weight: bold;
 }
 
+.intro-text {
+  height: 50vh;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .bc-nav {
   background-color: #03526A;
   height: 3vh;

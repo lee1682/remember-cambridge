@@ -5,7 +5,7 @@
 
 <?php get_template_part("sections/intro-text" );?>
 
-<section class="text-and-image"></section>
+<?php get_template_part("sections/text-and-image" );?>
 
 <section class="full-width-cta-banner"></section>
 
