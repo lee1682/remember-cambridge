@@ -409,7 +409,7 @@ li, a {
 }
 
 .header {
-  height: auto;
+  height: 42vh;
 }
 
 .header .hero {
@@ -429,6 +429,7 @@ li, a {
 }
 
 nav {
+  height: 5vh;
   width: 100%;
   justify-content: space-between;
 }
@@ -439,6 +440,7 @@ nav ul li {
 
 .bc-nav {
   background-color: #03526A;
+  height: 3vh;
 }
 
 .bc-nav ul {
