@@ -11,15 +11,22 @@ $paragraph-font:1px solid black;
 
 
 @font-face { 
+font-family: 'futura-pt-light';
+src: url(../fonts/FuturaPTlight.otf);
+}
+
+@font-face { 
 font-family: 'futura-pt-medium';
 src: url(../fonts/FuturaPTmedium.otf);
 }
 
-$title-font:'futura-pt-medium';     
+$main-font-light: 'futura-pt-light';
+
+$main-font-medium: 'futura-pt-medium';
 
 h1, h2, h3, h4 , h5, p, li, a{
     color: $color-primary;
-    font-family: $title-font;
+    font-family: $main-font-medium;
 }
 
 h1{

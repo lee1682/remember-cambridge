@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'futura-pt-light';
+  src: url(../fonts/FuturaPTlight.otf);
+}
+
+@font-face {
   font-family: 'futura-pt-medium';
   src: url(../fonts/FuturaPTmedium.otf);
 }
@@ -303,7 +308,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "futura-pt-medium";
+  font-family: 80px solid black;
   font-weight: 500;
 }
 
@@ -436,6 +441,15 @@ nav {
 
 nav ul li {
   margin-left: 4rem;
+  padding: 1rem;
+}
+
+nav ul li a {
+  font-family: "futura-pt-light";
+}
+
+nav ul li a:active {
+  font-weight: bold;
 }
 
 .bc-nav {
