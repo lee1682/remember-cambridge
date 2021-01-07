@@ -453,7 +453,7 @@ nav ul li a:active {
 }
 
 .intro-text {
-  height: 50vh;
+  min-height: 50vh;
   justify-content: center;
   align-items: flex-start;
 }
@@ -469,4 +469,13 @@ nav ul li a:active {
 
 .bc-nav ul li a {
   color: white;
+}
+
+.text-and-image {
+  height: 50vh;
+  background-color: #F2F2F2;
+}
+
+.text-and-image .container {
+  height: 100%;
 }
