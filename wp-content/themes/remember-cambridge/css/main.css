@@ -134,6 +134,12 @@ p {
   align-items: center;
 }
 
+.flex-center-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -478,4 +484,13 @@ nav ul li a:active {
 
 .text-and-image .container {
   height: 100%;
+}
+
+.text-and-image .img {
+  padding: 0;
+}
+
+.text-and-image .img img {
+  height: auto;
+  width: 85%;
 }
