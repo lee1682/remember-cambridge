@@ -1,4 +1,4 @@
-<section class="intro-text container flex-column  ">
+<section class="intro-text container flex-center">
     <div class="col-12">
       <h2> Category Intro Text</h2>
 

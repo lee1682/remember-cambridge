@@ -1,19 +1,26 @@
 .header{
-    height: 42vh;
+    min-height: 42vh;
 
     .hero{
         justify-content: center;
         height: 45vh;  
 
+        h1, p{
+            text-align: center;
+        }
+
         h1{
             padding: 0;
-            margin: 0;
+            margin: 0 0 1rem 0;
         }
 
         p{
-            text-align: center;
             margin-top: 1rem;
             width: 50%;
+
+            @include respond(phone) {
+            width: 100%;      
+    }
         }
     }   
 }

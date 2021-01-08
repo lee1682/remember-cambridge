@@ -9,12 +9,17 @@
 }
 
 h1, h2, h3, h4, h5, p, li, a {
-  color: #03526A;
   font-family: "futura-pt-medium";
+  color: #03526A;
+}
+
+p {
+  color: #5a5a5a;
 }
 
 h1 {
   font-size: 72px;
+  line-height: 0.9;
 }
 
 h2 {
@@ -134,16 +139,25 @@ p {
   align-items: center;
 }
 
-.flex-center-left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.flex-center, .flex-center-left, .flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-center-left {
+  align-items: flex-start;
+}
+
+.flex-center-row {
+  flex-direction: row;
 }
 
 .container {
@@ -314,7 +328,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 80px solid black;
+  font-family: #03526A;
   font-weight: 500;
 }
 
@@ -324,7 +338,7 @@ a,
 ul,
 li {
   font-size: 2.2rem;
-  font-family: 1px solid black;
+  font-family: #5a5a5a;
   font-weight: 400;
 }
 
@@ -420,7 +434,7 @@ li, a {
 }
 
 .header {
-  height: 42vh;
+  min-height: 42vh;
 }
 
 .header .hero {
@@ -428,15 +442,24 @@ li, a {
   height: 45vh;
 }
 
+.header .hero h1, .header .hero p {
+  text-align: center;
+}
+
 .header .hero h1 {
   padding: 0;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
 .header .hero p {
-  text-align: center;
   margin-top: 1rem;
   width: 50%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .hero p {
+    width: 100%;
+  }
 }
 
 nav {
@@ -456,6 +479,12 @@ nav ul li a {
 
 nav ul li a:active {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 37.5em) {
+  nav {
+    display: none !important;
+  }
 }
 
 .intro-text {
@@ -478,7 +507,7 @@ nav ul li a:active {
 }
 
 .text-and-image {
-  height: 50vh;
+  min-height: 50vh;
   background-color: #F2F2F2;
 }
 
@@ -493,4 +522,14 @@ nav ul li a:active {
 .text-and-image .img img {
   height: auto;
   width: 85%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .text-and-image .img img {
+    width: 100%;
+  }
+}
+
+.text-and-image .text h2 {
+  text-align: left;
 }

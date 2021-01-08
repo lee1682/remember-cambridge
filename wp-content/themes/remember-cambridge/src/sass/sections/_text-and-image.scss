@@ -1,21 +1,32 @@
-.text-and-image{
-    height: 50vh;
+.text-and-image{    
+    min-height: 50vh;
     background-color:$primary-3;
 
     .container{
         height: 100%;
     }
 
-
     .img{
-
         padding: 0;
         
-        
-
         img{
             height: auto;
             width: 85%;
+
+            @include respond(phone) {
+                width: 100%;
+            }
         }
     }
+
+    .text{
+    
+        h2{
+            text-align: left;
+        }
+       
+    }
+
+
+
 }

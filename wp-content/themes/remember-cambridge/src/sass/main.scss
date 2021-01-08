@@ -3,11 +3,11 @@ $color-primary:#03526A;
 $primary-2:#CBE0E0;
 $primary-3:#F2F2F2;
 $color-secondary:#FF9999;
-$dark-grey:#333333;
+$dark-grey:#5a5a5a;
 
 //FONTS
-$title-font:80px solid black;
-$paragraph-font:1px solid black;
+$title-font:$color-primary;
+$paragraph-font:$dark-grey;
 
 
 @font-face { 
@@ -21,16 +21,22 @@ src: url(../fonts/FuturaPTmedium.otf);
 }
 
 $main-font-light: 'futura-pt-light';
-
 $main-font-medium: 'futura-pt-medium';
 
+
 h1, h2, h3, h4 , h5, p, li, a{
-    color: $color-primary;
     font-family: $main-font-medium;
+    color: $color-primary;
 }
+
+p{
+    color: $dark-grey;
+}
+
 
 h1{
     font-size: 72px;
+    line-height: 0.9;
 }
 
 h2{

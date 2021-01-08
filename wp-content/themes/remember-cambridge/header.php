@@ -32,7 +32,7 @@
 
                     <a href="#"> Remember Cambridge</a>
 
-                    <ul class="flex-row">
+                    <ul class="flex-center-row">
                         <li>
                             <a href="#"> Icecream</a>
                         </li>
@@ -50,7 +50,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="hero flex-column">
+                <div class="hero flex-center">
                     <h1> Remember Cambridge </h1>
 
                      <P> Cookie croissant carrot cake sesame snaps chocolate bar. Cheesecake cupcake cotton candy biscuit dragée caramels wafer cupcake toffee</P>
