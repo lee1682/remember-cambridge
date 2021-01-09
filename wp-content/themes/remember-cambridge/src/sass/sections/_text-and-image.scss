@@ -1,14 +1,11 @@
 .text-and-image{    
-    min-height: 50vh;
+    height: 50vh;
     background-color:$primary-3;
-
     .container{
         height: 100%;
     }
-
     .img{
         padding: 0;
-        
         img{
             height: auto;
             width: 85%;
@@ -18,15 +15,9 @@
             }
         }
     }
-
     .text{
-    
         h2{
             text-align: left;
         }
-       
     }
-
-
-
 }

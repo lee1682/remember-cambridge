@@ -7,7 +7,7 @@
 
 <?php get_template_part("sections/text-and-image" );?>
 
-<section class="full-width-cta-banner"></section>
+<?php get_template_part("full-width-cta-banner" );?>
 
 <section class="featured-post"></section>
 

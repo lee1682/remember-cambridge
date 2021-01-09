@@ -4,17 +4,23 @@
 }
 
 @font-face {
+  font-family: 'futura-pt-book';
+  src: url(../fonts/FuturaPTbook.otf);
+}
+
+@font-face {
   font-family: 'futura-pt-medium';
   src: url(../fonts/FuturaPTmedium.otf);
 }
 
-h1, h2, h3, h4, h5, p, li, a {
+h1, h2, h3, h4, h5, li, a {
   font-family: "futura-pt-medium";
   color: #03526A;
 }
 
 p {
   color: #5a5a5a;
+  font-family: "futura-pt-book";
 }
 
 h1 {
@@ -507,7 +513,7 @@ nav ul li a:active {
 }
 
 .text-and-image {
-  min-height: 50vh;
+  height: 50vh;
   background-color: #F2F2F2;
 }
 

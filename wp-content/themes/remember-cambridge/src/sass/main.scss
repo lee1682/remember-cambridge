@@ -14,6 +14,11 @@ $paragraph-font:$dark-grey;
 font-family: 'futura-pt-light';
 src: url(../fonts/FuturaPTlight.otf);
 }
+
+@font-face { 
+font-family: 'futura-pt-book';
+src: url(../fonts/FuturaPTbook.otf);
+}
     
 @font-face { 
 font-family: 'futura-pt-medium';
@@ -21,16 +26,18 @@ src: url(../fonts/FuturaPTmedium.otf);
 }
 
 $main-font-light: 'futura-pt-light';
+$main-font-book: 'futura-pt-book';
 $main-font-medium: 'futura-pt-medium';
 
 
-h1, h2, h3, h4 , h5, p, li, a{
+h1, h2, h3, h4 , h5, li, a{
     font-family: $main-font-medium;
     color: $color-primary;
 }
 
 p{
     color: $dark-grey;
+    font-family: $main-font-book;
 }
 
 
