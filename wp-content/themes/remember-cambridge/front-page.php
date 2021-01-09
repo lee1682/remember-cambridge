@@ -5,9 +5,11 @@
 
 <?php get_template_part("sections/intro-text" );?>
 
-<?php get_template_part("sections/text-and-image" );?>
+<?php get_template_part("sections/text-and-image-top" );?>
 
-<?php get_template_part("full-width-cta-banner" );?>
+<?php get_template_part("sections/full-width-cta-banner" );?>
+
+<?php get_template_part("sections/text-and-image-bottom" );?>
 
 <section class="featured-post"></section>
 

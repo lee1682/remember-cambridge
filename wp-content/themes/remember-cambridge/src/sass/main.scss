@@ -4,6 +4,7 @@ $primary-2:#CBE0E0;
 $primary-3:#F2F2F2;
 $color-secondary:#FF9999;
 $dark-grey:#5a5a5a;
+$white:white;
 
 //FONTS
 $title-font:$color-primary;
@@ -29,8 +30,7 @@ $main-font-light: 'futura-pt-light';
 $main-font-book: 'futura-pt-book';
 $main-font-medium: 'futura-pt-medium';
 
-
-h1, h2, h3, h4 , h5, li, a{
+h1, h2, h3, h4 , h5, li, a, button{
     font-family: $main-font-medium;
     color: $color-primary;
 }
@@ -39,7 +39,6 @@ p{
     color: $dark-grey;
     font-family: $main-font-book;
 }
-
 
 h1{
     font-size: 72px;
@@ -54,8 +53,6 @@ p{
     font-size: 20px;
 }
 
-
-
 //IMPORTS
 @import 'utilities/variables';
 @import 'utilities/mixins';
@@ -68,9 +65,10 @@ p{
 @import 'parts/header';
 @import 'parts/nav';
 
-
 //SECTIONS
+
 @import 'sections/intro-text';
 @import 'sections/bc-nav';
-@import 'sections/text-and-image'
+@import 'sections/text-and-image';
+@import 'sections/full-width-cta-banner';
 

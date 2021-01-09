@@ -1,0 +1,22 @@
+.full-width-cta-banner{
+
+    .container{
+        height: 25vh;
+        width: 100%;
+        background-color: $color-primary;
+        margin-top: 5rem;
+        margin-bottom:5rem;
+        padding: 0;
+    } 
+    h2{
+        color: $white;
+        font-family:$main-font-book;
+    }
+    button{
+        background-color: $white;
+        border:none;
+        color: $color-primary;
+        font-size: 1em;
+        padding: 1rem 8rem 1rem 8rem;
+    }
+}

@@ -13,7 +13,7 @@
   src: url(../fonts/FuturaPTmedium.otf);
 }
 
-h1, h2, h3, h4, h5, li, a {
+h1, h2, h3, h4, h5, li, a, button {
   font-family: "futura-pt-medium";
   color: #03526A;
 }
@@ -512,30 +512,60 @@ nav ul li a:active {
   color: white;
 }
 
-.text-and-image {
+.text-and-image, .text-and-image-top, .text-and-image-bottom {
   height: 50vh;
   background-color: #F2F2F2;
 }
 
-.text-and-image .container {
+.text-and-image .container, .text-and-image-top .container, .text-and-image-bottom .container {
   height: 100%;
 }
 
-.text-and-image .img {
+.text-and-image .img, .text-and-image-top .img, .text-and-image-bottom .img {
   padding: 0;
 }
 
-.text-and-image .img img {
+.text-and-image .img img, .text-and-image-top .img img, .text-and-image-bottom .img img {
   height: auto;
   width: 85%;
 }
 
 @media only screen and (max-width: 37.5em) {
-  .text-and-image .img img {
+  .text-and-image .img img, .text-and-image-top .img img, .text-and-image-bottom .img img {
     width: 100%;
   }
 }
 
-.text-and-image .text h2 {
+.text-and-image .text h2, .text-and-image-top .text h2, .text-and-image-bottom .text h2 {
   text-align: left;
+}
+
+.text-and-image-bottom .container {
+  flex-direction: row-reverse;
+}
+
+.text-and-image-bottom .container .img {
+  align-items: flex-end;
+}
+
+.full-width-cta-banner .container {
+  height: 25vh;
+  width: 100%;
+  background-color: #03526A;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 0;
+}
+
+.full-width-cta-banner h2 {
+  color: white;
+  font-family: "futura-pt-book";
+}
+
+.full-width-cta-banner button {
+  background-color: white;
+  border: none;
+  color: #03526A;
+  font-size: 1em;
+  padding: 1rem 8rem 1rem 8rem;
 }

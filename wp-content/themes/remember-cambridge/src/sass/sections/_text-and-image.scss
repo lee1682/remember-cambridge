@@ -1,4 +1,5 @@
 .text-and-image{    
+
     height: 50vh;
     background-color:$primary-3;
     .container{
@@ -20,4 +21,25 @@
             text-align: left;
         }
     }
+
+    &-top{
+        @extend .text-and-image;
+
+        }
+
+    &-bottom{
+        @extend .text-and-image;
+
+        .container{
+            flex-direction: row-reverse;
+
+            .img{
+                align-items: flex-end;
+              
+            }
+
+        }
+       
+
+        }
 }
