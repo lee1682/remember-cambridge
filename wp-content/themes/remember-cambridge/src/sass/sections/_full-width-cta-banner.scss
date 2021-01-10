@@ -1,14 +1,15 @@
 .full-width-cta-banner{
 
     .container{
-        height: 25vh;
+        height: auto;
         width: 100%;
         background-color: $primary-1;
-        padding: 0;
+        padding: 3rem 0 3rem 0;
     } 
     h2{
         color: $white;
         font-family:$main-font-book;
+        text-align: center;
     }
     button{
         background-color: $white;
@@ -16,5 +17,10 @@
         color: $primary-1;
         font-size: 1em;
         padding: 1rem 8rem 1rem 8rem;
+        margin-bottom: 1.5rem;
+
+        @include respond(phone) {
+            width: 100%;
+        }
     }
-}
+}  

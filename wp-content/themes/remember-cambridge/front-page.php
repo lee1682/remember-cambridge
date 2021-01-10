@@ -11,7 +11,7 @@
 
 <?php get_template_part("sections/text-and-image-bottom" );?>
 
-<?php get_template_part("sections/featured-post" );?>
+<!-- <?php get_template_part("sections/featured-post" );?> -->
 
 <section class="3-col-highlights"></section>
 
@@ -20,4 +20,3 @@
 <section class="contact-cta"></section>
 
 <?php get_footer(); ?>
- 

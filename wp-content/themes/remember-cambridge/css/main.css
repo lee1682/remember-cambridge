@@ -96,11 +96,15 @@ p {
 }
 
 .flex-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .flex-grid col {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -110,8 +114,12 @@ p {
 }
 
 .flex-grid-thirds {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flex-grid-thirds .col {
@@ -125,8 +133,12 @@ p {
 }
 
 .flex-grid-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flex-grid-half .col {
@@ -140,30 +152,58 @@ p {
 }
 
 .flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-center, .flex-center-left, .flex-center-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-center-left {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .flex-center-row {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container {
@@ -325,6 +365,7 @@ ul li {
 }
 
 a {
+  -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
@@ -409,16 +450,22 @@ body {
   overflow-x: hidden;
 }
 
+::-moz-selection {
+  background: #FF9999;
+}
+
 ::selection {
   background: #FF9999;
 }
 
 a img {
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
 a:hover img {
-  filter: opacity(0.2);
+  -webkit-filter: opacity(0.2);
+          filter: opacity(0.2);
 }
 
 ul li p:before {
@@ -448,7 +495,9 @@ li, a {
 }
 
 .header .hero {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 45vh;
 }
 
@@ -475,7 +524,9 @@ li, a {
 nav {
   height: 5vh;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav ul li {
@@ -497,10 +548,14 @@ nav ul li a:active {
   }
 }
 
-.intro-text {
+.intro-text .container {
   min-height: 50vh;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bc-nav {
@@ -509,7 +564,8 @@ nav ul li a:active {
 }
 
 .bc-nav ul {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .bc-nav ul li a {
@@ -517,21 +573,28 @@ nav ul li a:active {
 }
 
 .text-and-image, .text-and-image-top, .text-and-image-bottom {
-  height: 50vh;
+  min-height: auto;
   background-color: #F2F2F2;
 }
 
 .text-and-image .container, .text-and-image-top .container, .text-and-image-bottom .container {
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text-and-image .img, .text-and-image-top .img, .text-and-image-bottom .img {
   padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .text-and-image .img img, .text-and-image-top .img img, .text-and-image-bottom .img img {
   height: auto;
-  width: 85%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -544,24 +607,40 @@ nav ul li a:active {
   text-align: left;
 }
 
+.text-and-image .text p, .text-and-image-top .text p, .text-and-image-bottom .text p {
+  width: 80%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .text-and-image .text, .text-and-image-top .text, .text-and-image-bottom .text {
+    padding: 1rem;
+  }
+}
+
 .text-and-image-bottom .container {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .text-and-image-bottom .container .img {
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .full-width-cta-banner .container {
-  height: 25vh;
+  height: auto;
   width: 100%;
   background-color: #03526A;
-  padding: 0;
+  padding: 3rem 0 3rem 0;
 }
 
 .full-width-cta-banner h2 {
   color: white;
   font-family: "futura-pt-book";
+  text-align: center;
 }
 
 .full-width-cta-banner button {
@@ -570,13 +649,27 @@ nav ul li a:active {
   color: #03526A;
   font-size: 1em;
   padding: 1rem 8rem 1rem 8rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .full-width-cta-banner button {
+    width: 100%;
+  }
 }
 
 .featured-post .container {
   min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #CBE0E0;
   padding: 0;
 }
@@ -593,3 +686,4 @@ nav ul li a:active {
 .featured-post .container .text a {
   color: #CBE0E0;
 }
+/*# sourceMappingURL=main.css.map */
