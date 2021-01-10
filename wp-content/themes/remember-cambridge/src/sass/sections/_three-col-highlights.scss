@@ -1,0 +1,47 @@
+.three-col-highlights{
+    width: 100%;
+    padding:0;
+    background:$primary-1;
+    
+  
+
+    .container{
+       
+        padding:0;
+    
+        h2{
+            color:$white;
+            text-align: center;
+            width: 100%;
+        }
+
+        .items{
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+
+            .item{
+                
+                height: auto;
+                flex-grow: 1;
+
+                .icon{
+                    height: 200px;
+                    background:$color-secondary
+                }
+
+                h3, p{
+                    text-align: center;
+                    color: $white;
+                }
+            }
+
+            @include respond(phone) {
+                flex-direction: column;
+            }
+
+        }
+
+        
+    }
+}

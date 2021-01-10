@@ -49,6 +49,10 @@ h2{
     font-size: 40px;
 }
 
+h3{
+    font-size: 30px;
+}
+
 p{
     font-size: 20px;
 }
@@ -72,4 +76,5 @@ p{
 @import 'sections/text-and-image';
 @import 'sections/full-width-cta-banner';
 @import 'sections/featured-post';
+@import 'sections/three-col-highlights';
 

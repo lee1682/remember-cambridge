@@ -11,12 +11,11 @@
 
 <?php get_template_part("sections/text-and-image-bottom" );?>
 
-<!-- <?php get_template_part("sections/featured-post" );?> -->
+<?php get_template_part("sections/featured-post" );?>
 
-<section class="3-col-highlights"></section>
+<?php get_template_part("sections/3-col-highlights" );?>
 
-<section class="3-col-post-thumbs"></section>
 
 <section class="contact-cta"></section>
 
-<?php get_footer(); ?>
+<!-- <?php get_footer(); ?> -->

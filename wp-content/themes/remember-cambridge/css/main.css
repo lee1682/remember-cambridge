@@ -32,6 +32,10 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  font-size: 30px;
+}
+
 p {
   font-size: 20px;
 }
@@ -658,6 +662,10 @@ nav ul li a:active {
   }
 }
 
+.featured-post {
+  width: 100%;
+}
+
 .featured-post .container {
   min-height: 50vh;
   display: -webkit-box;
@@ -685,5 +693,58 @@ nav ul li a:active {
 
 .featured-post .container .text a {
   color: #CBE0E0;
+}
+
+.three-col-highlights {
+  width: 100%;
+  padding: 0;
+  background: #03526A;
+}
+
+.three-col-highlights .container {
+  padding: 0;
+}
+
+.three-col-highlights .container h2 {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.three-col-highlights .container .items {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.three-col-highlights .container .items .item {
+  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.three-col-highlights .container .items .item .icon {
+  height: 200px;
+  background: #FF9999;
+}
+
+.three-col-highlights .container .items .item h3, .three-col-highlights .container .items .item p {
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .three-col-highlights .container .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
