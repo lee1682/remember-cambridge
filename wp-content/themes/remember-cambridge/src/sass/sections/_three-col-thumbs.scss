@@ -1,0 +1,55 @@
+.three-col-thumbs{
+    width: 100%;
+    padding:0;
+    
+    .container{
+       
+        padding:0;
+    
+        h2{
+            color:$primary-1;
+            text-align: center;
+            width: 100%;
+            border-bottom: 1px solid $primary-2;
+        }
+
+        .items{
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+  
+            .item{
+                height: auto;
+                flex-grow: 1;
+                background:$primary-1;
+                padding:1rem 1rem 2rem 1rem;
+                width: 100%;
+               
+
+                .image{
+                    height: 400px;
+                    background:$color-secondary;
+                  
+                }
+
+                h3, p{
+                    text-align: left;
+                    color: $white;
+                
+                }
+
+                a{
+                    color:$color-secondary;
+                    
+                }
+            }
+
+            @include respond(phone) {
+                flex-direction: column;
+            }
+
+        }
+
+        
+    }
+}

@@ -747,4 +747,64 @@ nav ul li a:active {
             flex-direction: column;
   }
 }
+
+.three-col-thumbs {
+  width: 100%;
+  padding: 0;
+}
+
+.three-col-thumbs .container {
+  padding: 0;
+}
+
+.three-col-thumbs .container h2 {
+  color: #03526A;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #CBE0E0;
+}
+
+.three-col-thumbs .container .items {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.three-col-thumbs .container .items .item {
+  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: #03526A;
+  padding: 1rem 1rem 2rem 1rem;
+  width: 100%;
+}
+
+.three-col-thumbs .container .items .item .image {
+  height: 400px;
+  background: #FF9999;
+}
+
+.three-col-thumbs .container .items .item h3, .three-col-thumbs .container .items .item p {
+  text-align: left;
+  color: white;
+}
+
+.three-col-thumbs .container .items .item a {
+  color: #FF9999;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .three-col-thumbs .container .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */
