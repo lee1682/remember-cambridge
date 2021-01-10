@@ -1,4 +1,4 @@
-<section class="text-and-image-bottom">
+<section class="text-and-image-bottom mb">
     <div class="flex-grid container">
 
         <div class="col-6 img flex-center ">

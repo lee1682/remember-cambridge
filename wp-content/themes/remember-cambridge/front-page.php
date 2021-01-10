@@ -11,7 +11,7 @@
 
 <?php get_template_part("sections/text-and-image-bottom" );?>
 
-<section class="featured-post"></section>
+<?php get_template_part("sections/featured-post" );?>
 
 <section class="3-col-highlights"></section>
 

@@ -1,0 +1,44 @@
+.featured-post{
+
+    .container{
+        min-height: 50vh;   
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:$primary-2;
+
+        padding: 0;
+  
+       
+
+        .text{
+        
+        padding: 3rem;
+            
+            // background: $primary-1;
+            height: 100%;
+
+            h2, p{
+                color: $primary-1;
+            }
+
+            a{
+                color: $primary-2;
+            }
+
+        }
+
+            // .img{
+                
+            //     background: $dark-grey;
+            //     margin-top: 4rem;
+            //     margin-top: 4rem;
+                
+            //     img{
+            //         width: 100%;
+            //         height: auto;
+            //     }
+            
+            // }
+    }
+}

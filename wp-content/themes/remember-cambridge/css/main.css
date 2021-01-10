@@ -264,6 +264,10 @@ p {
   margin-bottom: 6rem;
 }
 
+.mb {
+  margin-bottom: 6rem;
+}
+
 .heading-primary {
   font-size: 4rem;
   font-weight: 300;
@@ -552,8 +556,6 @@ nav ul li a:active {
   height: 25vh;
   width: 100%;
   background-color: #03526A;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   padding: 0;
 }
 
@@ -568,4 +570,26 @@ nav ul li a:active {
   color: #03526A;
   font-size: 1em;
   padding: 1rem 8rem 1rem 8rem;
+}
+
+.featured-post .container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #CBE0E0;
+  padding: 0;
+}
+
+.featured-post .container .text {
+  padding: 3rem;
+  height: 100%;
+}
+
+.featured-post .container .text h2, .featured-post .container .text p {
+  color: #03526A;
+}
+
+.featured-post .container .text a {
+  color: #CBE0E0;
 }

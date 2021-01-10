@@ -1,5 +1,5 @@
 //COLOURS
-$color-primary:#03526A;
+$primary-1:#03526A;
 $primary-2:#CBE0E0;
 $primary-3:#F2F2F2;
 $color-secondary:#FF9999;
@@ -7,7 +7,7 @@ $dark-grey:#5a5a5a;
 $white:white;
 
 //FONTS
-$title-font:$color-primary;
+$title-font:$primary-1;
 $paragraph-font:$dark-grey;
 
 
@@ -32,7 +32,7 @@ $main-font-medium: 'futura-pt-medium';
 
 h1, h2, h3, h4 , h5, li, a, button{
     font-family: $main-font-medium;
-    color: $color-primary;
+    color: $primary-1;
 }
 
 p{
@@ -71,4 +71,5 @@ p{
 @import 'sections/bc-nav';
 @import 'sections/text-and-image';
 @import 'sections/full-width-cta-banner';
+@import 'sections/featured-post';
 

@@ -1,7 +1,7 @@
 .heading-primary {
     font-size: 4rem;
     font-weight: 300;
-    color: $color-primary;
+    color: $primary-1;
 }
 
 .heading-secondary {
@@ -30,20 +30,20 @@ div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
     border: none !important;
     text-align: center;
-    color: $color-primary;
+    color: $primary-1;
 }
 
 .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
     border: none !important;
     text-align: center;
-    color: $color-primary;
+    color: $primary-1;
 }
 
 div.wpcf7-mail-sent-ng,
 div.wpcf7-aborted {
     border: none !important;
     text-align: center;
-    color: $color-primary;
+    color: $primary-1;
 }
 
 div.wpcf7-response-output {
