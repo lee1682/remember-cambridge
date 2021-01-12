@@ -76,6 +76,15 @@ p{
 @import 'sections/text-and-image';
 @import 'sections/full-width-cta-banner';
 @import 'sections/featured-post';
-@import 'sections/three-col-highlights';
-@import 'sections/three-col-thumbs';
+@import 'sections/highlights';
+@import 'sections/post-thumbs';
 
+.post-thumbs{
+    background:red
+}
+
+.contact-cta{
+    height: 20vh;
+    width: 100%;
+    background:pink;
+}

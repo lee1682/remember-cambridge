@@ -1,4 +1,4 @@
-<section class="three-col-thumbs mb">
+<section class="post-thumbs mb">
 
     <div class="container">
 

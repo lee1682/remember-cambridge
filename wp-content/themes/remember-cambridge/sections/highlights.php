@@ -1,4 +1,4 @@
-<section class="three-col-highlights mb">
+<section class="highlights mb">
 
     <div class="container">
 
