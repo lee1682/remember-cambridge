@@ -1,0 +1,44 @@
+.contact{
+    min-height: 50vh;
+    width: 100%;
+    background:$primary-1;
+
+    .container{
+
+        h2{
+            color:$white;
+        }
+
+        .wpcf7{
+
+            p{
+                label{
+                    color:$white;
+                    font-family: $paragraph-font;
+                }
+
+                input, textarea{
+                    background:pink;
+                    background:none;
+                    border:none;
+                    border-bottom: 1px solid $white;
+                }
+
+                textarea{
+                    height: 10vh;
+                }
+
+                input[type="submit"]{
+                    @extend .btn-primary;
+                    @extend .btn-primary-rg;
+                }
+
+                
+            }
+
+
+
+
+        }
+    }
+}

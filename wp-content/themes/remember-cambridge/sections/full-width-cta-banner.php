@@ -3,7 +3,7 @@
     <div class="container flex-center">
         <h2> Offical Remember Cambridge Walking Tours </h2>
         <a href="">
-            <button>
+            <button class="btn-primary-lg">
                 Book Now
             </button>
         </a>

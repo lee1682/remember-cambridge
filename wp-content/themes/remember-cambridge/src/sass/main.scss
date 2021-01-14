@@ -78,13 +78,26 @@ p{
 @import 'sections/featured-post';
 @import 'sections/highlights';
 @import 'sections/post-thumbs';
+@import 'sections/contact';
 
-.post-thumbs{
-    background:red
-}
+.btn-primary{
+    background-color: $white;
+    border:none;
+    color: $primary-1;
+    margin-bottom: 1.5rem;
 
-.contact-cta{
-    height: 20vh;
-    width: 100%;
-    background:pink;
+    &-rg{
+        font-size: 0.7em;
+        padding: 1rem 4rem 1rem 4rem;
+    }
+
+    &-lg{
+        font-size: 1em;
+        padding: 1rem 8rem 1rem 8rem;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+    }
+
 }

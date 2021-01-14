@@ -18,4 +18,4 @@
 
 <?php get_template_part("sections/contact" );?>
 
-<!-- <?php get_footer(); ?> -->
+<!-- <?php get_footer(); ?> --

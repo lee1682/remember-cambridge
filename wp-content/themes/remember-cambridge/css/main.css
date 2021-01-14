@@ -647,21 +647,6 @@ nav ul li a:active {
   text-align: center;
 }
 
-.full-width-cta-banner button {
-  background-color: white;
-  border: none;
-  color: #03526A;
-  font-size: 1em;
-  padding: 1rem 8rem 1rem 8rem;
-  margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .full-width-cta-banner button {
-    width: 100%;
-  }
-}
-
 .featured-post {
   width: 100%;
 }
@@ -809,13 +794,52 @@ nav ul li a:active {
   }
 }
 
-.post-thumbs {
-  background: red;
+.contact {
+  min-height: 50vh;
+  width: 100%;
+  background: #03526A;
 }
 
-.contact-cta {
-  height: 20vh;
-  width: 100%;
+.contact .container h2 {
+  color: white;
+}
+
+.contact .container .wpcf7 p label {
+  color: white;
+  font-family: #5a5a5a;
+}
+
+.contact .container .wpcf7 p input, .contact .container .wpcf7 p textarea {
   background: pink;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.contact .container .wpcf7 p textarea {
+  height: 10vh;
+}
+
+.btn-primary, .contact .container .wpcf7 p input[type="submit"] {
+  background-color: white;
+  border: none;
+  color: #03526A;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary-rg, .contact .container .wpcf7 p input[type="submit"] {
+  font-size: 0.7em;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.btn-primary-lg {
+  font-size: 1em;
+  padding: 1rem 8rem 1rem 8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btn-primary, .contact .container .wpcf7 p input[type="submit"] {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

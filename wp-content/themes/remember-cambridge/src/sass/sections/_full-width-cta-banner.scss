@@ -11,16 +11,5 @@
         font-family:$main-font-book;
         text-align: center;
     }
-    button{
-        background-color: $white;
-        border:none;
-        color: $primary-1;
-        font-size: 1em;
-        padding: 1rem 8rem 1rem 8rem;
-        margin-bottom: 1.5rem;
-
-        @include respond(phone) {
-            width: 100%;
-        }
-    }
+   
 }  
