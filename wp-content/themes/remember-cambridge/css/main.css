@@ -24,12 +24,12 @@ p {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 8em;
   line-height: 0.9;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 4.5em;
 }
 
 h3 {
@@ -495,6 +495,7 @@ li, a {
 }
 
 .header {
+  padding-top: 2rem;
   min-height: 42vh;
 }
 
@@ -514,14 +515,27 @@ li, a {
   margin: 0 0 1rem 0;
 }
 
-.header .hero p {
-  margin-top: 1rem;
-  width: 50%;
+@media only screen and (max-width: 56.35em) {
+  .header .hero h1 {
+    margin-bottom: 3rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
+  .header .hero h1 {
+    font-size: 6em;
+  }
+}
+
+.header .hero p {
+  margin-top: 1rem;
+  width: 50%;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 56.35em) {
   .header .hero p {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -562,6 +576,14 @@ nav ul li a:active {
           align-items: center;
 }
 
+.intro-text .container h2 {
+  padding: 0 2rem 0 2rem;
+}
+
+.intro-text .container p {
+  padding: 0 2rem 0 2rem;
+}
+
 .bc-nav {
   background-color: #03526A;
   height: 3vh;
@@ -574,6 +596,7 @@ nav ul li a:active {
 
 .bc-nav ul li a {
   color: white;
+  font-size: 1.2em;
 }
 
 .text-and-image, .text-and-image-top, .text-and-image-bottom {
@@ -588,36 +611,35 @@ nav ul li a:active {
           align-items: center;
 }
 
-.text-and-image .img, .text-and-image-top .img, .text-and-image-bottom .img {
+.text-and-image .container .img, .text-and-image-top .container .img, .text-and-image-bottom .container .img {
   padding: 0;
   margin: 0;
   height: 100%;
 }
 
-.text-and-image .img img, .text-and-image-top .img img, .text-and-image-bottom .img img {
+.text-and-image .container .img img, .text-and-image-top .container .img img, .text-and-image-bottom .container .img img {
   height: auto;
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .text-and-image .img img, .text-and-image-top .img img, .text-and-image-bottom .img img {
-    width: 100%;
-  }
+.text-and-image .container .text, .text-and-image-top .container .text, .text-and-image-bottom .container .text {
+  padding: 0;
 }
 
-.text-and-image .text h2, .text-and-image-top .text h2, .text-and-image-bottom .text h2 {
-  text-align: left;
+.text-and-image .container .text h2, .text-and-image-top .container .text h2, .text-and-image-bottom .container .text h2 {
+  text-align: center;
 }
 
-.text-and-image .text p, .text-and-image-top .text p, .text-and-image-bottom .text p {
-  width: 80%;
+.text-and-image .container .text p, .text-and-image-top .container .text p, .text-and-image-bottom .container .text p {
+  padding: 0 2rem 0 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
-  .text-and-image .text, .text-and-image-top .text, .text-and-image-bottom .text {
-    padding: 1rem;
+  .text-and-image .container .text, .text-and-image-top .container .text, .text-and-image-bottom .container .text {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
 }
 
@@ -626,12 +648,6 @@ nav ul li a:active {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.text-and-image-bottom .container .img {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 .full-width-cta-banner .container {
@@ -684,11 +700,6 @@ nav ul li a:active {
   width: 100%;
   padding: 0;
   background: #03526A;
-  min-height: 50vh;
-}
-
-.highlights .container {
-  padding: 0;
 }
 
 .highlights .container h2 {
@@ -734,15 +745,6 @@ nav ul li a:active {
   }
 }
 
-.post-thumbs {
-  width: 100%;
-  padding: 0;
-}
-
-.post-thumbs .container {
-  padding: 0;
-}
-
 .post-thumbs .container h2 {
   color: #03526A;
   text-align: center;
@@ -755,9 +757,8 @@ nav ul li a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 2rem;
 }
 
@@ -766,23 +767,30 @@ nav ul li a:active {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: #03526A;
-  padding: 1rem 1rem 2rem 1rem;
+  background: #F2F2F2;
+  padding-bottom: 2rem;
   width: 100%;
 }
 
 .post-thumbs .container .items .item .image {
-  height: 400px;
   background: #FF9999;
+  overflow: hidden;
+}
+
+.post-thumbs .container .items .item .image img {
+  width: 100%;
+  height: auto;
 }
 
 .post-thumbs .container .items .item h3, .post-thumbs .container .items .item p {
   text-align: left;
-  color: white;
+  color: #03526A;
+  padding: 2rem;
 }
 
 .post-thumbs .container .items .item a {
-  color: #FF9999;
+  color: #03526A;
+  margin: 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -795,39 +803,56 @@ nav ul li a:active {
 }
 
 .contact {
-  min-height: 50vh;
-  width: 100%;
   background: #03526A;
 }
 
 .contact .container h2 {
   color: white;
+  width: 100%;
+  text-align: left;
 }
 
-.contact .container .wpcf7 p label {
+.contact .container .wpcf7 form p {
+  width: 50% !important;
+}
+
+.contact .container .wpcf7 form p label {
   color: white;
   font-family: #5a5a5a;
 }
 
-.contact .container .wpcf7 p input, .contact .container .wpcf7 p textarea {
-  background: pink;
+.contact .container .wpcf7 form p input, .contact .container .wpcf7 form p textarea {
   background: none;
   border: none;
   border-bottom: 1px solid white;
 }
 
-.contact .container .wpcf7 p textarea {
+.contact .container .wpcf7 form p textarea {
+  height: 2vh;
+}
+
+.footer {
+  height: 50vh;
+  width: 100%;
+}
+
+.footer .footer-social {
   height: 10vh;
 }
 
-.btn-primary, .contact .container .wpcf7 p input[type="submit"] {
+.footer .footer-main {
+  background: #5a5a5a;
+  height: 40vh;
+}
+
+.btn-primary, .contact .container .wpcf7 form p input[type="submit"] {
   background-color: white;
   border: none;
   color: #03526A;
   margin-bottom: 1.5rem;
 }
 
-.btn-primary-rg, .contact .container .wpcf7 p input[type="submit"] {
+.btn-primary-rg, .contact .container .wpcf7 form p input[type="submit"] {
   font-size: 0.7em;
   padding: 1rem 4rem 1rem 4rem;
 }
@@ -838,7 +863,7 @@ nav ul li a:active {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .btn-primary, .contact .container .wpcf7 p input[type="submit"] {
+  .btn-primary, .contact .container .wpcf7 form p input[type="submit"] {
     width: 100%;
   }
 }

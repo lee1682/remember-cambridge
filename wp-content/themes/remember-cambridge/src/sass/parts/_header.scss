@@ -1,20 +1,39 @@
 .header{
-    min-height: 42vh;   
+    padding-top:2rem;  
+    min-height: 42vh; 
+   
     .hero{
         justify-content: center;
         height: 45vh;  
+
         h1, p{
             text-align: center;
         }
+
         h1{
             padding: 0;
             margin: 0 0 1rem 0;
+
+            @include respond(tab-port) {
+                margin-bottom: 3rem;
+            }
+
+            @include respond(phone) {
+                font-size: 6em;
+            }
         }
+        
         p{
             margin-top: 1rem;
             width: 50%;
+            padding:1rem;
+
+            @include respond(tab-port) {
+                width: 80%;     
+            }
+
             @include respond(phone) {
-            width: 100%;      
+        
             }
         }
     }   
@@ -23,3 +42,4 @@
  
 
 
+ 

@@ -11,11 +11,11 @@
 
         <div class="items flex-center">
 
-            <div class="col-3">
+            <div class="col-4">
 
                 <div class="item">
                     <div class="image">
-                        <img src="" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/ph.jpg">
                     </div>
                     <h3> Jelly Beans Pie</h3>
                     <p>Topping fruitcake gummi bears fruitcake caramels marzipan. Donut donut sugar plum topping gummi
@@ -29,11 +29,11 @@
 
             </div>
 
-            <div class="col-3">
+            <div class="col-4">
 
                 <div class="item">
                     <div class="image">
-                        <img src="" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/ph.jpg">
                     </div>
                     <h3> Jelly Beans Pie</h3>
                     <p>Topping fruitcake gummi bears fruitcake caramels marzipan. Donut donut sugar plum topping gummi
@@ -47,11 +47,11 @@
 
             </div>
 
-            <div class="col-3">
+            <div class="col-4">
 
                 <div class="item">
                     <div class="image">
-                        <img src="" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/ph.jpg">
                     </div>
                     <h3> Jelly Beans Pie</h3>
                     <p>Topping fruitcake gummi bears fruitcake caramels marzipan. Donut donut sugar plum topping gummi
