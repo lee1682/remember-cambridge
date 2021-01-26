@@ -1,0 +1,23 @@
+.breadcrumb-nav{
+    background-color: $primary-1;
+    height: auto;
+    width: 100%;
+    ul{
+        justify-content: space-around;
+        align-self: center;
+        height: 10vh;
+        width: 100%;
+        margin:0;
+        padding:0;
+
+        li{
+            align-self: inherit;
+          
+            a{
+                color: white;
+                font-size: 1.6em;
+            }
+        }
+    }
+}
+

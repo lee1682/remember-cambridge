@@ -1,0 +1,106 @@
+.post-thumbs{
+
+    margin-bottom: 5rem;
+
+    h2{
+        padding:4rem;
+    }
+
+    &_header{
+        h2{
+            text-align: center;
+        }
+    }
+
+    &_single{
+
+        margin:0 1rem 1rem 1rem;
+        background:$primary-1;
+
+        @include breakpoint-down(tablet-port) {
+          margin:0;
+          margin-bottom: 1rem;
+        }
+
+        .image{
+            height: 250px;
+            width: 100%;
+            background:pink;
+        }
+
+        h3,p{
+            color:$white;
+        }
+
+        p{
+            padding:0 2rem 0 2rem;
+            color:$white;
+
+            @include breakpoint-down(tablet-port) {
+                padding:0 0.5rem 0 0.5rem;
+            }
+        }
+    }
+}
+ 
+// .post-thumbs{
+//     width: 100%; 
+//     min-height: 50vh;
+//     display: flex;  
+
+//     .container-large{ 
+
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+
+//         h2{
+//             color:$primary-2;
+//             text-align: center;
+//             width: 100%;
+//             border-bottom: 1px solid $primary-2;
+//         }
+
+//         .items{
+//             flex-direction: row;
+//             justify-content: space-around;
+//             padding-bottom: 2rem;
+           
+//             .item{
+//                 height: auto;
+//                 flex-grow: 1;
+//                 background:$primary-3;
+//                 padding-bottom: 2rem;
+//                 width: 100%;
+            
+//                 .image{   
+//                     background:$color-secondary;
+//                     overflow: hidden;
+
+//                     img{
+//                         width: 100%;
+//                         height:auto;
+//                     }       
+//                 }
+
+//                 h3, p{
+//                     text-align: left;
+//                     color: $primary-1;
+//                     padding:2rem;
+//                 }
+
+                
+
+//                 a{
+//                     color:$primary-1;
+//                     margin:2rem;
+                    
+//                 }
+//             }
+
+//             // @include respond(phone) {
+//             //     flex-direction: column;
+//             // }
+//         }
+//     }
+// }

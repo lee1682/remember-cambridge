@@ -1,0 +1,20 @@
+.hero{
+    background:$white;
+    height: 100vh;
+    .container-large{
+        height: 100%;
+        align-items: center;
+
+        .heading{
+            width: auto;
+            h1, p{
+                width: 100%;
+                text-align: center;
+                margin:0 auto;
+            } 
+            h1{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

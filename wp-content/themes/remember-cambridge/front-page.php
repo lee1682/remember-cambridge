@@ -1,21 +1,21 @@
 <?php /* Template Name: front-page */ get_header(); ?>
 
-<?php get_template_part("sections/bc-nav");?>
+<?php get_template_part("template-parts/hero");?>
 
-<?php get_template_part("sections/intro-text" );?>
+<?php get_template_part("template-parts/breadcrumb-nav");?>
 
-<?php get_template_part("sections/text-and-image-top" );?>
+<?php get_template_part("template-parts/intro-text");?>
 
-<?php get_template_part("sections/full-width-cta-banner" );?>
+<?php get_template_part("template-parts/text-and-image-top");?>
 
-<?php get_template_part("sections/text-and-image-bottom" );?>
+<?php get_template_part("template-parts/full-width-cta-banner");?>
 
-<?php get_template_part("sections/featured-post" );?>
+<?php get_template_part("template-parts/text-and-image-bottom");?>
 
-<?php get_template_part("sections/highlights" );?>
+<?php get_template_part("template-parts/featured-post");?>
 
-<?php get_template_part("sections/post-thumbs" );?>
+<?php get_template_part("template-parts/highlights");?>
 
-<?php get_template_part("sections/contact" );?>
+<?php get_template_part("template-parts/post-thumbs");?>
 
-<?php get_footer(); ?>
+<?php get_template_part("template-parts/contact");?>

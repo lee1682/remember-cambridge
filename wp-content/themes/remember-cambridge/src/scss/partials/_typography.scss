@@ -1,0 +1,63 @@
+//imports
+@font-face { 
+font-family: 'futura-pt-light';
+src: url(../fonts/FuturaPTlight.otf);
+}
+
+@font-face { 
+font-family: 'futura-pt-book';
+src: url(../fonts/FuturaPTbook.otf);
+}
+    
+@font-face { 
+font-family: 'futura-pt-medium';
+src: url(../fonts/FuturaPTmedium.otf);
+}
+
+$main-font-light: 'futura-pt-light';
+$main-font-book: 'futura-pt-book';
+$main-font-medium: 'futura-pt-medium';
+
+//colors
+$title-font:$primary-1;
+$paragraph-font:$dark-grey;
+
+
+
+h1, h2, h3, h4, h5{
+    color: $primary-1;
+    font-family: $main-font-medium;
+    margin:0;
+}
+
+h1{
+    font-size: 3.5em;
+    line-height: 0.9; 
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+
+h2{
+    font-size: 2.5em;
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
+  
+}
+
+h3{
+    font-size: 30px;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    
+}
+
+p{
+    color: $dark-grey;
+    font-family: $main-font-book;
+    font-size: 20px;
+}
+
+li, a, button{
+    font-family: $main-font-medium;
+    color: $primary-1;
+}

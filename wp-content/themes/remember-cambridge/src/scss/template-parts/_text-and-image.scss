@@ -1,0 +1,52 @@
+.text-and-image{    
+    background-color:$primary-3;
+    min-height: 50vh;
+    overflow: hidden;
+
+        &_img{
+            padding:5rem;  
+            
+            @include breakpoint-down(tablet-port) {
+                padding:0;
+            }
+
+            img{  
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    
+        &_text{
+            display:flex;
+            flex-direction: column; 
+            justify-content: center;
+            height: 100%;
+            padding:2rem;
+
+            @include breakpoint-down(tablet-port) {
+                padding:0;
+            }
+        }
+    
+
+    &-top{
+        @extend .text-and-image;
+
+        }
+
+    &-bottom{
+        @extend .text-and-image;
+
+        .container-large{
+            flex-direction: row-reverse;
+
+            .text{
+                h2, p{
+                    padding-left: 0;
+                }
+            }
+        }
+
+    }
+}

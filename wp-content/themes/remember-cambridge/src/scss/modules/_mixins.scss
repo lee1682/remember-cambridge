@@ -1,0 +1,82 @@
+// Breakpoint Up
+@mixin breakpoint-up($size) {
+    @if $size == tablet-port {
+        @media (min-width: #{$tablet-port}) {
+            @content;
+        }
+    }
+    @else if $size == tablet-land {
+        @media (min-width: #{$tablet-land}) {
+            @content;
+        }
+    }
+    @else if $size == laptop {
+        @media (min-width: #{$laptop}) {
+            @content;
+        }
+    }
+    @else if $size == desktop {
+        @media (min-width: #{$desktop}) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $size+'px') {
+            @content;
+        }
+    }
+} 
+
+// Breakpoint Down
+@mixin breakpoint-down($size) {
+    @if $size == tablet-port {
+        @media (max-width: #{$tablet-port}) {
+            @content;
+        }
+    }
+    @else if $size == tablet-land {
+        @media (max-width: #{$tablet-land}) {
+            @content;
+        }
+    }
+    @else if $size == laptop {
+        @media (max-width: #{$laptop}) {
+            @content;
+        }
+    }
+    @else if $size == desktop {
+        @media (max-width: #{$desktop}) {
+            @content;
+        }
+    }
+    @else {
+        @media (max-width: $size+'px') {
+            @content;
+        }
+    }
+}
+
+// Add Font-Face
+@mixin font-face($name, $file) {
+    @font-face {
+        font-family: "#{$name}";
+        src: url("../fonts/#{$file}.eot");
+        src: url("../fonts/#{$file}.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/#{$file}.woff") format("woff"),
+        url("../fonts/#{$file}.ttf") format("truetype"),
+        url("../fonts/#{$file}.svg?#webfont") format("svg");
+    }
+}
+
+// Clearfix
+%clearfix {
+    *zoom: 1;
+    &:before, 
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

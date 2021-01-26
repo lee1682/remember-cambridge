@@ -1,17 +1,12 @@
-    <footer class="footer" role="contentinfo">
-        <div class="container">
+<footer class="footer" role="contentinfo">
+    <div class="container">
 
-            <div class="row footer-soical"> session_cache_limiter</div>
-            <div class="row footer-main"></div>
-        </div>
-
-
-
-
-
-    </footer>
+        <div class="row footer-soical"> session_cache_limiter</div>
+        <div class="row footer-main"></div>
     </div>
-    <?php wp_footer(); ?>
-    </body>
+</footer>
+</div>
+<?php wp_footer(); ?>
+</body>
 
-    </html>
+</html>

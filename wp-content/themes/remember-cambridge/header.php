@@ -25,39 +25,34 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="wrapper">
+    <div id="page">
+        <header class="header" role="banner">
+            <div class="header_wrapper">
+                <div class="container-large container-row">
+                    <!-- <div class="header_wrapper_logo">
+                        <a href="#"> Remember Cambridge</a>
+                    </div> -->
+                    <nav class="header_wrapper_navbar">
+                        <!-- <ul class="">
+                            <li>
+                                <a href="#"> Icecream</a>
+                            </li>
 
-        <header class="header container-large" role="banner">
+                            <li>
+                                <a href="#"> Icecream</a>
+                            </li>
 
-            <nav class="flex-row">
+                            <li>
+                                <a href="#"> Icecream</a>
+                            </li>
 
-                <a href="#"> Remember Cambridge</a>
-
-                <ul class="flex-center-row">
-                    <li>
-                        <a href="#"> Icecream</a>
-                    </li>
-
-                    <li>
-                        <a href="#"> Icecream</a>
-                    </li>
-
-                    <li>
-                        <a href="#"> Icecream</a>
-                    </li>
-
-                    <li>
-                        <a href="#"> Icecream</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="hero flex-center">
-                <h1> Remember Cambridge </h1>
-
-                <P> Cookie croissant carrot cake sesame snaps chocolate bar. Cheesecake cupcake cotton candy biscuit
-                    dragée caramels wafer cupcake toffee</P>
-
+                            <li>
+                                <a href="#"> Icecream</a>
+                            </li>
+                        </ul> -->
+                    </nav>
+                    <div class="header_wrapper_hamburger"></div>
+                </div>
             </div>
-
         </header>
+        </hr>

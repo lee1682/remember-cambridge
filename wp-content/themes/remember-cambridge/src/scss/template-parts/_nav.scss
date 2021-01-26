@@ -1,0 +1,25 @@
+nav{
+    height: 5vh;
+    width: 100%;
+    justify-content: space-between;
+   
+
+    ul{
+       li{
+           margin-left: 4rem;
+           padding: 1rem;
+           a{
+               font-family: $main-font-light;
+               &:active{
+                       font-weight: bold;
+               }
+           }
+       };
+    }
+
+    @include respond(phone) {
+    display: none !important;
+    }
+
+   
+}
