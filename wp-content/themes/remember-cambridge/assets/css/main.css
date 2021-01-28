@@ -1488,3 +1488,9 @@ li, a, button {
   resize: none;
   height: 10vh;
 }
+
+.footer {
+  height: 50vh;
+  width: 100vw;
+  background: #5a5a5a;
+}

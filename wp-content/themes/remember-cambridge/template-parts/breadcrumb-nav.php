@@ -3,19 +3,19 @@
         <div class="col-12">
             <ul class="container-row">
                 <li>
-                    <a href="#">icecream</a>
+                    <a href="#">Home</a>
                 </li>
 
                 <li>
-                    <a href="#">icecream</a>
+                    <a href="#">Thins To Do</a>
                 </li>
 
                 <li>
-                    <a href="#">icecream</a>
+                    <a href="#">Place To Eat</a>
                 </li>
 
                 <li>
-                    <a href="#">icecream</a>
+                    <a href="#">Guides</a>
                 </li>
             </ul>
 

@@ -3,10 +3,10 @@
         <div class="col-12 col-lg-5">
 
             <div class="featured-post_text">
-                <h2> Cookie pastry carrot cake biscuit gummies</h2>
-                <p> Topping fruitcake gummi bears fruitcake caramels marzipan. Donut donut sugar plum topping gummi
-                    bears.
-                    Marzipan soufflé sweet roll chocolate bar </p>
+                <h2> 5 Ways Covid-19 Has Changed Cambridge</h2>
+                <p> Let’s face it, the world is not the same place it was when 2020 started. It’s been dramatic and our
+                    lives have been turned upside down. And now life is returning slowly to the ‘new normal’. But if we
+                    are being perfectly honest, life isn’t really that close to normal. </p>
                 <a href=""> Cookie </a>
             </div>
 
