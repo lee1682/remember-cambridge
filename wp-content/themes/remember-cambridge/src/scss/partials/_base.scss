@@ -1,14 +1,22 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 li{
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
+
+@include breakpoint-down(laptop){
+  body{
+    overflow: hidden;
+  }
+}
+

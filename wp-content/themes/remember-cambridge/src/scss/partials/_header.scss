@@ -1,5 +1,51 @@
 .header{
-    padding-top:2rem;  
-    min-height: 42vh; 
-}
+    width: 100%;
+    height: 5vh;
+    padding-top:2rem;
+    &_logo{
+        width: 100%;
+        a{
+            letter-spacing: $letter-spacing-rg;
+            margin-left: 2rem;
+        }
+    }
+    &_nav{
+        justify-content: flex-end;
+        a{
+            margin-left: 2.5rem;
+            letter-spacing: $letter-spacing-rg;
+            margin-right: 2rem;
+        }
+    }
+    
+    //Mobile 
+    @include breakpoint-down(laptop) {
+        height: 100vh;
+        &_logo{
+            text-align: center;
+            a{
+                font-size: 1.5em;
+            }        
+        }  
+        &_nav{
+            background:$primary-1;
+            opacity: 0.5;
+            margin-top:2rem;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            a{
+                color:$white;
+                margin-left: 0;
+                padding: 1rem;
+                font-size: 1.5em;
+            }   
+        }
+        .hide{
+            background:red;
+            transform: translateX(-100%);
+        }
+    }  
+} 
 

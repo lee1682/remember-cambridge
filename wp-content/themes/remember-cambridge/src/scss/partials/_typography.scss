@@ -22,6 +22,8 @@ $main-font-medium: 'futura-pt-medium';
 $title-font:$primary-1;
 $paragraph-font:$dark-grey;
 
+//vars
+$letter-spacing-rg:0.1em;
 
 
 h1, h2, h3, h4, h5{
@@ -48,7 +50,6 @@ h3{
     font-size: 30px;
     padding-top:1rem;
     padding-bottom: 1rem;
-    
 }
 
 p{

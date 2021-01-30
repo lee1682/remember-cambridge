@@ -27,32 +27,15 @@
 <body <?php body_class(); ?>>
     <div id="page">
         <header class="header" role="banner">
-            <div class="header_wrapper">
-                <div class="container-large container-row">
-                    <!-- <div class="header_wrapper_logo">
-                        <a href="#"> Remember Cambridge</a>
-                    </div> -->
-                    <nav class="header_wrapper_navbar">
-                        <!-- <ul class="">
-                            <li>
-                                <a href="#"> Icecream</a>
-                            </li>
-
-                            <li>
-                                <a href="#"> Icecream</a>
-                            </li>
-
-                            <li>
-                                <a href="#"> Icecream</a>
-                            </li>
-
-                            <li>
-                                <a href="#"> Icecream</a>
-                            </li>
-                        </ul> -->
-                    </nav>
-                    <div class="header_wrapper_hamburger"></div>
+            <div class="header_wrapper container-large container-row">
+                <div class="header_logo col-sm-12 col-lg-4">
+                    <a href="">Remember Cambridge</a>
                 </div>
+                <nav class="header_nav container-row col-sm-12 col-lg-8 hide">
+                    <a href=""> Icecream</a>
+                    <a href=""> Icecream</a>
+                    <a href=""> Icecream</a>
+                    <a href=""> Icecream</a>
+                </nav>
             </div>
         </header>
-        </hr>
