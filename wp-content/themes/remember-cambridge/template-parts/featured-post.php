@@ -1,6 +1,6 @@
 <section class="featured-post">
     <div class="container-large container-row">
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-lg-12">
 
             <div class="featured-post_text">
                 <h2> 5 Ways Covid-19 Has Changed Cambridge</h2>

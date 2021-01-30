@@ -2,6 +2,7 @@
     background:$primary-1;
     height: auto;
     box-sizing: border-box;
+    padding:1rem;
     .container-large{
 
         .text{
@@ -41,8 +42,8 @@
                     }
     
                     input[type="submit"]{
-                        @extend .btn-primary;
-                        @extend .btn-primary-rg;
+                        @extend .btn-primary-outline;
+                        
                     }   
                 }
             }

@@ -2,7 +2,8 @@
 
     background:$primary-1;
     min-height: 50vh;
-    padding:2rem;
+    padding-bottom: 2rem;
+    
 
     display:flex;
     align-items: center;
@@ -15,6 +16,7 @@
         h2 {
             color:white;
             text-align: center;
+            padding:4rem;
         }
     }  
 

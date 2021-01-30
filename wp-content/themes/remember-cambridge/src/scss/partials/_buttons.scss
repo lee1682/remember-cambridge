@@ -1,19 +1,7 @@
-.btn-primary{
-        background-color: $white;
-        border:none;
-        color: $primary-1;
-        margin-bottom: 1.5rem;
-        font-size: 2em;
+.btn-primary-outline{
     
-        &-rg{
-            font-size: 0.7em;
-            padding: 1rem 4rem 1rem 4rem;
-        }
-    
-        &-lg{
-            font-size: 1em;
-            padding: 1rem 8rem 1rem 8rem;
-        }
-    
-        
-    }
+    background:inherit;
+    border:2px solid $white;
+    color:$white;
+    padding:0.5rem 2rem 0.5rem 2rem;
+}

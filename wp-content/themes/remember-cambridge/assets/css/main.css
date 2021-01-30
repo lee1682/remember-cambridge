@@ -1122,7 +1122,7 @@ h3 {
 }
 
 p {
-  color: #5a5a5a;
+  color: #2e2d2d;
   font-family: "futura-pt-book";
   font-size: 20px;
 }
@@ -1132,22 +1132,11 @@ li, a, button {
   color: #03526A;
 }
 
-.btn-primary, .contact .container-large .wpcf7 form p input[type="submit"] {
-  background-color: white;
-  border: none;
-  color: #03526A;
-  margin-bottom: 1.5rem;
-  font-size: 2em;
-}
-
-.btn-primary-rg, .contact .container-large .wpcf7 form p input[type="submit"] {
-  font-size: 0.7em;
-  padding: 1rem 4rem 1rem 4rem;
-}
-
-.btn-primary-lg {
-  font-size: 1em;
-  padding: 1rem 8rem 1rem 8rem;
+.btn-primary-outline, .contact .container-large .wpcf7 form p input[type="submit"] {
+  background: inherit;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .hero {
@@ -1188,7 +1177,7 @@ li, a, button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -1202,7 +1191,7 @@ li, a, button {
 
 .breadcrumb-nav ul li a {
   color: white;
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
 
 .intro-text {
@@ -1312,7 +1301,6 @@ li, a, button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
 }
 
 .full-width-cta-banner_wrapper h2 {
@@ -1344,6 +1332,12 @@ li, a, button {
 
 .featured-post_text h2, .featured-post_text p {
   color: #03526A;
+  text-align: center;
+}
+
+.featured-post_text p {
+  width: 75%;
+  margin: 0 auto;
 }
 
 .featured-post_text a {
@@ -1353,7 +1347,7 @@ li, a, button {
 .highlights {
   background: #03526A;
   min-height: 50vh;
-  padding: 2rem;
+  padding-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1371,6 +1365,7 @@ li, a, button {
 .highlights_header h2 {
   color: white;
   text-align: center;
+  padding: 4rem;
 }
 
 .highlights_single h3, .highlights_single p {
@@ -1452,6 +1447,7 @@ li, a, button {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 1rem;
 }
 
 .contact .container-large .text {
@@ -1474,7 +1470,7 @@ li, a, button {
 
 .contact .container-large .wpcf7 form p label {
   color: white;
-  font-family: #5a5a5a;
+  font-family: #2e2d2d;
 }
 
 .contact .container-large .wpcf7 form p input, .contact .container-large .wpcf7 form p textarea {
@@ -1492,5 +1488,5 @@ li, a, button {
 .footer {
   height: 50vh;
   width: 100vw;
-  background: #5a5a5a;
+  background: #2e2d2d;
 }
