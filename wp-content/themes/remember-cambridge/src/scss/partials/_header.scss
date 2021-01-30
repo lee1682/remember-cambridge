@@ -29,8 +29,9 @@
             display: flex;
             height: 3rem;
             width: 3rem;
-            right: 1.6rem ;  
-            top: 1.5rem;   
+            right: 1.6rem ;
+            top: 2rem;  
+       
             position: absolute;
         }
         &_logo{
@@ -54,9 +55,12 @@
                 font-size: 1.5em;
             }   
         }
+
         .hide{
-            background:red;
             animation: open-nav 1s;
+            transform: translateX(-100%);
+
+            
         }
     }  
 } 

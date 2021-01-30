@@ -1,26 +1,4 @@
-@-webkit-keyframes open-nav {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes open-nav {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-html {
+@-webkit-keyframes open-nav {}@keyframes open-nav {}html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1214,7 +1192,7 @@ li, a, button {
     height: 3rem;
     width: 3rem;
     right: 1.6rem;
-    top: 1.5rem;
+    top: 2rem;
     position: absolute;
   }
   .header_logo {
@@ -1246,9 +1224,10 @@ li, a, button {
     font-size: 1.5em;
   }
   .header .hide {
-    background: red;
     -webkit-animation: open-nav 1s;
             animation: open-nav 1s;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 

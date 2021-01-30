@@ -14,27 +14,29 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
 
     <?php wp_head(); ?>
-    <script>
-    // conditionizr.com
-    // configure environment tests
+    <!-- <script>
+    conditionizr.com
+    configure environment tests
     conditionizr.config({
         assets: '<?php echo get_template_directory_uri(); ?>',
         tests: {}
     });
-    </script>
+    </script> -->
 </head>
 
 <body <?php body_class(); ?>>
     <div id="page">
         <header class="header" role="banner">
             <div class="header_wrapper container-large container-row">
+
                 <div class="header_logo col-sm-12 col-lg-4">
                     <a href="">Remember Cambridge</a>
                     <button id="header_ham">
                         <div class="line"></div>
                     </button>
                 </div>
-                <nav class="header_nav container-row col-sm-12 col-lg-8 hide">
+
+                <nav class="header_nav container-row col-sm-12 col-lg-8 hide" id="header_nav">
                     <a href=""> Icecream</a>
                     <a href=""> Icecream</a>
                     <a href=""> Icecream</a>

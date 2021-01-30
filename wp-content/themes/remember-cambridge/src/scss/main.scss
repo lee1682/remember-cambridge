@@ -1,12 +1,9 @@
 //Modules
-
 @import 'modules/breakpoints';
 @import 'modules/colors.scss';
 @import 'modules/mixins';
 
-
 //Partials
-
 @import 'partials/base';
 @import 'partials/grids';  
 @import 'partials/typography'; 
@@ -17,8 +14,6 @@
 // @import 'partials/grid';
 
 //Template Parts
-
-
 @import 'template-parts/hero';
 @import 'template-parts/breadcrumb-nav';
 @import 'template-parts/intro-text';

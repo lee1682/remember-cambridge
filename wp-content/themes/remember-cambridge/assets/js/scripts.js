@@ -3,9 +3,12 @@
 	$(function () {
 		
 		'use strict';
-		
-		// DOM ready, take it away
-		
+
+		console.log('js working');
+
+		$( "#header_ham" ).click(function() {
+			console.log('clicked');
+			$('#header_nav').toggleClass( "hide" );
+		});
 	});
-	
 })(jQuery, this);
