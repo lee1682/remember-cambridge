@@ -30,6 +30,9 @@
             <div class="header_wrapper container-large container-row">
                 <div class="header_logo col-sm-12 col-lg-4">
                     <a href="">Remember Cambridge</a>
+                    <button id="header_ham">
+                        <div class="line"></div>
+                    </button>
                 </div>
                 <nav class="header_nav container-row col-sm-12 col-lg-8 hide">
                     <a href=""> Icecream</a>
