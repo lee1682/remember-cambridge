@@ -29,7 +29,14 @@
 
 // Breakpoint Down
 @mixin breakpoint-down($size) {
-    @if $size == tablet-port {
+
+    @if $size == phone-small {
+        @media (max-width: #{$phone-small}) {
+            @content;
+        }
+    }
+    
+    @else if $size == tablet-port {
         @media (max-width: #{$tablet-port}) {
             @content;
         }

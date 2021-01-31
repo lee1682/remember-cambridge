@@ -5,7 +5,6 @@
                 Ice cream cakes
             </h2>
         </div>
-
         <div class="col-12 container-row">
             <div class="col-12 col-lg-4">
                 <div class="highlights_single center-aligned">
@@ -32,6 +31,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>

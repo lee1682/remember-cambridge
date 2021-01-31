@@ -16,12 +16,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 992px) {
-  body {
-    overflow: hidden;
-  }
-}
-
 @media screen and (max-width: -1) {
   .hidden-xs-down {
     display: none !important;
@@ -1160,6 +1154,12 @@ li, a, button {
   display: none;
 }
 
+.header_top-bar {
+  height: 5vh;
+  background: blue;
+  width: 100%;
+}
+
 .header_logo {
   width: 100%;
 }
@@ -1193,13 +1193,13 @@ li, a, button {
     width: 3rem;
     right: 1.6rem;
     top: 2rem;
-    position: absolute;
   }
   .header_logo {
     text-align: center;
   }
   .header_logo a {
     font-size: 1.5em;
+    margin-left: 0;
   }
   .header_nav {
     background: #03526A;
@@ -1215,19 +1215,18 @@ li, a, button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
   }
   .header_nav a {
     color: white;
-    margin-left: 0;
+    margin: 0;
     padding: 1rem;
     font-size: 1.5em;
   }
   .header .hide {
     -webkit-animation: open-nav 1s;
             animation: open-nav 1s;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
   }
 }
 
