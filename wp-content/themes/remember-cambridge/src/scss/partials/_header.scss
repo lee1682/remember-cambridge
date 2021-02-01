@@ -1,83 +1,97 @@
 .header{
-    height: 5vh;
-    padding-top:2rem;
-    width: 100%;
-    button{
-        display: none;
-    }
-
     &_top-bar{
-        height: 5vh;
-        background:blue;
-        width: 100%;
-    }
-    &_logo{
-        width: 100%;
-
+        height: 10vh;
+        background:$white;
+        align-items: center;
+        z-index: 10;
+        justify-content: flex-start;
         a{
-            letter-spacing: $letter-spacing-rg;
-            margin-left: 2rem;
+            font-size: 1.4em;
+            margin:3rem;
         }
     }
     &_nav{
+        height: 10vh;
         justify-content: flex-end;
+        align-content: center;
         a{
-            margin-left: 2.5rem;
-            letter-spacing: $letter-spacing-rg;
-            margin-right: 2rem;
+            font-size: 1.4em;
+            margin:1rem;
+            justify-self:flex-start;
         }
     }
-    //Mobile Response 
-    @include breakpoint-down(laptop) {
-        height: 100vh;
-        button{
-            display: flex;
-            height: 3rem;
-            width: 3rem;
-            right: 1.6rem ;
-            top: 2rem;  
-            // position: absolute;
-        }
-        &_top-bar{
-
-        }
-        &_logo{
-            text-align: center;
-            a{
-                font-size: 1.5em;
-                margin-left: 0;
-            }   
-        }  
-        &_nav{
-            // position: absolute;
+    &_logo{
+        text-align: center;
+    }
+    &_button{
+        background:inherit;
+        border:0;
+        position: absolute; 
+        right: 0; 
+        display: none; 
+        margin-right: 2.5rem; 
+        height: 40px; 
+        width: 40px;
+        .line{
+            height: 2px;
             background:$primary-1;
-            opacity: 0.5;
-            margin-top:2rem;
+            width: 40px;
+            left: 0;
+            position: absolute;
+            &::before, &::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 40px;
+                background:$primary-1;
+                top:10px;
+                left: 0;
+            }
+            &::after{
+                top:-10px;
+            }
+        }
+    }
+    @include breakpoint-down(laptop){
+
+        &_top-bar{
+            a{
+                display:none;
+            }
+        }
+        &_nav{
+            height:105vh;
+            background:$primary-1;
+            position: absolute;
             flex-direction: column;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
-            // height: 100vh;
             a{
                 color:$white;
-                margin: 0;
-                padding: 1rem;
-                font-size: 1.5em;
-            }   
+                font-size: 2em;
+            }
+            &.hide{
+                transform: translateY(-1000px);
+            }
         }
-
-        .hide{
-            animation: open-nav 1s;
-            transform: translateX(-110%);
+        &_button{
+            display: block;
         }
-    }  
-
-    @include breakpoint-down(phone-small){
-       &_logo{
-            // text-align: left;
-            // margin-left: 1rem;
-            // font-size: 0.8em;
-       }
     }
 }
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

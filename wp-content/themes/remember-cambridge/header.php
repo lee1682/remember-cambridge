@@ -27,24 +27,20 @@
 <body <?php body_class(); ?>>
     <div id="page">
         <header class="header" role="banner">
-            <div class="header_wrapper container-large container-row">
-
-                <div class="header_top-bar container-row">
-
-                    <div class="header_logo ">
-                        <!-- <a href="">Remember Cambridge</a> -->
+            <div class="header_wrapper container-row">
+                <div class="header_top-bar container-row col-12 col-lg-5">
+                    <div class="header_logo">
+                        <a href="">Remember Cambridge</a>
                     </div>
-
-                    <button id="header_ham ">
-                        <!-- <div class="line"></div> -->
+                    <button class="header_button">
+                        <div class="line"></div>
                     </button>
                 </div>
-
-                <nav class="header_nav container-row col-sm-12 col-lg-8 hide" id="header_nav">
-                    <!-- <a href=""> Icecream</a>
+                <nav class="header_nav container-row col-12 col-lg-7 hide">
                     <a href=""> Icecream</a>
                     <a href=""> Icecream</a>
-                    <a href=""> Icecream</a> -->
+                    <a href=""> Icecream</a>
+                    <a href=""> Icecream</a>
                 </nav>
             </div>
         </header>
