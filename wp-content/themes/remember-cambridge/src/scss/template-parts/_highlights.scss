@@ -1,7 +1,8 @@
 .highlights{
 
     background:$primary-1;
-    min-height: 50vh;
+    height: auto;
+    padding-top:2rem;
     padding-bottom: 2rem;
     
 
@@ -16,7 +17,7 @@
         h2 {
             color:white;
             text-align: center;
-            padding:4rem;
+            margin-bottom: 1rem;
         }
     }  
 
@@ -29,22 +30,21 @@
         }
 
         p{
-            padding:0rem 2rem 0rem 2rem;
-
+            margin-top: 0;
             @include breakpoint-down(tablet-port) {
                 padding:0;
             }
         }
 
         .icon{
-            width: 200px;
-            height: 200px;
+            width: 75px;
+            height: 75px;
             background:pink;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
 
             @include breakpoint-down(tablet-port) {
-                width: 200px;
-                height: 150px;
+                width: 75px;
+                height: 75px;
             }
         }
     }

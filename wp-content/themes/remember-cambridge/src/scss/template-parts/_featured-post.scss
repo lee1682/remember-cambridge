@@ -7,12 +7,6 @@
     height: auto;
     width: 100%;  
     background-color:$primary-2;
-
-    @include breakpoint-down(tablet-port) {
-        padding:0;
-    }
-
-
     &_text{
 
         height: 100%;
@@ -31,4 +25,19 @@
             color: $primary-2;
         }
     }
+
+    @include breakpoint-down(tablet-port) {
+        padding:0;
+        margin:0;
+
+        h2, p{
+            text-align: left;
+        }
+
+        p{
+            width: 100%;
+            margin-top:1.25rem;
+        }
+    }
+
 }
