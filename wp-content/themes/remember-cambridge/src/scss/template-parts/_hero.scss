@@ -4,7 +4,6 @@
     .container-large{
         height: 100%;
         align-items: center;
-
         .heading{
             width: auto;
             h1, p{
@@ -13,6 +12,7 @@
                 margin:0 auto;
             } 
             h1{
+                padding-bottom: 0;
                 margin-bottom: 1rem;
             }
         }

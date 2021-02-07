@@ -1270,6 +1270,7 @@ li, a, button {
 }
 
 .hero .container-large .heading h1 {
+  padding-bottom: 0;
   margin-bottom: 1rem;
 }
 
@@ -1310,9 +1311,6 @@ li, a, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .intro-text .container-large {
@@ -1331,7 +1329,7 @@ li, a, button {
   height: auto;
 }
 
-.text-and-image, .text-and-image-top, .text-and-image-bottom {
+.text-and-image, .text-and-image-reverse {
   background-color: #F2F2F2;
   min-height: 50vh;
   overflow: hidden;
@@ -1375,14 +1373,14 @@ li, a, button {
   }
 }
 
-.text-and-image-bottom .container-large {
+.text-and-image-reverse .container-large {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.text-and-image-bottom .container-large .text h2, .text-and-image-bottom .container-large .text p {
+.text-and-image-reverse .container-large .text h2, .text-and-image-reverse .container-large .text p {
   padding-left: 0;
 }
 
@@ -1505,12 +1503,6 @@ li, a, button {
   margin-top: 0;
 }
 
-@media (max-width: 576px) {
-  .highlights_single p {
-    padding: 0;
-  }
-}
-
 .highlights_single .icon {
   width: 75px;
   height: 75px;
@@ -1519,9 +1511,8 @@ li, a, button {
 }
 
 @media (max-width: 576px) {
-  .highlights_single .icon {
-    width: 75px;
-    height: 75px;
+  .highlights_single p {
+    padding: 0;
   }
 }
 
@@ -1614,8 +1605,56 @@ li, a, button {
   height: 10vh;
 }
 
+@media (max-width: 576px) {
+  .contact .container-large .wpcf7 form p {
+    width: 100% !important;
+  }
+}
+
 .footer {
   height: 50vh;
   width: 100vw;
   background: #2e2d2d;
+}
+
+.content-item {
+  display: block;
+  background: #03526A;
+  width: 100vw;
+}
+
+.content-item_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+}
+
+.content-item_text h2, .content-item_text p {
+  color: white;
+}
+
+.content-item_image img {
+  height: 50vh;
+  width: 50vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .content-item_image {
+    padding: 0;
+  }
+  .content-item_image img {
+    width: 100vw;
+  }
 }

@@ -1,8 +1,8 @@
 <section class="hero">
     <div class="container-large container-row">
         <div class="heading col-12">
-            <h1> Remember Cambridge </h1>
-            <P> Cookie croissant carrot cake sesame snaps chocolate bar.</P>
+            <h1><?php the_field('title'); ?></h1>
+            <P> <?php the_field('tag');?></P>
         </div>
     </div>
 </section>

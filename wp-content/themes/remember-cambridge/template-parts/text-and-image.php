@@ -1,4 +1,4 @@
-<section class="text-and-image-top">
+<section class="text-and-image">
     <div class="container-large container-row">
         <div class="col-12 col-lg-6">
             <div class="text-and-image_img">

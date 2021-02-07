@@ -2,6 +2,7 @@
     background-color:$primary-3;
     min-height: 50vh;
     overflow: hidden;
+
         &_img{
             padding:5rem;  
             
@@ -15,6 +16,7 @@
                 object-fit: contain;
             }
         }
+
         &_text{
             display:flex;
             flex-direction: column; 
@@ -26,11 +28,8 @@
                 padding:0;
             }
         }
-    &-top{
-        @extend .text-and-image;
 
-        }
-    &-bottom{
+    &-reverse{
         @extend .text-and-image;
 
         .container-large{
@@ -43,7 +42,7 @@
             }
         }
     }
-
+    
     // @include breakpoint-down(tablet-port){
    
     

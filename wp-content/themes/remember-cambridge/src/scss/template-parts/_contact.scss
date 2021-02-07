@@ -4,47 +4,50 @@
     box-sizing: border-box;
     padding:1rem;
     .container-large{
-
         .text{
             align-self: center;
-            justify-content: center;
-            
+            justify-content: center;   
             h2{
                 color:$white;
                 text-align: left;    
             }
         }
-
         .wpcf7{
-    
             form{
-        
-                p{
-                    
+                p{   
                     width: 50% !important;
-    
                     label{
                         color:$white;
                         font-family: $paragraph-font;
                     }
-    
                     input, textarea{
-                    
                         background:none;
                         border:none;
                         border-bottom: 1px solid $white;
                         width: 100%;
                     }
-
                     textarea{
                         resize: none;
                         height: 10vh;
                     }
-    
                     input[type="submit"]{
                         @extend .btn-primary-outline;
                         
                     }   
+                }
+            }
+        }
+    }
+
+    @include breakpoint-down(tablet-port){
+
+        .container-large{
+            .wpcf7{
+                form{
+                    p{
+                        width: 100% !important;
+                    }
+    
                 }
             }
         }

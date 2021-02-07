@@ -1,5 +1,5 @@
 <section class="intro-text container-large container-row ">
-    <div class="col-12 col-lg-10 offset-lg-2">
+    <div class="col-12">
         <h2> Category Intro Text</h2>
 
         <p> Cambridge is a small yet vibrant city packed with things to do, from stepping inside inspiring buildings to
