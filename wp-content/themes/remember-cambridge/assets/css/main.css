@@ -1331,25 +1331,22 @@ li, a, button {
 
 .text-and-image, .text-and-image-reverse {
   background-color: #F2F2F2;
-  min-height: 50vh;
+  height: auto;
   overflow: hidden;
-}
-
-.text-and-image_img {
-  padding: 5rem;
-}
-
-@media (max-width: 576px) {
-  .text-and-image_img {
-    padding: 0;
-  }
 }
 
 .text-and-image_img img {
   width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 2rem 0 0;
 }
 
 .text-and-image_text {
@@ -1367,12 +1364,6 @@ li, a, button {
   padding: 2rem;
 }
 
-@media (max-width: 576px) {
-  .text-and-image_text {
-    padding: 0;
-  }
-}
-
 .text-and-image-reverse .container-large {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1382,6 +1373,15 @@ li, a, button {
 
 .text-and-image-reverse .container-large .text h2, .text-and-image-reverse .container-large .text p {
   padding-left: 0;
+}
+
+@media (max-width: 576px) {
+  .text-and-image_text {
+    padding: 1rem;
+  }
+  .text-and-image_img img {
+    padding: 0 0 1rem 0;
+  }
 }
 
 .full-width-cta-banner {
@@ -1521,6 +1521,10 @@ li, a, button {
   padding-bottom: 2rem;
 }
 
+.post-thumbs .container-row {
+  padding: 0;
+}
+
 .post-thumbs h2 {
   margin-bottom: 1rem;
 }
@@ -1621,6 +1625,7 @@ li, a, button {
   display: block;
   background: #03526A;
   width: 100vw;
+  border-bottom: 2px solid white;
 }
 
 .content-item_text {
@@ -1643,6 +1648,16 @@ li, a, button {
   color: white;
 }
 
+.content-item_text p {
+  width: 85%;
+}
+
+.content-item_image {
+  position: absolute;
+  padding: 0;
+  right: 0;
+}
+
 .content-item_image img {
   height: 50vh;
   width: 50vw;
@@ -1650,9 +1665,39 @@ li, a, button {
      object-fit: cover;
 }
 
+@media (min-width: 992px) {
+  .content-item .reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .content-item .reverse .content-item_text h2, .content-item .reverse .content-item_text p {
+    text-align: right;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .content-item .reverse .content-item_image {
+    position: absolute;
+    left: 0;
+    padding: 0;
+  }
+}
+
 @media (max-width: 992px) {
+  .content-item > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .content-item_text {
+    width: 100%;
+    border-top: 2px solid white;
+  }
   .content-item_image {
     padding: 0;
+    position: relative;
   }
   .content-item_image img {
     width: 100vw;

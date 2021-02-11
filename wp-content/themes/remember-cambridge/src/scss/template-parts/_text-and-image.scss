@@ -1,19 +1,16 @@
 .text-and-image{    
     background-color:$primary-3;
-    min-height: 50vh;
+    height: auto;
     overflow: hidden;
 
-        &_img{
-            padding:5rem;  
-            
-            @include breakpoint-down(tablet-port) {
-                padding:0;
-            }
-
+        &_img{    
             img{  
                 width: 100%;
-                height: auto;
-                object-fit: contain;
+                height: 40vh;
+                object-fit: cover;
+                display: flex;
+                justify-content: flex-start;
+                padding:0 2rem 0 0;
             }
         }
 
@@ -23,18 +20,12 @@
             justify-content: center;
             height: 100%;
             padding:2rem;
-
-            @include breakpoint-down(tablet-port) {
-                padding:0;
-            }
         }
 
     &-reverse{
         @extend .text-and-image;
-
         .container-large{
             flex-direction: row-reverse;
-
             .text{
                 h2, p{
                     padding-left: 0;
@@ -43,9 +34,16 @@
         }
     }
     
-    // @include breakpoint-down(tablet-port){
-   
-    
-    // }
-    
+    @include breakpoint-down(tablet-port){
+
+        &_text{
+            padding:1rem;
+        }
+
+        &_img{
+            img{
+                padding:0 0 1rem 0;
+            }
+        }
+    }
 }

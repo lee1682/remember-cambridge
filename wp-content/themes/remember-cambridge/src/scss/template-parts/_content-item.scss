@@ -2,7 +2,7 @@
     display: block;
     background:$primary-1;
     width: 100vw;
-    
+    border-bottom: 2px solid white;
     &_text{
         display: flex;
         justify-content: center;
@@ -12,84 +12,57 @@
         h2, p{
             color:white;
         }
+        p{
+            width: 85%;
+        }
     }
     &_image{
+
+        position: absolute;
+        padding: 0;
+        right: 0;
        img{       
             height: 50vh;
             width: 50vw;
             object-fit: cover;
        }
     }
+    .reverse{
+        @include breakpoint-up(laptop){
+            flex-direction: row-reverse;
+            .content-item_text{    
+                h2, p{
+                    text-align: right;
+                    align-self: flex-end;
+                }
+            }
+            .content-item_image{
+                position: absolute;
+                left:0;
+                padding: 0;
+            }
+        }
+    }
 
     @include breakpoint-down(laptop) {
+
+        > div {
+        flex-direction: column-reverse;
+        }
+        
+        &_text{
+            width:100%;
+            border-top: 2px solid white;
+
+        }
+
         &_image{
             padding:0;
+
+            position: relative;
             img{        
                 width: 100vw;
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-// .content-item{
-//     min-height: 50vh;
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     justify-content: center;
- 
-// }
-
-
-
-
-
-
-
-
-
-// .content-item{
-//     height: 100%;
-
-//     .green-bg{
-//         background:$primary-1;
-//     }
-
-//     &_text{
-//         background:$primary-1;
-//         height: 100%;
-//         display:flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-  
-
-//         h2, p{
-//             color:$white;
-//             text-align: left;
-//         }
-
-//     }
-
-//     &_image{
-
-//         img{
-//             width: 50vw;
-//             height: auto;
-//             object-fit: cover;
-            
-
-//         }
-       
-
-//     }
-
-
-// }
