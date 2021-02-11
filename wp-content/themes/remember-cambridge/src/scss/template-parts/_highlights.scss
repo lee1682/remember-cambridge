@@ -40,6 +40,8 @@
         }
     }
     @include breakpoint-down(tablet-port){
+        padding-top:2rem;
+        padding-bottom: 2rem;
         &_single{
             p{
                 padding:0;

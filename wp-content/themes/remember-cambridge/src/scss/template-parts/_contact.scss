@@ -2,7 +2,7 @@
     background:$primary-1;
     height: auto;
     box-sizing: border-box;
-    padding:1rem;
+    padding:2rem;
     .container-large{
         .text{
             align-self: center;
@@ -40,6 +40,7 @@
     }
 
     @include breakpoint-down(tablet-port){
+        padding:2rem 0 0 0.5rem;
 
         .container-large{
             .wpcf7{

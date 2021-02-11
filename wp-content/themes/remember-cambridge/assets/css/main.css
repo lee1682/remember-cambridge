@@ -1444,6 +1444,7 @@ li, a, button {
 .featured-post_text h2, .featured-post_text p {
   color: #03526A;
   text-align: center;
+  padding: 1rem;
 }
 
 .featured-post_text p {
@@ -1457,15 +1458,17 @@ li, a, button {
 
 @media (max-width: 576px) {
   .featured-post {
-    padding: 0;
+    padding: 2rem 0 0.75rem 0;
     margin: 0;
   }
   .featured-post h2, .featured-post p {
     text-align: left;
   }
+  .featured-post h2 {
+    margin-bottom: 0.5rem;
+  }
   .featured-post p {
     width: 100%;
-    margin-top: 1.25rem;
   }
 }
 
@@ -1511,6 +1514,10 @@ li, a, button {
 }
 
 @media (max-width: 576px) {
+  .highlights {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   .highlights_single p {
     padding: 0;
   }
@@ -1571,7 +1578,7 @@ li, a, button {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .contact .container-large .text {
@@ -1610,6 +1617,9 @@ li, a, button {
 }
 
 @media (max-width: 576px) {
+  .contact {
+    padding: 2rem 0 0 0.5rem;
+  }
   .contact .container-large .wpcf7 form p {
     width: 100% !important;
   }

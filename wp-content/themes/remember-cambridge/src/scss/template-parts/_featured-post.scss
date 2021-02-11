@@ -14,6 +14,7 @@
         h2, p{
             color: $primary-1;
             text-align: center;
+            padding:1rem;
         }
 
         p{
@@ -27,16 +28,19 @@
     }
 
     @include breakpoint-down(tablet-port) {
-        padding:0;
+        padding:2rem 0 0.75rem 0;
         margin:0;
 
         h2, p{
             text-align: left;
         }
 
+        h2{
+            margin-bottom: 0.5rem;
+        }
+
         p{
             width: 100%;
-            margin-top:1.25rem;
         }
     }
 
