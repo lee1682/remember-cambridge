@@ -30,16 +30,16 @@
             <div class="header_wrapper container-row">
                 <div class="header_top-bar container-row col-12 col-lg-5">
                     <div class="header_logo">
-                        <a href="">Remember Cambridge</a>
+                        <a href="/remember-cambridge">Remember Cambridge</a>
                     </div>
                     <button class="header_button">
                         <div class="line"></div>
                     </button>
                 </div>
                 <nav class="header_nav container-row col-12 col-lg-7 hide">
-                    <a href=""> Icecream</a>
-                    <a href=""> Icecream</a>
-                    <a href=""> Icecream</a>
+                    <a href="../remember-cambridge/tours"> Tours</a>
+                    <a href="../remember-cambridge/walking-tours"> Walking tours</a>
+                    <a href="../remember-cambridge/river-tours"> River</a>
                     <a href=""> Icecream</a>
                 </nav>
             </div>

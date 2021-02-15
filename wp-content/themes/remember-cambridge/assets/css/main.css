@@ -1513,6 +1513,12 @@ li, a, button {
   margin-bottom: 1rem;
 }
 
+.highlights_single .icon img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
 @media (max-width: 576px) {
   .highlights {
     padding-top: 2rem;
@@ -1542,7 +1548,7 @@ li, a, button {
 
 .post-thumbs_single {
   margin: 0 1rem 1rem 1rem;
-  background: #03526A;
+  background: #CBE0E0;
 }
 
 @media (max-width: 576px) {
@@ -1553,18 +1559,24 @@ li, a, button {
 }
 
 .post-thumbs_single .image {
-  height: 250px;
-  width: 100%;
+  height: 100%;
+  width: auto;
   background: pink;
 }
 
+.post-thumbs_single .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
 .post-thumbs_single h3, .post-thumbs_single p {
-  color: white;
+  color: #03526A;
 }
 
 .post-thumbs_single p {
   padding: 0 2rem 0 2rem;
-  color: white;
 }
 
 @media (max-width: 576px) {

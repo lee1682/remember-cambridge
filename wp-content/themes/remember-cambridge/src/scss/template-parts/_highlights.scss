@@ -1,18 +1,13 @@
 .highlights{
-
     background:$primary-1;
     height: auto;
     padding-top:2rem;
     padding-bottom: 2rem;
-    
-
     display:flex;
     align-items: center;
-
     @include breakpoint-down(tablet-port) {
         padding:0;
     }
-
     &_header{
         h2 {
             color:white;
@@ -20,23 +15,23 @@
             margin-bottom: 1rem;
         }
     }  
-
     &_single{
-
         h3, p{
             color:white;
             text-align: center;
         }
-
         p{
             margin-top: 0; 
         }
-        
         .icon{
             width: 75px;
             height: 75px;
             background:pink;
             margin-bottom: 1rem;
+            img{
+                object-fit: contain;
+                height: 100%;
+            }
         }
     }
     @include breakpoint-down(tablet-port){
