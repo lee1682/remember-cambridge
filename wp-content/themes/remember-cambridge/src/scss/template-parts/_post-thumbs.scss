@@ -1,44 +1,42 @@
 .post-thumbs{
     padding-top:2rem;
     padding-bottom:2rem;
-
     .container-row{
         padding:0;
     }
     h2{
         margin-bottom: 1rem;
     }
-
     &_header{
         h2{
             text-align: center;
         }
     }
-
     &_single{
-
         margin:0 1rem 1rem 1rem;
-        background:$primary-1;
-
+        background:$primary-2;
         @include breakpoint-down(tablet-port) {
           margin:0;
           margin-bottom: 1rem;
         }
-
         .image{
-            height: 250px;
-            width: 100%;
+            height: 100%;
+            width: auto;
             background:pink;
+            img{
+                object-fit: cover;
+                height: auto;
+                width:100%;
+            }
         }
 
         h3,p{
-            color:$white;
+            color:$primary-1;
         }
 
         p{
             padding:0 2rem 0 2rem;
-            color:$white;
-
+       
             @include breakpoint-down(tablet-port) {
                 padding:0 0.5rem 0 0.5rem;
             }
