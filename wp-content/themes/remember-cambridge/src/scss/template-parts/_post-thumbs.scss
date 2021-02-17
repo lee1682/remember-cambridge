@@ -4,9 +4,11 @@
     .container-row{
         padding:0;
     }
+
     h2{
         margin-bottom: 1rem;
     }
+
     &_header{
         h2{
             text-align: center;
@@ -34,12 +36,23 @@
             color:$primary-1;
         }
 
+        h3{
+            padding-top: 2rem;
+        }
+
         p{
             padding:0 2rem 0 2rem;
        
             @include breakpoint-down(tablet-port) {
                 padding:0 0.5rem 0 0.5rem;
             }
+        }
+
+        a{
+            margin-bottom: 2rem;
+            text-align: left;
+            width: 100%;
+            padding-left: 2rem;
         }
     }
 }

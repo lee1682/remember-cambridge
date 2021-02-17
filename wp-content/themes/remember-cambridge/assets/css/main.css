@@ -1575,6 +1575,10 @@ li, a, button {
   color: #03526A;
 }
 
+.post-thumbs_single h3 {
+  padding-top: 2rem;
+}
+
 .post-thumbs_single p {
   padding: 0 2rem 0 2rem;
 }
@@ -1583,6 +1587,13 @@ li, a, button {
   .post-thumbs_single p {
     padding: 0 0.5rem 0 0.5rem;
   }
+}
+
+.post-thumbs_single a {
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 100%;
+  padding-left: 2rem;
 }
 
 .contact {
@@ -1687,19 +1698,23 @@ li, a, button {
      object-fit: cover;
 }
 
+.content-item:first-child {
+  background-color: red;
+}
+
 @media (min-width: 992px) {
-  .content-item .reverse {
+  .content-item:first-child {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .content-item .reverse .content-item_text h2, .content-item .reverse .content-item_text p {
+  .content-item:first-child .content-item_text h2, .content-item:first-child .content-item_text p {
     text-align: right;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-  .content-item .reverse .content-item_image {
+  .content-item:first-child .content-item_image {
     position: absolute;
     left: 0;
     padding: 0;

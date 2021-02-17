@@ -27,7 +27,26 @@
             object-fit: cover;
        }
     }
-    .reverse{
+
+    // .reverse{
+    //     @include breakpoint-up(laptop){
+    //         flex-direction: row-reverse;
+    //         .content-item_text{    
+    //             h2, p{
+    //                 text-align: right;
+    //                 align-self: flex-end;
+    //             }
+    //         }
+    //         .content-item_image{
+    //             position: absolute;
+    //             left:0;
+    //             padding: 0;
+    //         }
+    //     }
+    // }
+
+    &:first-child{
+        background-color: red;
         @include breakpoint-up(laptop){
             flex-direction: row-reverse;
             .content-item_text{    
