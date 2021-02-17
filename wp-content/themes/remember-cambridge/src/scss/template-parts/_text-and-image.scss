@@ -2,7 +2,6 @@
     background-color:$primary-3;
     height: auto;
     overflow: hidden;
-
         &_img{    
             img{  
                 width: 100%;
@@ -13,7 +12,6 @@
                 padding:0 2rem 0 0;
             }
         }
-
         &_text{
             display:flex;
             flex-direction: column; 
@@ -33,7 +31,7 @@
             }
         }
     }
-    
+
     @include breakpoint-down(tablet-port){
 
         &_text{

@@ -10,7 +10,9 @@
 
 <?php get_template_part("template-parts/full-width-cta-banner");?>
 
-<?php get_template_part("template-parts/text-and-image-reverse");?>
+<?php get_template_part("template-parts/text-and-image");?>
+
+<!-- <?php get_template_part("template-parts/text-and-image-reverse");?> -->
 
 <?php get_template_part("template-parts/featured-post");?>
 

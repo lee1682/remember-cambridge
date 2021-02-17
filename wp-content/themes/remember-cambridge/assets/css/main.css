@@ -1330,7 +1330,7 @@ li, a, button {
 }
 
 .text-and-image, .text-and-image-reverse {
-  background-color: #F2F2F2;
+  background-color: #d4cfcf;
   height: auto;
   overflow: hidden;
 }
@@ -1686,7 +1686,6 @@ li, a, button {
 }
 
 .content-item_image {
-  position: absolute;
   padding: 0;
   right: 0;
 }
@@ -1698,23 +1697,36 @@ li, a, button {
      object-fit: cover;
 }
 
-.content-item:first-child {
-  background-color: red;
+.content-item:nth-child(even) > div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 992px) {
+  .content-item:nth-child(even) > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media (min-width: 992px) {
-  .content-item:first-child {
+  .content-item:nth-child(even) {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .content-item:first-child .content-item_text h2, .content-item:first-child .content-item_text p {
-    text-align: right;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+  .content-item:nth-child(even) .content-item_text h2, .content-item:nth-child(even) .content-item_text p {
+    text-align: left;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 3rem;
   }
-  .content-item:first-child .content-item_image {
+  .content-item:nth-child(even) .content-item_image {
     position: absolute;
     left: 0;
     padding: 0;
