@@ -2,10 +2,11 @@
     background-color: $primary-1;
     height: auto;
     width: 100%;
+    padding: 1rem;
     ul{
         justify-content: space-around;
         align-self: center;
-        height: 8vh;
+        height: auto;
         width: 100%;
         margin:0;
         padding:0;
@@ -19,5 +20,27 @@
             }
         }
     }
+
+    // @include breakpoint-down(laptop){
+    //     ul{
+    //         li{
+    //             a{
+    //                 font-size:1em;
+    //             }
+    
+    //         }
+    //     }
+    // }
+
+    // @include breakpoint-down(laptop){
+    //     ul{
+    //         li{
+    //             a{
+    //                 font-size:0.8em;
+    //             }
+    
+    //         }
+    //     }
+    // }
 }
 

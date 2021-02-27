@@ -1,3 +1,10 @@
 .full-width-text{
+    min-height: auto;
+    padding-top:2rem;
+    padding-bottom:2rem;
+
+   h2 + p{
+    margin-top: 0;
+    }   
     
 }

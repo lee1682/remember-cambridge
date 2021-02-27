@@ -1,6 +1,5 @@
 <?php if( have_rows('text_and_image') ): ?>
 <?php while( have_rows('text_and_image') ): the_row(); 
-    // Get sub field values.
     $image = get_sub_field('image');
     $heading = get_sub_field('heading');
     $text = get_sub_field('text');

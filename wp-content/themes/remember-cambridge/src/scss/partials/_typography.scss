@@ -18,12 +18,28 @@ $main-font-light: 'futura-pt-light';
 $main-font-book: 'futura-pt-book';
 $main-font-medium: 'futura-pt-medium';
 
+//font-size
+*{
+    font-size: 16px;
+}
+@include breakpoint-down(laptop){
+    *{
+        font-size: 14px;
+    } 
+}
+@include breakpoint-down(laptop){
+    *{
+        font-size: 11px;
+    }
+}
+
 //colors
 $title-font:$primary-1;
 $paragraph-font:$dark-grey;
 
 //vars
 $letter-spacing-rg:0.1em;
+$letter-spacing-md:0.1em;
 
 
 h1, h2, h3, h4, h5{
@@ -43,7 +59,6 @@ h2{
     font-size: 2.5em;
     padding-top:1.5rem;
     padding-bottom: 1.5rem;
-  
 }
 
 h3{
@@ -55,10 +70,27 @@ h3{
 p{
     color: $dark-grey;
     font-family: $main-font-book;
-    font-size: 20px;
+    font-size: 1.4em;
+}
+
+ul{ 
+    li{
+        font-size: 1.4em;
+    }
 }
 
 li, a, button{
     font-family: $main-font-medium;
     color: $primary-1;
 }
+
+.key-info-list, .contact-and-address{
+    li{
+        font-family: $main-font-light;
+        
+        span{
+            font-family: $main-font-medium;
+        }
+    }   
+}
+

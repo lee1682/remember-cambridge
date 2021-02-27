@@ -4,8 +4,9 @@
     <?php $heading = get_sub_field('heading'); ?>
     <?php $text = get_sub_field('text'); ?>
     <?php $image = get_sub_field('image'); ?>
+    <?php $layout = get_sub_field('layout');?>
     <div class="content-item">
-        <div class="container-large container-row">
+        <div class="container-row <?php echo $layout?>">
             <div class="content-item_text col-12 col-lg-6">
                 <h2> <?php echo $heading ?> </h2>
                 <p> <?php echo $text ?> </p>

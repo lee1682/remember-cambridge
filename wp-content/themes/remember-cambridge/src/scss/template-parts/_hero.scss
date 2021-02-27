@@ -1,6 +1,6 @@
 .hero{
     background:$white;
-    height: 95vh;
+    height: 45vh;
     .container-large{
         height: 100%;
         align-items: center;
@@ -17,4 +17,7 @@
             }
         }
     }
+}
+.full-page{
+    height: 95vh;
 }

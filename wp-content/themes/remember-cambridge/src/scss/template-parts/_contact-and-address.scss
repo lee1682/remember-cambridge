@@ -1,3 +1,42 @@
 .contact-and-address{
-    
+    height: auto;
+    background-color:$light-grey;
+    & > div {
+        padding: 0;
+    }
+    &_contact{ 
+       h2{
+           text-align: center;
+       }
+        & > div {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0;
+        }
+        & > div:nth-child(2),div:nth-child(3) {
+          
+            justify-content: flex-start;
+        }
+    }
+    &_map{
+        height: 500px;
+        border: 1px solid $primary-2;
+
+        iframe{
+            height: 100%;
+            width: 100%;
+        } 
+    }
+    @include breakpoint-down(laptop){
+        &_contact{
+            margin-bottom: 3rem;
+
+            & > div {
+                align-items: flex-start;
+            }
+        }
+    }
 }

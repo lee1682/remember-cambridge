@@ -1,5 +1,4 @@
 <section class="post-thumbs">
-
     <div class="container-large">
         <div class="col-12 post-thumbs_header">
             <h2> <?php the_field('heading'); ?></h2>

@@ -5,7 +5,6 @@
                 <?php the_field('heading'); ?>
             </h2>
         </div>
-
         <?php if( have_rows('highlights') ): ?>
         <div class="col-12 container-row">
             <?php while( have_rows('highlights') ) : the_row(); ?>

@@ -2,14 +2,14 @@
     min-height: 50vh;
     display: flex;
     align-items: center;
+    text-align: center;
    
     .container-large{
         height: 100%;  
         align-items: center;
 
         .img{
-            padding:2rem;
-
+      
             img{
                 width: 300px; 
                 height: auto;

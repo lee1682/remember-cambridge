@@ -2,13 +2,14 @@
     display: block;
     background:$primary-1;
     width: 100vw;
-    border-bottom: 2px solid white;
+
     &_text{
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
         height: 50vh;
+        padding-left: 5rem;
         h2, p{
             color:white;
         }
@@ -21,43 +22,20 @@
         right: 0;
        img{       
             height: 50vh;
-            width: 50vw;
+            width: 100%;
             object-fit: cover;
+
        }
     }
-    &:nth-child(even){
-        > div{
-            flex-direction: row-reverse;
-        }
-        @include breakpoint-down(laptop){
-            > div{
-                flex-direction: column-reverse;
-            }
-        }
-        @include breakpoint-up(laptop){
-            flex-direction: row;
-            .content-item_text{    
-                h2, p{
-                    text-align: left;
-                    align-self: flex-start;
-                    margin-left: 3rem;
-                }
-            }
-            .content-item_image{
-                position: absolute;
-                left:0;
-                padding: 0;
-            }
-        }
-    }
+
     @include breakpoint-down(laptop) {
+       
         > div {
         flex-direction: column-reverse;
         }  
         &_text{
             width:100%;
-            border-top: 2px solid white;
-
+            padding-left: 1rem;
         }
         &_image{
             padding:0;
@@ -70,3 +48,38 @@
     }
 }
 
+.reverse{   
+    flex-direction: row-reverse;
+
+    .content-item_image{
+        position: relative;
+        left:0;
+        padding: 0;
+        @include breakpoint-down(laptop){
+            position: relative;
+        }
+    }
+
+    // .content-item_text{    
+    //     h2, p{
+    //         text-align: left;
+    //         align-self: flex-start;
+    //         margin-left: 3rem;
+    //     }
+    // }
+
+    
+    // > div{
+    //     flex-direction: row-reverse;
+    // }
+    // @include breakpoint-down(laptop){
+    //     > div{
+    //         flex-direction: column-reverse;
+    //     }
+    // }
+    // @include breakpoint-up(laptop){
+    //     flex-direction: row;
+       
+        
+    // }
+}

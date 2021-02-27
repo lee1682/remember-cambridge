@@ -8,8 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-li{
-  list-style-type: none;
+ul{
+  margin: 0;
+  padding-inline-start: 0;
+  li{
+    list-style-type: none;
+  }
 }
 
 a{
@@ -20,6 +24,21 @@ body{
   margin:0;
   padding:0;
 }
+
+section{
+  padding: 2rem 0 2rem 0;
+}
+
+//paddings
+
+
+
+@include breakpoint-down(laptop){
+ 
+}
+
+
+
 
 @include breakpoint-down(laptop){
   body{
