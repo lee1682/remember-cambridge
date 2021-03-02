@@ -37,10 +37,12 @@
                     </button>
                 </div>
                 <nav class="header_nav container-row col-12 col-lg-7 hide">
-                    <a href="../remember-cambridge/tours"> Tours</a>
-                    <a href="../remember-cambridge/walking-tours"> Walking tours</a>
-                    <a href="../remember-cambridge/river-tours"> River</a>
-                    <a href=""> Icecream</a>
+                    <?php wp_nav_menu(); ?>
+
+                    <!-- <a href="../tours"> Tours</a>
+                    <a href="../walking-tours"> Walking tours</a>
+                    <a href="../river-tours"> River</a>
+                    <a href="../colleges"> Colleges</a> -->
                 </nav>
             </div>
         </header>

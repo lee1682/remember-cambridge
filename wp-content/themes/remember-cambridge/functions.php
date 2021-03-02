@@ -277,7 +277,7 @@ function html5blankgravatar($avatar_defaults)
     $avatar_defaults[$myavatar] = "Custom Gravatar";
     return $avatar_defaults;
 }
-
+ 
 // Threaded Comments
 function enable_threaded_comments()
 {
@@ -345,7 +345,7 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'colleges_cpt'); // Add our colleges Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -395,27 +395,27 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+// Create 1 Custom Post type for a Demo, called colleges
+function colleges_cpt()
 {
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
+    register_taxonomy_for_object_type('category', 'colleges'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'colleges');
     register_post_type(
-        'html5-blank', // Register Custom Post Type
+        'colleges', // Register Custom Post Type
         array(
             'labels' => array(
-                'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-                'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-                'add_new' => __('Add New', 'html5blank'),
-                'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-                'edit' => __('Edit', 'html5blank'),
-                'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-                'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-                'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-                'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-                'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-                'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-                'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+                'name' => __('College', 'colleges'), // Rename these to suit
+                'singular_name' => __('College', 'colleges'),
+                'add_new' => __('Add New', 'colleges'),
+                'add_new_item' => __('Add New college', 'colleges'),
+                'edit' => __('Edit', 'colleges'),
+                'edit_item' => __('Edit college', 'colleges'),
+                'new_item' => __('New college', 'colleges'),
+                'view' => __('View college', 'colleges'),
+                'view_item' => __('View college', 'colleges'),
+                'search_items' => __('Search college', 'colleges'),
+                'not_found' => __('No colleges found', 'colleges'),
+                'not_found_in_trash' => __('No colleges found in Trash', 'colleges')
             ),
             'public' => true,
             'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -425,7 +425,9 @@ function create_post_type_html5()
                 'editor',
                 'excerpt',
                 'thumbnail'
-            ), // Go to Dashboard Custom HTML5 Blank post for supports
+
+            ),
+             // Go to Dashboard Custom HTML5 Blank post for supports
             'can_export' => true, // Allows export in Tools > Export
             'taxonomies' => array(
                 'post_tag',
@@ -439,7 +441,7 @@ function create_post_type_html5()
 //Remove Default Editor
 add_action('init', 'init_remove_support',100);
 function init_remove_support(){
-    $post_type = 'your post type';
+    $post_type = 'colleges';
     remove_post_type_support( $post_type, 'editor');
 }
 

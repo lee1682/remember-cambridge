@@ -5,10 +5,11 @@
     <?php $text = get_sub_field('text'); ?>
     <?php $image = get_sub_field('image'); ?>
     <?php $layout = get_sub_field('layout');?>
+    <?php $link = get_sub_field('link');?>
     <div class="content-item">
         <div class="container-row <?php echo $layout?>">
             <div class="content-item_text col-12 col-lg-6">
-                <h2> <?php echo $heading ?> </h2>
+                <h2> <a href="<?php echo $link?>"> <?php echo $heading ?> </a></h2>
                 <p> <?php echo $text ?> </p>
             </div>
             <div class="content-item_image col-12 col-lg-6">

@@ -1,11 +1,12 @@
-nav{
+.menu{
     height: 5vh;
     width: 100%;
     justify-content: space-between;
+    background: red !important;
    
 
-    ul{
-       li{
+
+       .menu-item{
            margin-left: 4rem;
            padding: 1rem;
            a{
@@ -15,11 +16,11 @@ nav{
                }
            }
        };
-    }
-
     @include respond(phone) {
     display: none !important;
     }
+}
 
-   
+.menu-item{
+    color:red;
 }

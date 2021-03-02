@@ -1,3 +1,11 @@
+.archive-college .colleges {
+  background-color: #f6f2f2;
+  margin-bottom: 2rem;
+}
+.archive-college .colleges h2 a {
+  font-size: inherit;
+}
+
 html {
   box-sizing: border-box;
   padding: 0;
@@ -959,6 +967,10 @@ h2 {
   font-size: 2.5em;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+h2 a {
+  color: inherit;
+  font-size: inherit;
 }
 
 h3 {
