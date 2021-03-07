@@ -5,20 +5,25 @@
     padding-bottom: 2rem;
     display:flex;
     align-items: center;
-    @include breakpoint-down(tablet-port) {
-        padding:0;
-    }
+   
     &_header{
         h2 {
             color:white;
             text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
         }
     }  
     &_single{
+        margin-left: 3rem;
+        margin-right: 3rem;
+       
         h3, p{
             color:white;
             text-align: center;
+        }
+
+        h3{
+            white-space: nowrap;
         }
         p{
             margin-top: 0; 
@@ -26,13 +31,17 @@
         .icon{
             width: 75px;
             height: 75px;
-            background:pink;
             margin-bottom: 1rem;
+            color: white;
             img{
                 object-fit: contain;
                 height: 100%;
             }
         }
+    }
+
+    @include breakpoint-down(tablet-port) {
+        padding:0;
     }
     @include breakpoint-down(tablet-port){
         padding-top:2rem;

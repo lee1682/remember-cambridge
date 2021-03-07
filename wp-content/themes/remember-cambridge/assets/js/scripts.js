@@ -8,7 +8,7 @@
 
 		$( ".header_button" ).click(function() {
 			console.log('clicked');
-			$('.header_nav').toggleClass( "hide" );
+			$('.menu').toggleClass( "hide" );
 		});
 	});
 })(jQuery, this);

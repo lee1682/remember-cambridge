@@ -1,19 +1,13 @@
 .intro-text{
-    min-height: 50vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     text-align: center;
-   
-    .container-large{
-        height: 100%;  
-        align-items: center;
-
-        .img{
-      
-            img{
-                width: 300px; 
-                height: auto;
-            }
-        }
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    p{
+        width: 80%;
+        margin:0 auto;
     }
 }
+

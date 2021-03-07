@@ -12,16 +12,13 @@
                 $text = get_sub_field('text');
             ?>
             <div class="col-12 col-lg-4">
-                <div class="post-thumbs_single center-aligned">
+                <div class="post-thumbs_single">
                     <div class="image">
                         <img src="<?php echo $image?>" alt="">
                     </div>
-                    <h3> <?php echo $text ?></h3>
-                    <p>Topping fruitcake gummi bears fruitcake caramels marzipan. Donut donut sugar plum topping gummi
-                        bears.
-                        sweet roll chocolate bar muffin chupa chups lemon drops cheesecake. Gummi bears
-                        donut croissant
-                        powder.
+                    <h3> <?php echo $item_heading ?></h3>
+                    <p>
+                        <?php echo $text ?>
                     </p>
                     <a href=""> Icecream</a>
                 </div>

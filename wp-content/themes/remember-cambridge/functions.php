@@ -395,7 +395,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called colleges
+// College CPT
 function colleges_cpt()
 {
     register_taxonomy_for_object_type('category', 'colleges'); // Register Taxonomies for Category
@@ -437,14 +437,16 @@ function colleges_cpt()
     );
 }
 
+// Featured CPT
 
 //Remove Default Editor
 add_action('init', 'init_remove_support',100);
 function init_remove_support(){
     $post_type = 'colleges';
+    $post_type = 'page';
+    $post_type = 'featured_post';
     remove_post_type_support( $post_type, 'editor');
 }
-
 
 /*------------------------------------*\
 	ShortCode Functions

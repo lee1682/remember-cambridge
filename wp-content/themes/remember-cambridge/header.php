@@ -9,6 +9,11 @@
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
+    <!-- temp fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php bloginfo('description'); ?>">
@@ -36,13 +41,8 @@
                         <div class="line"></div>
                     </button>
                 </div>
-                <nav class="header_nav container-row col-12 col-lg-7 hide">
+                <nav class="menu container-row col-12 col-lg-7 hide">
                     <?php wp_nav_menu(); ?>
-
-                    <!-- <a href="../tours"> Tours</a>
-                    <a href="../walking-tours"> Walking tours</a>
-                    <a href="../river-tours"> River</a>
-                    <a href="../colleges"> Colleges</a> -->
                 </nav>
             </div>
         </header>

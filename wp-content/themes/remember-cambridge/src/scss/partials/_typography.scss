@@ -1,7 +1,7 @@
 //imports
 @font-face { 
 font-family: 'futura-pt-light';
-src: url(../fonts/FuturaPTlight.otf);
+src: url(/../fonts/FuturaPTlight.otf);
 }
 
 @font-face { 
@@ -15,8 +15,15 @@ src: url(../fonts/FuturaPTmedium.otf);
 }
 
 $main-font-light: 'futura-pt-light';
-$main-font-book: 'futura-pt-book';
-$main-font-medium: 'futura-pt-medium';
+$main-font-medium: 'futura-pt-book';
+$main-font-book: 'futura-pt-medium';
+
+
+//temp fonts
+// $main-font-light:'Roboto', sans-serif;
+// $main-font-medium:'Roboto', sans-serif;
+// $main-font-book:'Roboto', sans-serif;
+
 
 //font-size
 *{
@@ -89,13 +96,13 @@ li, a, button{
     color: $primary-1;
 }
 
-.key-info-list, .contact-and-address{
-    li{
-        font-family: $main-font-light;
+// .key-info-list, .contact-and-address, .key-info-list{
+//     li{
+//         font-family: $main-font-light;
         
-        span{
-            font-family: $main-font-medium;
-        }
-    }   
-}
+//         span{
+//             font-family: $main-font-medium;
+//         }
+//     }   
+// }
 

@@ -1,6 +1,7 @@
 .post-thumbs{
     padding-top:2rem;
     padding-bottom:2rem;
+    height: auto;
     .container-row{
         padding:0;
     }
@@ -16,7 +17,7 @@
     }
     &_single{
         margin:0 1rem 1rem 1rem;
-        background:$primary-2;
+        background:$light-grey;
         @include breakpoint-down(tablet-port) {
           margin:0;
           margin-bottom: 1rem;
@@ -24,7 +25,6 @@
         .image{
             height: 100%;
             width: auto;
-            background:pink;
             img{
                 object-fit: cover;
                 height: auto;
@@ -38,6 +38,9 @@
 
         h3{
             padding-top: 2rem;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
         }
 
         p{
@@ -53,6 +56,7 @@
             text-align: left;
             width: 100%;
             padding-left: 2rem;
+            display: inline-block;
         }
     }
 }

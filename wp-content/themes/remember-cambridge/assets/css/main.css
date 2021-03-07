@@ -926,7 +926,7 @@ section {
 
 @font-face {
   font-family: "futura-pt-light";
-  src: url(../fonts/FuturaPTlight.otf);
+  src: url(/../fonts/FuturaPTlight.otf);
 }
 @font-face {
   font-family: "futura-pt-book";
@@ -951,8 +951,8 @@ section {
   }
 }
 h1, h2, h3, h4, h5 {
-  color: #03526A;
-  font-family: "futura-pt-medium";
+  color: #215e72;
+  font-family: "futura-pt-book";
   margin: 0;
 }
 
@@ -981,7 +981,7 @@ h3 {
 
 p {
   color: #2e2d2d;
-  font-family: "futura-pt-book";
+  font-family: "futura-pt-medium";
   font-size: 1.4em;
 }
 
@@ -990,15 +990,8 @@ ul li {
 }
 
 li, a, button {
-  font-family: "futura-pt-medium";
-  color: #03526A;
-}
-
-.key-info-list li, .contact-and-address li {
-  font-family: "futura-pt-light";
-}
-.key-info-list li span, .contact-and-address li span {
-  font-family: "futura-pt-medium";
+  font-family: "futura-pt-book";
+  color: #215e72;
 }
 
 .btn-primary-outline, .contact .container-large .wpcf7 form p input[type=submit] {
@@ -1015,24 +1008,28 @@ li, a, button {
   color: #CBE0E0;
 }
 
-.header_top-bar {
+.header_wrapper .header_top-bar {
   height: 10vh;
   background: white;
   align-items: center;
   z-index: 10;
   justify-content: flex-start;
 }
-.header_top-bar a {
+.header_wrapper .header_top-bar a {
   font-size: 1.4em;
   margin: 3rem;
 }
-.header_nav {
-  height: 10vh;
+.header nav {
+  display: flex;
   justify-content: flex-end;
-  align-content: center;
 }
-.header_nav a {
-  font-size: 1.4em;
+.header #menu-main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header #menu-main-nav li a {
+  font-size: 1em;
   margin: 1rem;
   justify-self: flex-start;
 }
@@ -1051,7 +1048,7 @@ li, a, button {
 }
 .header_button .line {
   height: 2px;
-  background: #03526A;
+  background: #215e72;
   width: 40px;
   left: 0;
   position: absolute;
@@ -1061,7 +1058,7 @@ li, a, button {
   position: absolute;
   height: 2px;
   width: 40px;
-  background: #03526A;
+  background: #215e72;
   top: 10px;
   left: 0;
 }
@@ -1072,20 +1069,30 @@ li, a, button {
   .header_top-bar a {
     display: none;
   }
-  .header_nav {
+  .header nav {
     height: 105vh;
-    background: #03526A;
+    background: #215e72;
     position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .header_nav a {
+  .header nav a {
     color: white;
     font-size: 2em;
   }
-  .header_nav.hide {
+  .header nav.hide {
     transform: translateY(-1000px);
+    flex-direction: column;
+  }
+  .header #menu-main-nav {
+    flex-direction: column;
+  }
+  .header .menu-item a {
+    font-size: 4em;
+  }
+  .header #menu-main-nav li a {
+    font-size: 2em;
   }
   .header_button {
     display: block;
@@ -1094,6 +1101,7 @@ li, a, button {
 
 .hero {
   background: white;
+  background-image: url("http://localhost/remember-cambridge/wp-content/uploads/2021/02/ph.jpg");
   height: 45vh;
 }
 .hero .container-large {
@@ -1107,6 +1115,7 @@ li, a, button {
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  color: white;
 }
 .hero .container-large .heading h1 {
   padding-bottom: 0;
@@ -1118,7 +1127,7 @@ li, a, button {
 }
 
 .breadcrumb-nav {
-  background-color: #03526A;
+  background-color: #215e72;
   height: auto;
   width: 100%;
   padding: 1rem;
@@ -1140,18 +1149,16 @@ li, a, button {
 }
 
 .intro-text {
-  min-height: 50vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
-.intro-text .container-large {
-  height: 100%;
-  align-items: center;
-}
-.intro-text .container-large .img img {
-  width: 300px;
-  height: auto;
+.intro-text p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .text-and-image, .text-and-image-reverse {
@@ -1161,7 +1168,7 @@ li, a, button {
 }
 .text-and-image_img img {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   object-fit: cover;
   display: flex;
   justify-content: flex-start;
@@ -1184,6 +1191,9 @@ li, a, button {
   .text-and-image_text {
     padding: 1rem;
   }
+  .text-and-image_img {
+    height: 200px;
+  }
   .text-and-image_img img {
     padding: 0 0 1rem 0;
   }
@@ -1195,7 +1205,7 @@ li, a, button {
   margin-bottom: 2rem;
 }
 .full-width-cta-banner_wrapper {
-  background-color: #03526A;
+  background-color: #215e72;
   min-height: 25vh;
   width: 100%;
   display: flex;
@@ -1206,13 +1216,13 @@ li, a, button {
 .full-width-cta-banner_wrapper h2 {
   color: white;
   width: 100%;
-  font-family: "futura-pt-book";
+  font-family: "futura-pt-medium";
   text-align: center;
   margin: 0;
 }
 @media (max-width: 576px) {
   .full-width-cta-banner {
-    background: #03526A;
+    background: #215e72;
     padding-bottom: 2rem;
   }
   .full-width-cta-banner button {
@@ -1233,7 +1243,7 @@ li, a, button {
   height: 100%;
 }
 .featured-post_text h2, .featured-post_text p {
-  color: #03526A;
+  color: #215e72;
   text-align: center;
   padding: 1rem;
 }
@@ -1261,26 +1271,28 @@ li, a, button {
 }
 
 .highlights {
-  background: #03526A;
+  background: #215e72;
   height: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
   align-items: center;
 }
-@media (max-width: 576px) {
-  .highlights {
-    padding: 0;
-  }
-}
 .highlights_header h2 {
   color: white;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+.highlights_single {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 .highlights_single h3, .highlights_single p {
   color: white;
   text-align: center;
+}
+.highlights_single h3 {
+  white-space: nowrap;
 }
 .highlights_single p {
   margin-top: 0;
@@ -1288,12 +1300,17 @@ li, a, button {
 .highlights_single .icon {
   width: 75px;
   height: 75px;
-  background: pink;
   margin-bottom: 1rem;
+  color: white;
 }
 .highlights_single .icon img {
   object-fit: contain;
   height: 100%;
+}
+@media (max-width: 576px) {
+  .highlights {
+    padding: 0;
+  }
 }
 @media (max-width: 576px) {
   .highlights {
@@ -1308,6 +1325,7 @@ li, a, button {
 .post-thumbs {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  height: auto;
 }
 .post-thumbs .container-row {
   padding: 0;
@@ -1320,7 +1338,7 @@ li, a, button {
 }
 .post-thumbs_single {
   margin: 0 1rem 1rem 1rem;
-  background: #CBE0E0;
+  background: #f6f2f2;
 }
 @media (max-width: 576px) {
   .post-thumbs_single {
@@ -1331,7 +1349,6 @@ li, a, button {
 .post-thumbs_single .image {
   height: 100%;
   width: auto;
-  background: pink;
 }
 .post-thumbs_single .image img {
   object-fit: cover;
@@ -1339,10 +1356,13 @@ li, a, button {
   width: 100%;
 }
 .post-thumbs_single h3, .post-thumbs_single p {
-  color: #03526A;
+  color: #215e72;
 }
 .post-thumbs_single h3 {
   padding-top: 2rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 .post-thumbs_single p {
   padding: 0 2rem 0 2rem;
@@ -1357,10 +1377,11 @@ li, a, button {
   text-align: left;
   width: 100%;
   padding-left: 2rem;
+  display: inline-block;
 }
 
 .contact {
-  background: #03526A;
+  background: #215e72;
   height: auto;
   box-sizing: border-box;
   padding: 2rem;
@@ -1372,6 +1393,9 @@ li, a, button {
 .contact .container-large .text h2 {
   color: white;
   text-align: left;
+}
+.contact .container-large .wpcf7 form {
+  padding-top: 3rem;
 }
 .contact .container-large .wpcf7 form p {
   width: 50% !important;
@@ -1407,7 +1431,7 @@ li, a, button {
 
 .content-item {
   display: block;
-  background: #03526A;
+  background: #215e72;
   width: 100vw;
 }
 .content-item_text {
@@ -1506,8 +1530,8 @@ li, a, button {
 
 .full-width-text {
   min-height: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .full-width-text h2 + p {
   margin-top: 0;
@@ -1515,7 +1539,9 @@ li, a, button {
 
 .key-info-list {
   height: auto;
-  background: #03526A;
+  background: #215e72;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .key-info-list h2, .key-info-list p, .key-info-list li {
   color: white;
@@ -1568,4 +1594,11 @@ li, a, button {
   .contact-and-address_contact > div {
     align-items: flex-start;
   }
+}
+
+.article .breadcrumbs {
+  background: red;
+}
+.article .date {
+  background: green;
 }

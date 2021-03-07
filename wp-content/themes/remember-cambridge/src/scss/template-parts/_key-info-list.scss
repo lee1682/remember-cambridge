@@ -1,6 +1,8 @@
 .key-info-list{
     height: auto;
     background: $primary-1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     
     h2,p,li{
         color:white;
@@ -9,14 +11,12 @@
     h2{
         margin-bottom: 1rem;
     }
-
     ul{
         margin-bottom: 3rem;
         li{
             margin-bottom: 1rem;
         }
     }
-
     a{
         display: inline-block;
     }

@@ -1,25 +1,40 @@
 .header{
-    &_top-bar{
-        height: 10vh;
-        background:$white;
-        align-items: center;
-        z-index: 10;
-        justify-content: flex-start;
-        a{
-            font-size: 1.4em;
-            margin:3rem;
-        }
+
+    &_wrapper{
+
+        .header_top-bar{
+            height: 10vh;
+            background:$white;
+            align-items: center;
+            z-index: 10;
+            justify-content: flex-start;
+            a{
+                font-size: 1.4em;
+                margin:3rem;
+            }
+        }  
     }
-    &_nav{
-        height: 10vh;
+
+    nav{
+        display: flex;
         justify-content: flex-end;
-        align-content: center;
-        a{
-            font-size: 1.4em;
-            margin:1rem;
-            justify-self:flex-start;
+    }
+
+    #menu-main-nav{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            a{
+                font-size: 1em;
+                margin:1rem;
+                justify-self:flex-start;
+            }
         }
     }
+
     &_logo{
         text-align: center;
     }
@@ -32,7 +47,7 @@
         margin-right: 2.5rem; 
         height: 40px; 
         width: 40px;
-        .line{
+        .line{  
             height: 2px;
             background:$primary-1;
             width: 40px;
@@ -59,7 +74,7 @@
                 display:none;
             }
         }
-        &_nav{
+        nav{
             height:105vh;
             background:$primary-1;
             position: absolute;
@@ -72,6 +87,22 @@
             }
             &.hide{
                 transform: translateY(-1000px);
+                flex-direction: column;
+            }
+        }
+        #menu-main-nav{     
+            flex-direction: column;
+        }
+        .menu-item{
+            a{
+                font-size: 4em;
+            }
+        }
+        #menu-main-nav{
+            li{
+                a{
+                    font-size: 2em;
+                }
             }
         }
         &_button{

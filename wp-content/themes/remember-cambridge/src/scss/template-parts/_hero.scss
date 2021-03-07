@@ -1,5 +1,6 @@
 .hero{
     background:$white;
+    background-image: url('http://localhost/remember-cambridge/wp-content/uploads/2021/02/ph.jpg');
     height: 45vh;
     .container-large{
         height: 100%;
@@ -10,6 +11,7 @@
                 width: 100%;
                 text-align: center;
                 margin:0 auto;
+                color: $white;
             } 
             h1{
                 padding-bottom: 0;

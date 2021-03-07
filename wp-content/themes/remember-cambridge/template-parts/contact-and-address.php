@@ -4,22 +4,22 @@
 
         <div class="contact-and-address_contact col-12 col-lg-6 container-row ">
             <div class="col-12">
-                <h2>How To Find</h2>
+                <h2>Get In Touch</h2>
             </div>
-            <div class="col-6">
-                <h3>contact</h3>
+            <div class="col-12">
+                <h3>Contact Us</h3>
                 <ul>
-                    <li> Address line </li>
-                    <li> Address line </li>
-                    <li> Address line </li>
+                    <li> By phone: 01223 123456 </li>
+                    <li> By Email: info@remembercambridge.co.uk </li>
+
                 </ul>
             </div>
-            <div class="col-6">
-                <h3>contact</h3>
+            <div class="col-12">
+                <h3>Find Us</h3>
                 <ul>
-                    <li> Address line </li>
-                    <li> Address line </li>
-                    <li> Address line </li>
+                    <li> Kings Parade </li>
+                    <li> Cb1,2pz </li>
+                    <li> Cambridge </li>
                 </ul>
             </div>
         </div>
