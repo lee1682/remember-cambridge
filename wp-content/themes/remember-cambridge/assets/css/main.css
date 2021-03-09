@@ -994,6 +994,11 @@ li, a, button {
   color: #215e72;
 }
 
+.article .lead {
+  font-family: "futura-pt-book";
+  font-size: 1.7em;
+}
+
 .btn-primary-outline, .contact .container-large .wpcf7 form p input[type=submit] {
   background: inherit;
   border: 2px solid white;
@@ -1101,7 +1106,6 @@ li, a, button {
 
 .hero {
   background: white;
-  background-image: url("http://localhost/remember-cambridge/wp-content/uploads/2021/02/ph.jpg");
   height: 45vh;
 }
 .hero .container-large {
@@ -1596,9 +1600,57 @@ li, a, button {
   }
 }
 
-.article .breadcrumbs {
-  background: red;
+.article .article {
+  padding: 1rem;
 }
-.article .date {
+.article .nav-date {
+  display: flex;
+  justify-content: space-between;
+}
+.article .nav-date p {
+  font-size: 1em;
+}
+.article .nav-date_breadcrumbs {
+  margin-bottom: 1rem;
+}
+.article .nav-date_date {
   background: green;
+}
+.article_image {
+  height: 400px;
+  margin: 0 auto;
+  background: pink;
+  overflow: hidden;
+}
+.article_image img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.article p:last-child {
+  margin-bottom: 2rem;
+}
+.article_more-posts {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.article_more-posts h2 {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #215e72;
+  margin-top: 2rem;
+}
+.article_more-posts .post {
+  height: auto;
+  padding: 1rem;
+}
+.article_more-posts .post img {
+  height: 150px;
+  width: 100%;
+  background: pink;
+  object-fit: cover;
+}
+.article_more-posts .post h3 {
+  text-align: center;
 }

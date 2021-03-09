@@ -48,6 +48,7 @@ $paragraph-font:$dark-grey;
 $letter-spacing-rg:0.1em;
 $letter-spacing-md:0.1em;
 
+//base styles
 
 h1, h2, h3, h4, h5{
     color: $primary-1;
@@ -96,6 +97,8 @@ li, a, button{
     color: $primary-1;
 }
 
+//pages styles
+
 // .key-info-list, .contact-and-address, .key-info-list{
 //     li{
 //         font-family: $main-font-light;
@@ -106,3 +109,11 @@ li, a, button{
 //     }   
 // }
 
+
+.article{
+
+    .lead{
+        font-family: $main-font-medium;
+        font-size: 1.7em;
+    }
+}

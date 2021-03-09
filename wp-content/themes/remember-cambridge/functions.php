@@ -442,11 +442,12 @@ function colleges_cpt()
 //Remove Default Editor
 add_action('init', 'init_remove_support',100);
 function init_remove_support(){
-    $post_type = 'colleges';
     $post_type = 'page';
-    $post_type = 'featured_post';
+
     remove_post_type_support( $post_type, 'editor');
 }
+
+
 
 /*------------------------------------*\
 	ShortCode Functions
