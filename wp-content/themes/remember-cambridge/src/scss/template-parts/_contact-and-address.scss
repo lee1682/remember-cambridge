@@ -21,13 +21,19 @@
             justify-content: flex-start;
         }
     }
-    &_map{
-        height: 500px;
-        border: 1px solid $primary-2;
 
-        iframe{
+    &_map{  
+        height: 500px;
+        width: 100%;
+        border: 1px solid $primary-2;
+        background: red;
+        display: flex;
+
+        img{
             height: 100%;
             width: 100%;
+            overflow: hidden;
+            object-fit: cover;
         } 
     }
     @include breakpoint-down(laptop){

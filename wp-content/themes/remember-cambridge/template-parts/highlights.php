@@ -1,13 +1,12 @@
+<?php if( have_rows('highlights') ): ?>
 <section class="highlights">
     <div class="container-large">
         <div class="col-12 highlights_header">
-            <h2>
-                <?php the_field('heading'); ?>
-            </h2>
+            <h2> 3 Reasons To Book With Us </h2>
         </div>
-        <?php if( have_rows('highlights') ): ?>
+
         <div class="col-12 container-row">
-            <?php while( have_rows('highlights') ) : the_row(); ?>
+            <?php while( have_rows  ('highlights') ) : the_row(); ?>
             <?php 
                 $icon = get_sub_field('icon');
                 $sub_heading = get_sub_field('sub_heading');
@@ -35,6 +34,7 @@
             </div>
             <?php endwhile; ?>
         </div>
-        <?php endif;?>
+
     </div>
 </section>
+<?php endif;?>

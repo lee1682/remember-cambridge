@@ -75,15 +75,21 @@ h2{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 2rem;
     padding-top:1rem;
     padding-bottom: 1rem;
 }
 
 p{
     color: $dark-grey;
-    font-family: $main-font-book;
+    font-family: $main-font-light;
     font-size: 1.4em;
+}
+
+strong{
+    font-family:$main-font-book;
+    font-size: 1em;
+    color: $dark-grey;
 }
 
 ul{ 

@@ -1,6 +1,7 @@
 .hero{
     background:$white;
     height: 45vh;
+    filter: grayscale(0.125);
     .container-large{
         height: 100%;
         align-items: center;
@@ -15,6 +16,7 @@
             h1{
                 padding-bottom: 0;
                 margin-bottom: 1rem;
+                max-width: 400px;
             }
         }
     }

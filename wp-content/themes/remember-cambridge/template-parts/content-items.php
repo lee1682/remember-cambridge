@@ -11,6 +11,7 @@
             <div class="content-item_text col-12 col-lg-6">
                 <h2> <a href="<?php echo $link?>"> <?php echo $heading ?> </a></h2>
                 <p> <?php echo $text ?> </p>
+                <a href="<?php echo $link ?>">More Information</a>
             </div>
             <div class="content-item_image col-12 col-lg-6">
                 <img src="<?php echo $image ?> ">

@@ -5,11 +5,9 @@
     .container-row{
         padding:0;
     }
-
     h2{
         margin-bottom: 1rem;
     }
-
     &_header{
         h2{
             text-align: center;
@@ -27,11 +25,15 @@
             width: auto;
             img{
                 object-fit: cover;
-                height: auto;
+                height: 400px;
                 width:100%;
+
+                &:hover{
+                    filter:grayscale(0.25);
+                    cursor: pointer;
+                }
             }
         }
-
         h3,p{
             color:$primary-1;
         }
@@ -42,15 +44,12 @@
             width: 80%;
             margin: 0 auto;
         }
-
         p{
             padding:0 2rem 0 2rem;
-       
             @include breakpoint-down(tablet-port) {
                 padding:0 0.5rem 0 0.5rem;
             }
         }
-
         a{
             margin-bottom: 2rem;
             text-align: left;
@@ -58,6 +57,9 @@
             padding-left: 2rem;
             display: inline-block;
         }
+    }
+    &_wrapper{
+        padding: 0 !important;
     }
 }
  

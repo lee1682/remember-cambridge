@@ -28,6 +28,10 @@
        }
     }
 
+    a{
+        color:white;
+    }
+
     @include breakpoint-down(laptop) {
        
         > div {

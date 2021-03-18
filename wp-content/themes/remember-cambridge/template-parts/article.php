@@ -2,11 +2,11 @@
     <div class="container">
         <div class="container-row nav-date">
             <div class="article_breadcrumbs">
-                <p> Breadcrumbs</p>
+                <p> Cambridge History</p>
             </div>
             <div class="article_date">
                 <p>
-                    1st January 2020
+                    Published : 1st March 2020
                 </p>
             </div>
         </div>
@@ -16,17 +16,24 @@
         </div>
 
         <article>
-            <p class="lead">
-                <?php the_field('lead')?>
-            </p>
-
-            <div>
-                <?php the_field('text')?>
-
-            </div>
-
-
+            <?php if( have_rows('article') ): ?>
+            <?php while( have_rows('article') ): the_row(); ?>
+            <?php if( get_row_layout() == 'paragraph' ): ?>
+            <p> <?php the_sub_field('paragraph'); ?> </p>
+            <?php elseif( get_row_layout() == 'heading' ): ?>
+            <h2> <?php the_sub_field('heading'); ?></h2>
+            <?php elseif( get_row_layout() == 'lead' ): ?>
+            <p> <?php the_sub_field('lead'); ?></p>
+            <?php elseif( get_row_layout() == 'image' ): 
+            $image = get_sub_field('image');
+            ?>
+            <img src="<?php echo $image ?>" alt="">
+            <?php endif; ?>
+            <?php endwhile ?>
+            <?php endif; ?>
         </article>
+
+
 
         <!-- <div class="article_more-posts container-row">
 
@@ -49,4 +56,5 @@
 
 
     </div>
+
 </section>

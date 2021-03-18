@@ -346,6 +346,7 @@ add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comment
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'colleges_cpt'); // Add our colleges Type
+add_action('init', 'featured_article_cpt'); // 
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -438,6 +439,46 @@ function colleges_cpt()
 }
 
 // Featured CPT
+function featured_article_cpt()
+{
+    register_taxonomy_for_object_type('category', 'featured_article'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'featured_article');
+    register_post_type(
+        'featured_article', // Register Custom Post Type
+        array(
+            'labels' => array(
+                'name' => __('Featured Article', 'featured article'), // Rename these to suit
+                'singular_name' => __('Featured Article', 'featured article'),
+                'add_new' => __('Add New', 'featured article'),
+                'add_new_item' => __('Add New Featured Article', 'featured article'),
+                'edit' => __('Edit', 'featured article'),
+                'edit_item' => __('Edit Featured Article', 'featured article'),
+                'new_item' => __('New Featured Article', 'featured article'),
+                'view' => __('View Featured Article', 'featured article'),
+                'view_item' => __('View Featured Article', 'featured article'),
+                'search_items' => __('Search Featured Article', 'featured article'),
+                'not_found' => __('No featured article found', 'featured article'),
+                'not_found_in_trash' => __('No featured article found in Trash', 'featured article')
+            ),
+            'public' => true,
+            'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'excerpt',
+                'thumbnail'
+
+            ),
+             // Go to Dashboard Custom HTML5 Blank post for supports
+            'can_export' => true, // Allows export in Tools > Export
+            'taxonomies' => array(
+                'post_tag',
+                'category'
+            ) // Add Category and Post Tags support
+        )
+    );
+}
 
 //Remove Default Editor
 add_action('init', 'init_remove_support',100);

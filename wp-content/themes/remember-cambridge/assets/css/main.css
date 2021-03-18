@@ -974,15 +974,21 @@ h2 a {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 p {
   color: #2e2d2d;
-  font-family: "futura-pt-medium";
+  font-family: "futura-pt-light";
   font-size: 1.4em;
+}
+
+strong {
+  font-family: "futura-pt-medium";
+  font-size: 1em;
+  color: #2e2d2d;
 }
 
 ul li {
@@ -1107,6 +1113,7 @@ li, a, button {
 .hero {
   background: white;
   height: 45vh;
+  filter: grayscale(0.125);
 }
 .hero .container-large {
   height: 100%;
@@ -1124,6 +1131,7 @@ li, a, button {
 .hero .container-large .heading h1 {
   padding-bottom: 0;
   margin-bottom: 1rem;
+  max-width: 400px;
 }
 
 .full-page {
@@ -1178,12 +1186,19 @@ li, a, button {
   justify-content: flex-start;
   padding: 0 2rem 0 0;
 }
+.text-and-image_img img:hover {
+  filter: grayscale(0.25);
+  cursor: pointer;
+}
 .text-and-image_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
   padding: 2rem;
+}
+.text-and-image_text p {
+  margin-bottom: 2.5rem;
 }
 .text-and-image-reverse .container-large {
   flex-direction: row-reverse;
@@ -1356,8 +1371,12 @@ li, a, button {
 }
 .post-thumbs_single .image img {
   object-fit: cover;
-  height: auto;
+  height: 400px;
   width: 100%;
+}
+.post-thumbs_single .image img:hover {
+  filter: grayscale(0.25);
+  cursor: pointer;
 }
 .post-thumbs_single h3, .post-thumbs_single p {
   color: #215e72;
@@ -1382,6 +1401,9 @@ li, a, button {
   width: 100%;
   padding-left: 2rem;
   display: inline-block;
+}
+.post-thumbs_wrapper {
+  padding: 0 !important;
 }
 
 .contact {
@@ -1460,6 +1482,9 @@ li, a, button {
   height: 50vh;
   width: 100%;
   object-fit: cover;
+}
+.content-item a {
+  color: white;
 }
 @media (max-width: 992px) {
   .content-item > div {
@@ -1585,11 +1610,16 @@ li, a, button {
 }
 .contact-and-address_map {
   height: 500px;
+  width: 100%;
   border: 1px solid #CBE0E0;
+  background: red;
+  display: flex;
 }
-.contact-and-address_map iframe {
+.contact-and-address_map img {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  object-fit: cover;
 }
 @media (max-width: 992px) {
   .contact-and-address_contact {
@@ -1619,7 +1649,6 @@ li, a, button {
 .article_image {
   height: 400px;
   margin: 0 auto;
-  background: pink;
   overflow: hidden;
 }
 .article_image img {
@@ -1648,7 +1677,6 @@ li, a, button {
 .article_more-posts .post img {
   height: 150px;
   width: 100%;
-  background: pink;
   object-fit: cover;
 }
 .article_more-posts .post h3 {

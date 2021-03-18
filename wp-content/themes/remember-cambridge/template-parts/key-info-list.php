@@ -9,7 +9,7 @@
                 $bold_text = get_sub_field('bold_text');
                 $regular_text = get_sub_field('regular_text');?>
                 <li>
-                    <?php echo $bold_text ?> <?php echo $regular_text ?>
+                    <strong> <?php echo $bold_text ?> </strong> <?php echo $regular_text ?>
                 </li>
                 <?php endwhile; ?>
             </ul>
