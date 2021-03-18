@@ -14,9 +14,9 @@
         </div>
         <div class="col-12 col-lg-6">
             <div class="text-and-image_text">
-                <h2> <?php echo $heading ?></h 2>
-                    <p> <?php echo $text ?></p>
-                    <a href="">More Information</a>
+                <h2> <?php echo $heading ?></h2>
+                <p> <?php echo $text ?></p>
+                <a href="">More Information</a>
             </div>
         </div>
     </div>

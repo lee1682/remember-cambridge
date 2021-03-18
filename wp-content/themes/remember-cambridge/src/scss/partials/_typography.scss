@@ -11,8 +11,10 @@ src: url(../fonts/FuturaPTbook.otf);
     
 @font-face { 
 font-family: 'futura-pt-medium';
-src: url(../fonts/FuturaPTmedium.otf);
+src: url(../assets/fonts/FuturaPTMedium.otf);
 }
+
+$testfont:'Helvetica', Helvetica;
 
 $main-font-light: 'futura-pt-light';
 $main-font-medium: 'futura-pt-book';
@@ -46,7 +48,7 @@ $paragraph-font:$dark-grey;
 
 //vars
 $letter-spacing-rg:0.1em;
-$letter-spacing-md:0.1em;
+$letter-spacing-md:0.2em;
 
 //base styles
 
@@ -82,8 +84,8 @@ h3{
 
 p{
     color: $dark-grey;
-    font-family: $main-font-light;
     font-size: 1.4em;
+    font-family: $main-font-medium;
 }
 
 strong{
