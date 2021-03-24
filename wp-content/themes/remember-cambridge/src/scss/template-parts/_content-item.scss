@@ -1,8 +1,7 @@
 .content-item{
     display: block;
-    background:$primary-1;
+    background:$light-grey;
     width: 100vw;
-
     &_text{
         display: flex;
         justify-content: center;
@@ -10,8 +9,10 @@
         flex-direction: column;
         height: 50vh;
         padding-left: 5rem;
-        h2, p{
-            color:white;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        h2, p, a{
+            color:$primary-1;
         }
         p{
             width: 85%;
@@ -19,19 +20,17 @@
     }
     &_image{  
         padding: 0;
+        height: 400px;
         right: 0;
        img{       
-            height: 50vh;
+            height:100%;
             width: 100%;
             object-fit: cover;
-
+            @include breakpoint-down(laptop){
+                height: 200px;
+            }
        }
     }
-
-    a{
-        color:white;
-    }
-
     @include breakpoint-down(laptop) {
        
         > div {
@@ -43,10 +42,10 @@
         }
         &_image{
             padding:0;
-
             position: relative;
+            height: 150px;
             img{        
-                width: 100vw;
+                width: 100%;
             }
         }
     }

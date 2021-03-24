@@ -33,10 +33,6 @@ body {
   padding: 0;
 }
 
-section {
-  padding: 2rem 0 2rem 0;
-}
-
 @media screen and (max-width: -1) {
   .hidden-xs-down {
     display: none !important;
@@ -1007,7 +1003,7 @@ li, a, button {
 
 .btn-primary-outline, .contact .container-large .wpcf7 form p input[type=submit] {
   background: inherit;
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   padding: 0.5rem 2rem 0.5rem 2rem;
   font-size: 1em;
@@ -1110,8 +1106,21 @@ li, a, button {
   }
 }
 
+.site-footer {
+  height: 50vh;
+  width: 100%;
+  background: #2e2d2d;
+}
+.site-footer .footer-social {
+  height: 10vh;
+}
+.site-footer .footer-main {
+  background: #2e2d2d;
+  height: 40vh;
+}
+
 .hero {
-  background: white;
+  background: #2e2d2d;
   height: 45vh;
   filter: grayscale(0.125);
 }
@@ -1167,16 +1176,33 @@ li, a, button {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  width: 80%;
+}
+@media (max-width: 576px) {
+  .intro-text {
+    text-align: left;
+  }
 }
 .intro-text p {
   width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .intro-text p {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .text-and-image, .text-and-image-reverse {
   background-color: #f6f2f2;
   height: auto;
   overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.text-and-image_img {
+  height: 400px;
 }
 .text-and-image_img img {
   width: 100%;
@@ -1297,6 +1323,15 @@ li, a, button {
   display: flex;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .highlights {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .highlights_single p {
+    padding: 0;
+  }
+}
 .highlights_header h2 {
   color: white;
   text-align: center;
@@ -1306,12 +1341,19 @@ li, a, button {
   margin-left: 3rem;
   margin-right: 3rem;
 }
+@media (max-width: 576px) {
+  .highlights_single p {
+    padding: 0;
+  }
+}
 .highlights_single h3, .highlights_single p {
   color: white;
   text-align: center;
 }
-.highlights_single h3 {
-  white-space: nowrap;
+@media (max-width: 576px) {
+  .highlights_single h3 {
+    font-size: 1.4em;
+  }
 }
 .highlights_single p {
   margin-top: 0;
@@ -1322,23 +1364,15 @@ li, a, button {
   margin-bottom: 1rem;
   color: white;
 }
+@media (max-width: 576px) {
+  .highlights_single .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
 .highlights_single .icon img {
   object-fit: contain;
   height: 100%;
-}
-@media (max-width: 576px) {
-  .highlights {
-    padding: 0;
-  }
-}
-@media (max-width: 576px) {
-  .highlights {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  .highlights_single p {
-    padding: 0;
-  }
 }
 
 .post-thumbs {
@@ -1439,6 +1473,7 @@ li, a, button {
 .contact .container-large .wpcf7 form p textarea {
   resize: none;
   height: 10vh;
+  margin-bottom: 3rem;
 }
 @media (max-width: 576px) {
   .contact {
@@ -1449,15 +1484,53 @@ li, a, button {
   }
 }
 
-.footer {
-  height: 50vh;
-  width: 100vw;
-  background: #2e2d2d;
+footer {
+  background: #e9dadd;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+footer .footer-content .left .logo-social {
+  display: flex;
+}
+@media (max-width: 992px) {
+  footer .footer-content .left .logo-social {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+footer .footer-content .left .logo-social .logo {
+  height: 50px;
+  width: 50px;
+  background: lightcoral;
+}
+footer .footer-content .left .logo-social .social {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: coral;
+}
+footer .footer-content .left .copyright-info p, footer .footer-content .left .company-info p {
+  font-size: 0.8em;
+}
+footer .footer-content .right ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  footer .footer-content .right ul {
+    justify-content: center;
+  }
+}
+footer .footer-content .right ul li {
+  margin-right: 5rem;
 }
 
 .content-item {
   display: block;
-  background: #215e72;
+  background: #f6f2f2;
   width: 100vw;
 }
 .content-item_text {
@@ -1467,24 +1540,29 @@ li, a, button {
   flex-direction: column;
   height: 50vh;
   padding-left: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.content-item_text h2, .content-item_text p {
-  color: white;
+.content-item_text h2, .content-item_text p, .content-item_text a {
+  color: #215e72;
 }
 .content-item_text p {
   width: 85%;
 }
 .content-item_image {
   padding: 0;
+  height: 400px;
   right: 0;
 }
 .content-item_image img {
-  height: 50vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.content-item a {
-  color: white;
+@media (max-width: 992px) {
+  .content-item_image img {
+    height: 200px;
+  }
 }
 @media (max-width: 992px) {
   .content-item > div {
@@ -1497,9 +1575,10 @@ li, a, button {
   .content-item_image {
     padding: 0;
     position: relative;
+    height: 150px;
   }
   .content-item_image img {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -1681,4 +1760,81 @@ li, a, button {
 }
 .article_more-posts .post h3 {
   text-align: center;
+}
+
+.tour-stops {
+  height: 20vh;
+  width: 100%;
+  background: red;
+}
+
+.faq {
+  min-height: 600px;
+}
+.faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .faq__content {
+    flex-direction: column-reverse;
+  }
+}
+.faq .accordion-wrapper__item {
+  border-bottom: 2px solid black;
+  width: 75%;
+}
+@media (max-width: 992px) {
+  .faq .accordion-wrapper__item {
+    width: 100%;
+  }
+}
+.faq .accordion-wrapper__item.active .accordion-wrapper__question svg {
+  transform: rotate(45deg);
+}
+.faq .accordion-wrapper__item.active .accordion-wrapper__answer {
+  opacity: 1;
+  visibility: visible;
+  max-height: 1000px;
+  padding: 0;
+}
+.faq .accordion-wrapper__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq .accordion-wrapper__question h3 {
+  margin-right: 2rem;
+  font-size: 1.4em;
+}
+.faq .accordion-wrapper__question svg {
+  color: white;
+}
+.faq .accordion-wrapper__answer {
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  max-height: 0px;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+.faq .accordion-wrapper__answer p {
+  padding: 0 0 1rem 0;
+  margin: 0;
+}
+.faq .image-wrapper {
+  height: 400px;
+  width: auto;
+  align-self: center;
+}
+@media (max-width: 992px) {
+  .faq .image-wrapper {
+    margin-bottom: 4rem;
+    height: 250px;
+  }
+}
+.faq .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

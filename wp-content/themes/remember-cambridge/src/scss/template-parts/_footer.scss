@@ -1,5 +1,76 @@
-.footer{
-    height: 50vh;
-    width: 100vw;
-    background:$dark-grey;
+footer{
+    background: rgb(233, 218, 221);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    // .lower-nav{
+    //     border:1px solid $primary-1;
+    //     margin-bottom: 3rem;
+
+    //     ul{
+    //         justify-content: center;
+
+    //         li{
+    //             margin:0.5rem 2rem 0.5rem 2rem;
+    //             a{
+    //                 font-size: 0.8em;
+    //             }
+    //         }
+    //     }
+    // }
+
+    .footer-content{
+        .left{
+            .logo-social{
+                display: flex;
+
+                @include breakpoint-down(laptop) {
+                padding-top:2rem;
+                padding-bottom:2rem;
+                    
+                }
+
+
+                .logo{
+                    height: 50px;
+                    width: 50px;
+                    background: lightcoral;      
+                }
+        
+                .social{
+                    display: inline-block;
+                    height: 50px;
+                    width: 50px;
+                    background: coral;
+                }        
+            }
+
+            .copyright-info, .company-info{
+                p{
+                    font-size: 0.8em;
+                }
+            }
+        }
+        
+        .right{
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 100%;
+                @include breakpoint-down(tablet-port){
+                    justify-content: center;
+
+                }
+                li{
+                    margin-right: 5rem;
+                }
+            }
+        }
+    }
+
 }
+
+   

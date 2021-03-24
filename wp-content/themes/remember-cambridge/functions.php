@@ -347,6 +347,7 @@ add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'colleges_cpt'); // Add our colleges Type
 add_action('init', 'featured_article_cpt'); // 
+add_action('init', 'tours_cpt'); //
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -396,7 +397,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// College CPT
+// Colleges
 function colleges_cpt()
 {
     register_taxonomy_for_object_type('category', 'colleges'); // Register Taxonomies for Category
@@ -438,7 +439,7 @@ function colleges_cpt()
     );
 }
 
-// Featured CPT
+// Featured Article
 function featured_article_cpt()
 {
     register_taxonomy_for_object_type('category', 'featured_article'); // Register Taxonomies for Category
@@ -459,6 +460,47 @@ function featured_article_cpt()
                 'search_items' => __('Search Featured Article', 'featured article'),
                 'not_found' => __('No featured article found', 'featured article'),
                 'not_found_in_trash' => __('No featured article found in Trash', 'featured article')
+            ),
+            'public' => true,
+            'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'excerpt',
+                'thumbnail'
+
+            ),
+             // Go to Dashboard Custom HTML5 Blank post for supports
+            'can_export' => true, // Allows export in Tools > Export
+            'taxonomies' => array(
+                'post_tag',
+                'category'
+            ) // Add Category and Post Tags support
+        )
+    );
+}
+
+function tours_cpt()
+{
+    register_taxonomy_for_object_type('category', 'Tours'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'Tours');
+    register_post_type(
+        'tours', // Register Custom Post Type
+        array(
+            'labels' => array(
+                'name' => __('Tours', 'Tours'), // Rename these to suit
+                'singular_name' => __('tours', 'tours'),
+                'add_new' => __('Add New', 'tour'),
+                'add_new_item' => __('Add New tour', 'tours'),
+                'edit' => __('Edit', 'tours'),
+                'edit_item' => __('Edit tours', 'tours'),
+                'new_item' => __('New tours', 'tours'),
+                'view' => __('View tours', 'tours'),
+                'view_item' => __('View tours', 'tours'),
+                'search_items' => __('Search tours', 'tours'),
+                'not_found' => __('No tours found', 'tours'),
+                'not_found_in_trash' => __('No tours found in Trash', 'tours')
             ),
             'public' => true,
             'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

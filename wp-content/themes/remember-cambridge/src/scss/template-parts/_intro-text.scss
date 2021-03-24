@@ -5,9 +5,19 @@
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    width: 80%;
+    @include breakpoint-down(tablet-port){
+        text-align: left;
+
+      
+    }
     p{
         width: 80%;
         margin:0 auto;
+        @include breakpoint-down(tablet-port){
+            text-align: left;
+            width: 100%;
+        }
     }
 }
 

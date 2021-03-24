@@ -12,7 +12,7 @@
                 $sub_heading = get_sub_field('sub_heading');
                 $text = get_sub_field('text');
             ?>
-            <div class="col-12 col-lg-4">
+            <div class="col-4 col-lg-4">
                 <div class="highlights_single center-aligned">
                     <div class="icon">
                         <!-- <img src="<?php echo $icon?>" alt=""> -->

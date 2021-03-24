@@ -5,6 +5,16 @@
     padding-bottom: 2rem;
     display:flex;
     align-items: center;
+    @include breakpoint-down(tablet-port){
+        padding-top:2rem;
+        padding-bottom: 2rem;
+
+        &_single{
+            p{
+                padding:0;
+            }
+        }
+    }
    
     &_header{
         h2 {
@@ -16,6 +26,11 @@
     &_single{
         margin-left: 3rem;
         margin-right: 3rem;
+        @include breakpoint-down(tablet-port){
+            p{
+                padding:0;
+            }
+        }
        
         h3, p{
             color:white;
@@ -23,7 +38,10 @@
         }
 
         h3{
-            white-space: nowrap;
+            // white-space: nowrap;
+            @include breakpoint-down(tablet-port){
+              font-size: 1.4em;
+            }
         }
         p{
             margin-top: 0; 
@@ -33,6 +51,10 @@
             height: 75px;
             margin-bottom: 1rem;
             color: white;
+            @include breakpoint-down(tablet-port){
+                width: 40px;
+                height: 40px;
+            }
             img{
                 object-fit: contain;
                 height: 100%;
@@ -40,16 +62,4 @@
         }
     }
 
-    @include breakpoint-down(tablet-port) {
-        padding:0;
-    }
-    @include breakpoint-down(tablet-port){
-        padding-top:2rem;
-        padding-bottom: 2rem;
-        &_single{
-            p{
-                padding:0;
-            }
-        }
-    }
 }

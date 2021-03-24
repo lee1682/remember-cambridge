@@ -30,10 +30,10 @@
                     textarea{
                         resize: none;
                         height: 10vh;
+                        margin-bottom: 3rem;
                     }
                     input[type="submit"]{
-                        @extend .btn-primary-outline;
-                        
+                        @extend .btn-primary-outline;     
                     }   
                 }
             }
