@@ -1,16 +1,22 @@
+.content-items{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
 .content-item{
     display: block;
     background:$light-grey;
     width: 100vw;
+    // height: 600px;
     &_text{
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        height: 50vh;
+        // height: 50vh;
         padding-left: 5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        // padding-top: 2rem;
+        // padding-bottom: 2rem;
         h2, p, a{
             color:$primary-1;
         }
@@ -21,10 +27,11 @@
     &_image{  
         padding: 0;
         height: 400px;
+        background:brown;
         right: 0;
-       img{       
-            height:100%;
-            width: 100%;
+       img{     
+            width: 100%;  
+            height: 100%;
             object-fit: cover;
             @include breakpoint-down(laptop){
                 height: 200px;

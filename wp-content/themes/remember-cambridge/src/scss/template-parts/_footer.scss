@@ -1,5 +1,5 @@
 footer{
-    background: rgb(233, 218, 221);
+    background: $dark-grey;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
@@ -36,7 +36,6 @@ footer{
                     width: 50px;
                     background: lightcoral;      
                 }
-        
                 .social{
                     display: inline-block;
                     height: 50px;
@@ -44,16 +43,15 @@ footer{
                     background: coral;
                 }        
             }
-
             .copyright-info, .company-info{
                 p{
                     font-size: 0.8em;
+                    color: white;
                 }
             }
         }
-        
+    
         .right{
-
             ul{
                 display: flex;
                 flex-direction: row;
@@ -62,10 +60,12 @@ footer{
                 width: 100%;
                 @include breakpoint-down(tablet-port){
                     justify-content: center;
-
                 }
                 li{
                     margin-right: 5rem;
+                    a{
+                        color:white;
+                    }
                 }
             }
         }

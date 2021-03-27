@@ -4,6 +4,8 @@
     $image = get_sub_field('image');
     $heading = get_sub_field('heading');
     $text = get_sub_field('text');
+    $link = get_sub_field('link');
+    $link_link = get_sub_field('link_text');
 ?>
 <section class="text-and-image-reverse">
     <div class="container-large container-row">
@@ -16,7 +18,7 @@
             <div class="text-and-image_text">
                 <h2> <?php echo $heading ?></h2>
                 <p> <?php echo $text ?></p>
-                <a href="">More Information</a>
+                <a href="<?php echo $link ?>"> <?php echo $link_text ?> </a>
             </div>
         </div>
     </div>

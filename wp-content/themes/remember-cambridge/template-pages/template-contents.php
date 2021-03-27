@@ -10,3 +10,5 @@
 
 <!-- should become custom post -->
 <?php get_template_part("/template-parts/content-items");?>
+
+<?php get_footer();?>

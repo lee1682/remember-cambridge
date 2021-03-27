@@ -2,9 +2,10 @@
   min-height: 600px;
 
   h2{
-    text-align: center;
-
-    margin-bottom: 2rem;
+    text-align: left;
+    margin-top:3rem;
+    padding-bottom: 0;
+ 
   }
 
   &__content{
@@ -14,9 +15,15 @@
   }
 
   .accordion-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
     &__item{
       border-bottom: 2px solid black;
       width: 75%;
+      
       @include breakpoint-down(laptop){
         width: 100%;
       }
@@ -71,7 +78,7 @@
   }
 
   .image-wrapper{
-    height: 400px;
+    height: 450px;
     width: auto;
     align-self: center;
     @include breakpoint-down(laptop){
@@ -81,7 +88,7 @@
     img{
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }

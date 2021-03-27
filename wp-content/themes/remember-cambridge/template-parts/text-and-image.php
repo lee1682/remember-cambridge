@@ -3,7 +3,8 @@
     $image = get_sub_field('image');
     $heading = get_sub_field('heading');
     $text = get_sub_field('text');
-    $link = get_sub_field('link'); ?>
+    $link = get_sub_field('link'); 
+    $link_text = get_sub_field('link_text'); ?>
 <section class="text-and-image">
     <div class="container-large container-row">
         <div class="col-12 col-lg-6">
@@ -15,7 +16,7 @@
             <div class="text-and-image_text">
                 <h2> <?php echo $heading ?></h2>
                 <p> <?php echo $text ?></p>
-                <a href=" <?php echo $link ?>">More Information</a>
+                <a href=" <?php echo $link ?>"><?php echo $link_text ?></a>
             </div>
         </div>
     </div>

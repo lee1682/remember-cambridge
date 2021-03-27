@@ -33,6 +33,11 @@ body {
   padding: 0;
 }
 
+a img:hover {
+  filter: grayscale(0.25);
+  cursor: pointer;
+}
+
 @media screen and (max-width: -1) {
   .hidden-xs-down {
     display: none !important;
@@ -1120,7 +1125,7 @@ li, a, button {
 }
 
 .hero {
-  background: #2e2d2d;
+  background: #215e72;
   height: 45vh;
   filter: grayscale(0.125);
 }
@@ -1211,10 +1216,6 @@ li, a, button {
   display: flex;
   justify-content: flex-start;
   padding: 0 2rem 0 0;
-}
-.text-and-image_img img:hover {
-  filter: grayscale(0.25);
-  cursor: pointer;
 }
 .text-and-image_text {
   display: flex;
@@ -1323,6 +1324,9 @@ li, a, button {
   display: flex;
   align-items: center;
 }
+.highlights .container-large {
+  width: 1700px;
+}
 @media (max-width: 576px) {
   .highlights {
     padding-top: 2rem;
@@ -1335,7 +1339,6 @@ li, a, button {
 .highlights_header h2 {
   color: white;
   text-align: center;
-  margin-bottom: 3rem;
 }
 .highlights_single {
   margin-left: 3rem;
@@ -1363,6 +1366,7 @@ li, a, button {
   height: 75px;
   margin-bottom: 1rem;
   color: white;
+  display: none;
 }
 @media (max-width: 576px) {
   .highlights_single .icon {
@@ -1373,6 +1377,8 @@ li, a, button {
 .highlights_single .icon img {
   object-fit: contain;
   height: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .post-thumbs {
@@ -1404,8 +1410,8 @@ li, a, button {
   width: auto;
 }
 .post-thumbs_single .image img {
-  object-fit: cover;
-  height: 400px;
+  object-fit: contain;
+  height: 200px;
   width: 100%;
 }
 .post-thumbs_single .image img:hover {
@@ -1485,7 +1491,7 @@ li, a, button {
 }
 
 footer {
-  background: #e9dadd;
+  background: #2e2d2d;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1511,6 +1517,7 @@ footer .footer-content .left .logo-social .social {
 }
 footer .footer-content .left .copyright-info p, footer .footer-content .left .company-info p {
   font-size: 0.8em;
+  color: white;
 }
 footer .footer-content .right ul {
   display: flex;
@@ -1527,6 +1534,14 @@ footer .footer-content .right ul {
 footer .footer-content .right ul li {
   margin-right: 5rem;
 }
+footer .footer-content .right ul li a {
+  color: white;
+}
+
+.content-items {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 .content-item {
   display: block;
@@ -1538,10 +1553,7 @@ footer .footer-content .right ul li {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 50vh;
   padding-left: 5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .content-item_text h2, .content-item_text p, .content-item_text a {
   color: #215e72;
@@ -1552,11 +1564,12 @@ footer .footer-content .right ul li {
 .content-item_image {
   padding: 0;
   height: 400px;
+  background: brown;
   right: 0;
 }
 .content-item_image img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 @media (max-width: 992px) {
@@ -1772,13 +1785,20 @@ footer .footer-content .right ul li {
   min-height: 600px;
 }
 .faq h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+  text-align: left;
+  margin-top: 3rem;
+  padding-bottom: 0;
 }
 @media (max-width: 992px) {
   .faq__content {
     flex-direction: column-reverse;
   }
+}
+.faq .accordion-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .faq .accordion-wrapper__item {
   border-bottom: 2px solid black;
@@ -1823,7 +1843,7 @@ footer .footer-content .right ul li {
   margin: 0;
 }
 .faq .image-wrapper {
-  height: 400px;
+  height: 450px;
   width: auto;
   align-self: center;
 }
@@ -1836,5 +1856,5 @@ footer .footer-content .right ul li {
 .faq .image-wrapper img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }

@@ -14,7 +14,9 @@
                 <a href="<?php echo $link ?>">More Information</a>
             </div>
             <div class="content-item_image col-12 col-lg-6">
-                <img src="<?php echo $image ?> ">
+                <a href="">
+                    <img src="<?php echo $image ?> ">
+                </a>
             </div>
         </div>
     </div>

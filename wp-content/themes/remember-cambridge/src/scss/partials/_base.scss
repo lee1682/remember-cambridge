@@ -43,3 +43,11 @@ body{
   }
 }
 
+a{
+  img{
+    &:hover{
+      filter:grayscale(0.25);
+      cursor: pointer;
+  }
+  }
+}
