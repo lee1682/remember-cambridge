@@ -1,5 +1,5 @@
+<?php if (have_rows('question_and_answer')): ?>
 <section class="faq">
-
     <div class="container-large">
         <div class="col-12">
             <h2><?php the_field('faq_heading'); ?></h2>
@@ -8,7 +8,7 @@
 
     <div class="container-large container-row faq__content">
         <div class="col-12 col-lg-7">
-            <?php if (have_rows('question_and_answer')): ?>
+         
             <div class="accordion-wrapper">
                 <?php while ( have_rows('question_and_answer') ) : the_row();?>
                 <div class="accordion-wrapper__item">
@@ -26,7 +26,6 @@
                 </div>
                 <?php endwhile; ?>
             </div>
-            <?php endif; ?>
         </div>
         <div class="col-12 col-lg-5">
             <div class="image-wrapper">
@@ -36,3 +35,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>

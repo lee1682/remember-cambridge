@@ -1,26 +1,27 @@
-.hero{
-    background:$primary-1;
-    height: 45vh;
-    filter: grayscale(0.125);
-    .container-large{
-        height: 100%;
-        align-items: center;
-        .heading{
-            width: auto;
-            h1, p{
-                width: 100%;
-                text-align: center;
-                margin:0 auto;
-                color: $white;
-            } 
-            h1{
-                padding-bottom: 0;
-                margin-bottom: 1rem;
-                max-width: 400px;
-            }
-        }
+.hero {
+  background: $primary-1;
+  height: 45vh;
+  filter: grayscale(0.125);
+  .container-large {
+    height: 100%;
+    align-items: center;
+    .heading {
+      width: auto;
+      h1,
+      p {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: $white;
+      }
+      h1 {
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+        max-width: 400px;
+      }
     }
+  }
 }
-.full-page{
-    height: 95vh;
+.full-page {
+  height: 95vh;
 }

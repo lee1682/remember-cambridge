@@ -1,52 +1,53 @@
-.text-and-image{    
-    background-color:$light-grey;
-    height: auto;
-    overflow: hidden;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-        &_img{   
-            height: 400px;
-            img{  
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: flex;
-                justify-content: flex-start;
-                padding:0 2rem 0 0;
-            }
-        }
-        &_text{
-            display:flex;
-            flex-direction: column; 
-            justify-content: center;
-            height: 100%;
-            padding:2rem;
-            
-            p{
-                margin-bottom: 2.5rem;
-            }
-        }
+.text-and-image {
+  background-color: $light-grey;
+  height: auto;
+  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  &_img {
+    height: 400px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 2rem 0 0;
+    }
+  }
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
 
-    &-reverse{
-        @extend .text-and-image;
-        .container-large{
-            flex-direction: row-reverse;
-            .text{
-                h2, p{
-                    padding-left: 0;
-                }
-            }
-        }
+    p {
+      margin-bottom: 2.5rem;
     }
-    @include breakpoint-down(tablet-port){
-        &_text{
-            padding:1rem;
+  }
+
+  &-reverse {
+    @extend .text-and-image;
+    .container-large {
+      flex-direction: row-reverse;
+      .text {
+        h2,
+        p {
+          padding-left: 0;
         }
-        &_img{
-            height: 200px;
-            img{
-                padding:0 0 1rem 0;
-            }
-        }
+      }
     }
+  }
+  @include breakpoint-down(tablet-port) {
+    &_text {
+      padding: 1rem;
+    }
+    &_img {
+      height: 200px;
+      img {
+        padding: 0 0 1rem 0;
+      }
+    }
+  }
 }

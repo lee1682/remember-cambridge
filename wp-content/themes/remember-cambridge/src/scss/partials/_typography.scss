@@ -1,108 +1,112 @@
 //imports
-@font-face { 
-font-family: 'futura-pt-light';
-src: url(/../fonts/FuturaPTlight.otf);
+@font-face {
+  font-family: "futura-pt-light";
+  src: url(/../fonts/FuturaPTlight.otf);
 }
 
-@font-face { 
-font-family: 'futura-pt-book';
-src: url(../fonts/FuturaPTbook.otf);
-}
-    
-@font-face { 
-font-family: 'futura-pt-medium';
-src: url(../assets/fonts/FuturaPTMedium.otf);
+@font-face {
+  font-family: "futura-pt-book";
+  src: url(../fonts/FuturaPTbook.otf);
 }
 
-$testfont:'Helvetica', Helvetica;
+@font-face {
+  font-family: "futura-pt-medium";
+  src: url(../assets/fonts/FuturaPTMedium.otf);
+}
 
-$main-font-light: 'futura-pt-light';
-$main-font-medium: 'futura-pt-book';
-$main-font-book: 'futura-pt-medium';
+$testfont: "Helvetica", Helvetica;
 
+$main-font-light: "futura-pt-light";
+$main-font-medium: "futura-pt-book";
+$main-font-book: "futura-pt-medium";
 
 //temp fonts
 // $main-font-light:'Roboto', sans-serif;
 // $main-font-medium:'Roboto', sans-serif;
 // $main-font-book:'Roboto', sans-serif;
 
-
 //font-size
-*{
-    font-size: 16px;
+* {
+  font-size: 16px;
 }
-@include breakpoint-down(laptop){
-    *{
-        font-size: 14px;
-    } 
+@include breakpoint-down(laptop) {
+  * {
+    font-size: 14px;
+  }
 }
-@include breakpoint-down(laptop){
-    *{
-        font-size: 11px;
-    }
+@include breakpoint-down(laptop) {
+  * {
+    font-size: 11px;
+  }
 }
 
 //colors
-$title-font:$primary-1;
-$paragraph-font:$dark-grey;
+$title-font: $primary-1;
+$paragraph-font: $dark-grey;
 
 //vars
-$letter-spacing-rg:0.1em;
-$letter-spacing-md:0.2em;
+$letter-spacing-rg: 0.1em;
+$letter-spacing-md: 0.2em;
 
 //base styles
 
-h1, h2, h3, h4, h5{
-    color: $primary-1;
-    font-family: $main-font-medium;
-    margin:0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary-1;
+  font-family: $main-font-medium;
+  margin: 0;
 }
 
-h1{
-    font-size: 3.5em;
-    line-height: 0.9; 
-    padding-top:2rem;
-    padding-bottom: 2rem;
+h1 {
+  font-size: 3.5em;
+  line-height: 0.9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-h2{
-    font-size: 2.5em;
-    padding-top:1.5rem;
-    padding-bottom: 1.5rem;
+h2 {
+  font-size: 2.5em;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
-    a{
-        color: inherit;
-        font-size: inherit;
-    }
+  a {
+    color: inherit;
+    font-size: inherit;
+  }
 }
 
-h3{
-    font-size: 2rem;
-    padding-top:1rem;
-    padding-bottom: 1rem;
+h3 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-p{
-    color: $dark-grey;
+p {
+  color: $dark-grey;
+  font-size: 1.4em;
+  font-family: $main-font-medium;
+}
+
+strong {
+  font-family: $main-font-medium;
+  font-size: 1em;
+  color: $dark-grey;
+}
+
+ul {
+  li {
     font-size: 1.4em;
-    font-family: $main-font-medium;
+  }
 }
 
-strong{
-    font-family:$main-font-book;
-    font-size: 1em;
-    color: $dark-grey;
-}
-
-ul{ 
-    li{
-        font-size: 1.4em;
-    }
-}
-
-li, a, button{
-    font-family: $main-font-medium;
-    color: $primary-1;
+li,
+a,
+button {
+  font-family: $main-font-medium;
+  color: $primary-1;
 }
 
 //pages styles
@@ -110,18 +114,16 @@ li, a, button{
 // .key-info-list, .contact-and-address, .key-info-list{
 //     li{
 //         font-family: $main-font-light;
-        
+
 //         span{
 //             font-family: $main-font-medium;
 //         }
-//     }   
+//     }
 // }
 
-
-.article{
-
-    .lead{
-        font-family: $main-font-medium;
-        font-size: 1.7em;
-    }
+.article {
+  .lead {
+    font-family: $main-font-medium;
+    font-size: 1.7em;
+  }
 }

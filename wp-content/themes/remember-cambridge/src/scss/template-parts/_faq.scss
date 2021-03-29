@@ -1,95 +1,91 @@
-.faq{
-  min-height: 600px;
+.faq {
+  min-height: 750px;
 
-  h2{
+  h2 {
     text-align: left;
-    margin-top:3rem;
-    padding-bottom: 0;
- 
+    margin-top: 3rem;
+    padding-bottom: 3rem;
   }
 
-  &__content{
-    @include breakpoint-down(laptop){
+  &__content {
+    @include breakpoint-down(laptop) {
       flex-direction: column-reverse;
     }
   }
 
-  .accordion-wrapper{
+  .accordion-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 
-    &__item{
+    &__item {
       border-bottom: 2px solid black;
       width: 75%;
-      
-      @include breakpoint-down(laptop){
+
+      @include breakpoint-down(laptop) {
         width: 100%;
       }
 
       &.active {
         .accordion-wrapper__question {
           svg {
-            transform:rotate(45deg);
+            transform: rotate(45deg);
           }
         }
         .accordion-wrapper__answer {
           opacity: 1;
           visibility: visible;
           max-height: 1000px;
-          padding:0;
+          padding: 0;
         }
       }
     }
 
-    &__question{
+    &__question {
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-
-      h3{
+      h3 {
         margin-right: 2rem;
         font-size: 1.4em;
       }
 
-      svg{
+      svg {
         color: white;
       }
     }
 
-    &__answer{
+    &__answer {
       opacity: 0;
       visibility: hidden;
       height: 100%;
       max-height: 0px;
-      transition: all .35s ease;
+      transition: all 0.35s ease;
       overflow: hidden;
 
-      p{
+      p {
         padding: 0 0 1rem 0;
         margin: 0;
-        
- 
       }
     }
-
   }
 
-  .image-wrapper{
+  .image-wrapper {
     height: 450px;
     width: auto;
     align-self: center;
-    @include breakpoint-down(laptop){
-     margin-bottom: 4rem;
-     height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    @include breakpoint-down(laptop) {
+      margin-bottom: 4rem;
+      height: 250px;
     }
-    img{
+    img {
       height: 100%;
       width: 100%;
       object-fit: contain;
     }
   }
 }
-

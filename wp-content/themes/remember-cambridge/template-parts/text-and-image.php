@@ -8,9 +8,22 @@
 <section class="text-and-image">
     <div class="container-large container-row">
         <div class="col-12 col-lg-6">
+        <?php if (!$link) {
+          ?>
             <div class="text-and-image_img">
                 <img src="<?php echo $image ?>" />
             </div>
+        <?php
+
+        } else { ?>
+            <a href="<?php echo $link ?>">
+                <div class="text-and-image_img">
+                    <img src="<?php echo $image ?>" />
+                </div>
+            </a>
+        <?php
+        } ?>
+
         </div>
         <div class="col-12 col-lg-6">
             <div class="text-and-image_text">

@@ -15,6 +15,14 @@
 
 <?php get_template_part('template-parts/content-items');?>
 
+<?php get_template_part("template-parts/key-info-list");?>
+
 <?php get_template_part('template-parts/faq');?>
+
+<?php get_template_part("template-parts/post-thumbs");?>
+
+<?php get_template_part("template-parts/contact");?>
+
+
 
 <?php get_footer(); ?>

@@ -1,9 +1,10 @@
+ <?php if( have_rows('post_thumbs') ): ?>
 <section class="post-thumbs">
     <div class="container-large">
         <div class="col-12 post-thumbs_header">
-            <h2> <?php the_field('heading'); ?></h2>
+            <h2> <?php the_field('post_heading'); ?></h2> 
+            <p class="intro"><?php the_field('thumbs_intro_text'); ?>  </p>
         </div>
-        <?php if( have_rows('post_thumbs') ): ?>
         <div class="col-12 container-row">
             <?php while( have_rows('post_thumbs') ) : the_row(); ?>
             <?php 
@@ -11,6 +12,7 @@
                 $item_heading = get_sub_field('item_heading');
                 $text = get_sub_field('text');
                 $link = get_sub_field('link');
+                $link_text = get_sub_field('link_text');
             ?>
             <div class="col-12 col-lg-4">
                 <a href="<?php echo $link ?>" class="post-thumbs_wrapper">
@@ -22,12 +24,13 @@
                         <p>
                             <?php echo $text ?>
                         </p>
-                        <a href=""> Read More</a>
+                        <a href=" <?php echo $link ?>"> <?php echo $link_text ?> </a>
                     </div>
                 </a>
             </div>
             <?php endwhile; ?>
         </div>
-        <?php endif;?>
+       
     </div>
 </section>
+ <?php endif;?>
