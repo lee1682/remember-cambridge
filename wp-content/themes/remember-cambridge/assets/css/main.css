@@ -1054,6 +1054,9 @@ button {
 .header_logo {
   text-align: center;
 }
+.header_logo img {
+  height: 50px;
+}
 .header_button {
   background: inherit;
   border: 0;

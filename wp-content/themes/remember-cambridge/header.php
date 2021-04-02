@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+    <title><?php wp_title(''); ?><?php if (wp_title('', false)) {
+                                        echo ' :';
+                                    } ?> <?php bloginfo('name'); ?></title>
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
@@ -35,13 +37,13 @@
             <div class="header_wrapper container-row">
                 <div class="header_top-bar container-row col-12 col-lg-5">
                     <div class="header_logo">
-                        <a href="/remember-cambridge">Remember Cambridge</a>
+                        <a href="/remember-cambridge"><img src="<?php the_field('logo', 'option'); ?>" alt=""></a>
                     </div>
                     <button class="header_button">
                         <div class="line"></div>
                     </button>
                 </div>
-                <nav class="menu container-row col-12 col-lg-7 hide">
+                <nav class="menu container-row col-12 col-lg-7">
                     <?php wp_nav_menu(); ?>
                 </nav>
             </div>

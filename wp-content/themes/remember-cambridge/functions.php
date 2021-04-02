@@ -82,7 +82,7 @@ function html5blank_header_scripts()
         // wp_enqueue_script('modernizr'); 
 
         wp_register_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('scripts'); 
+        wp_enqueue_script('scripts');
 
         // wp_register_script('owlscripts', get_template_directory_uri() . '/js/lib/owl.carousel.min.js', array('jquery'), '1.0.0'); // Owl scripts
         // wp_enqueue_script('owlscripts'); 
@@ -277,7 +277,7 @@ function html5blankgravatar($avatar_defaults)
     $avatar_defaults[$myavatar] = "Custom Gravatar";
     return $avatar_defaults;
 }
- 
+
 // Threaded Comments
 function enable_threaded_comments()
 {
@@ -301,7 +301,7 @@ function html5blankcomments($comment, $args, $depth)
         $tag = 'li';
         $add_below = 'div-comment';
     }
-    ?>
+?>
 <!-- heads up: starting < for the html tag (li or div) in the next line: -->
 <<?php echo $tag ?> <?php comment_class(empty($args['has_children']) ? '' : 'parent') ?>
     id="comment-<?php comment_ID() ?>">
@@ -320,8 +320,8 @@ function html5blankcomments($comment, $args, $depth)
         <div class="comment-meta commentmetadata"><a
                 href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>">
                 <?php
-                printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'), '  ', '');
-                                                                                        ?>
+                    printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'), '  ', '');
+                                                                                                ?>
         </div>
 
         <?php comment_text() ?>
@@ -332,7 +332,7 @@ function html5blankcomments($comment, $args, $depth)
         <?php if ('div' != $args['style']) : ?>
     </div>
     <?php endif; ?>
-    <?php 
+    <?php
 }
 
 /*------------------------------------*\
@@ -429,7 +429,7 @@ function colleges_cpt()
                 'thumbnail'
 
             ),
-             // Go to Dashboard Custom HTML5 Blank post for supports
+            // Go to Dashboard Custom HTML5 Blank post for supports
             'can_export' => true, // Allows export in Tools > Export
             'taxonomies' => array(
                 'post_tag',
@@ -471,7 +471,7 @@ function featured_article_cpt()
                 'thumbnail'
 
             ),
-             // Go to Dashboard Custom HTML5 Blank post for supports
+            // Go to Dashboard Custom HTML5 Blank post for supports
             'can_export' => true, // Allows export in Tools > Export
             'taxonomies' => array(
                 'post_tag',
@@ -512,7 +512,7 @@ function tours_cpt()
                 'thumbnail'
 
             ),
-             // Go to Dashboard Custom HTML5 Blank post for supports
+            // Go to Dashboard Custom HTML5 Blank post for supports
             'can_export' => true, // Allows export in Tools > Export
             'taxonomies' => array(
                 'post_tag',
@@ -523,13 +523,38 @@ function tours_cpt()
 }
 
 //Remove Default Editor
-add_action('init', 'init_remove_support',100);
-function init_remove_support(){
+add_action('init', 'init_remove_support', 100);
+function init_remove_support()
+{
     $post_type = 'page';
 
-    remove_post_type_support( $post_type, 'editor');
+    remove_post_type_support($post_type, 'editor');
 }
 
+//Add Options Page
+
+if (function_exists('acf_add_options_page')) {
+
+    acf_add_options_page(array(
+        'page_title'     => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'        => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'     => 'Theme Header Settings',
+        'menu_title'    => 'Header',
+        'parent_slug'    => 'theme-general-settings',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'     => 'Theme Footer Settings',
+        'menu_title'    => 'Footer',
+        'parent_slug'    => 'theme-general-settings',
+    ));
+}
 
 
 /*------------------------------------*\
@@ -548,4 +573,4 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
-?>
+    ?>

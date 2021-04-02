@@ -1,128 +1,112 @@
-.header{
-
-    &_wrapper{
-
-        .header_top-bar{
-            height: 10vh;
-            background:$white;
-            align-items: center;
-            z-index: 10;
-            justify-content: flex-start;
-            a{
-                font-size: 1.4em;
-                margin:3rem;
-            }
-        }  
+.header {
+  &_wrapper {
+    .header_top-bar {
+      height: 10vh;
+      background: $white;
+      align-items: center;
+      z-index: 10;
+      justify-content: flex-start;
+      a {
+        font-size: 1.4em;
+        margin: 3rem;
+      }
     }
+  }
 
-    nav{
-        display: flex;
-        justify-content: flex-end;
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #menu-main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      a {
+        font-size: 1em;
+        margin: 1rem;
+        justify-self: flex-start;
+      }
     }
+  }
 
-    #menu-main-nav{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        li{
-            a{
-                font-size: 1em;
-                margin:1rem;
-                justify-self:flex-start;
-            }
-        }
+  &_logo {
+    text-align: center;
+    img {
+      height: 50px;
     }
-
-    &_logo{
-        text-align: center;
-    }
-    &_button{
-        background:inherit;
-        border:0;
-        position: absolute; 
-        right: 0; 
-        display: none; 
-        margin-right: 2.5rem; 
-        height: 40px; 
+  }
+  &_button {
+    background: inherit;
+    border: 0;
+    position: absolute;
+    right: 0;
+    display: none;
+    margin-right: 2.5rem;
+    height: 40px;
+    width: 40px;
+    .line {
+      height: 2px;
+      background: $primary-1;
+      width: 40px;
+      left: 0;
+      position: absolute;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
         width: 40px;
-        .line{  
-            height: 2px;
-            background:$primary-1;
-            width: 40px;
-            left: 0;
-            position: absolute;
-            &::before, &::after{
-                content: "";
-                position: absolute;
-                height: 2px;
-                width: 40px;
-                background:$primary-1;
-                top:10px;
-                left: 0;
-            }
-            &::after{
-                top:-10px;
-            }
-        }
+        background: $primary-1;
+        top: 10px;
+        left: 0;
+      }
+      &::after {
+        top: -10px;
+      }
     }
-    @include breakpoint-down(laptop){
-
-        &_top-bar{
-            a{
-                display:none;
-            }
-        }
-        nav{
-            height:105vh;
-            background:$primary-1;
-            position: absolute;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            a{
-                color:$white;
-                font-size: 2em;
-            }
-            &.hide{
-                transform: translateY(-1000px);
-                flex-direction: column;
-            }
-        }
-        #menu-main-nav{     
-            flex-direction: column;
-        }
-        .menu-item{
-            a{
-                font-size: 4em;
-            }
-        }
-        #menu-main-nav{
-            li{
-                a{
-                    font-size: 2em;
-                }
-            }
-        }
-        &_button{
-            display: block;
-        }
+  }
+  @include breakpoint-down(laptop) {
+    &_top-bar {
+      a {
+        display: none;
+      }
     }
+    nav {
+      height: 105vh;
+      background: $primary-1;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: $white;
+        font-size: 2em;
+      }
+      &.hide {
+        transform: translateY(-1000px);
+        flex-direction: column;
+      }
+    }
+    #menu-main-nav {
+      flex-direction: column;
+    }
+    .menu-item {
+      a {
+        font-size: 4em;
+      }
+    }
+    #menu-main-nav {
+      li {
+        a {
+          font-size: 2em;
+        }
+      }
+    }
+    &_button {
+      display: block;
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
