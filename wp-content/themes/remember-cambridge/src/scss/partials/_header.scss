@@ -4,7 +4,7 @@
       height: 10vh;
       background: $white;
       align-items: center;
-      z-index: 10;
+      z-index: 15;
       justify-content: flex-start;
       a {
         font-size: 1.4em;
@@ -12,7 +12,6 @@
       }
     }
   }
-
   nav {
     display: flex;
     justify-content: flex-end;
@@ -68,9 +67,10 @@
       }
     }
   }
+
   @include breakpoint-down(laptop) {
     &_top-bar {
-      a {
+      .header_logo {
         display: none;
       }
     }
@@ -83,15 +83,20 @@
       align-items: center;
       a {
         color: $white;
-        font-size: 2em;
+        font-size: 4em;
       }
       &.hide {
         transform: translateY(-1000px);
         flex-direction: column;
       }
     }
+
     #menu-main-nav {
       flex-direction: column;
+      z-index: 10;
+      background-color: $primary-1;
+      height: 100%;
+      width: 100%;
     }
     .menu-item {
       a {

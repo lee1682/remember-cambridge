@@ -1,53 +1,91 @@
 html {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-ul{
+ul {
   margin: 0;
   padding-inline-start: 0;
-  li{
+  li {
     list-style-type: none;
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-body{
-  margin:0;
-  padding:0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-
-//paddings
-
-
-
-@include breakpoint-down(laptop){
- 
+//Paddings
+@include breakpoint-down(laptop) {
 }
 
-
-
-
-@include breakpoint-down(laptop){
-  body{
+@include breakpoint-down(laptop) {
+  body {
     // overflow: hidden;
   }
 }
 
-a{
-  img{
-    &:hover{
-      filter:grayscale(0.25);
+//Hover
+a {
+  img {
+    &:hover {
+      filter: grayscale(0.25);
       cursor: pointer;
-  }
+    }
   }
 }
+
+//Global Classes
+// .spacer {
+//   &::after {
+//     position: relative;
+//     content: "";
+//     width: 100px;
+//     height: 1px;
+//     background: $primary-1;
+//     display: block;
+//     margin: 0 auto;
+//     margin-top: 1rem;
+
+//     // @include breakpoint-down(tablet-port) {
+//     //   margin: 0;
+//     //   margin-top: 1rem;
+//     // }
+//   }
+// }
+
+// .spacer-left {
+//   &::after {
+//     position: relative;
+//     content: "";
+//     width: 100px;
+//     height: 1px;
+//     background: $primary-1;
+//     display: block;
+//     margin-top: 1rem;
+//   }
+// }
+
+// .spacer-left-white {
+//   &::after {
+//     position: relative;
+//     content: "";
+//     width: 100px;
+//     height: 1px;
+//     background: white;
+//     display: block;
+//     margin-top: 1rem;
+//   }
+// }

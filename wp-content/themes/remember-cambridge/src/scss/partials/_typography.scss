@@ -1,34 +1,19 @@
 //imports
-@font-face {
-  font-family: "futura-pt-light";
-  src: url(/../fonts/FuturaPTlight.otf);
-}
 
-@font-face {
-  font-family: "futura-pt-book";
-  src: url(../fonts/FuturaPTbook.otf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans&display=swap");
 
-@font-face {
-  font-family: "futura-pt-medium";
-  src: url(../assets/fonts/FuturaPTMedium.otf);
-}
+// @font-face {
+//   font-family: "futura-pt-medium";
+//   src: url(../../../assets/fonts/FuturaPTMedium.otf);
+// }
 
-$testfont: "Helvetica", Helvetica;
-
-$main-font-light: "futura-pt-light";
-$main-font-medium: "futura-pt-book";
-$main-font-book: "futura-pt-medium";
-
-//temp fonts
-// $main-font-light:'Roboto', sans-serif;
-// $main-font-medium:'Roboto', sans-serif;
-// $main-font-book:'Roboto', sans-serif;
+$main-font-medium: "Open Sans", sans-serif;
 
 //font-size
 * {
   font-size: 16px;
 }
+
 @include breakpoint-down(laptop) {
   * {
     font-size: 14px;

@@ -6,6 +6,7 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   width: 80%;
+
   @include breakpoint-down(tablet-port) {
     text-align: left;
     width: 90%;

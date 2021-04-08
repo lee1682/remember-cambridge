@@ -11,7 +11,7 @@
 
 
         <div class="col-12 col-lg-6 right">
-            <?php wp_nav_menu(array('theme_location' => 'footer-menu', )); ?>
+            <?php wp_nav_menu(array('theme_location' => 'footer-menu',)); ?>
         </div>
 
         <div class="col-12 col-lg-6 left">
@@ -26,13 +26,12 @@
                 </div>
             </div> -->
             <div class="copyright-info">
-                <p> © Copyright 2021 David Lloyd Leisure Ltd.
+                <p> © Copyright 2021 Remember Cambridge Ltd.
                 </p>
             </div>
             <div class="company-info">
-                <p> VAT No. 740 5477 34. Registered Company No. 1516226 David Lloyd Leisure Ltd, The Hangar, Mosquito
-                    Way,
-                    Hatfield Business Park, Hatfield, Hertfordshire, AL10 9AX
+                <p> Registered Company No. 12222737 Remember Cambridge Ltd, 12 Fulbourn Old Drift,
+                    Cambridge,Cambridgeshire, CB1 9NE
                 </p>
             </div>
         </div>

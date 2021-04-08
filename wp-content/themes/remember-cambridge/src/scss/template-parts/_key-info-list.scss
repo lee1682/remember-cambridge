@@ -25,12 +25,12 @@
       width: 50%;
       margin-bottom: 1.5rem;
       padding-right: 1rem;
+      color: $darker-grey;
 
       strong {
-        color: white;
         display: block;
         font-weight: bolder;
-        text-decoration: underline;
+        color: white;
       }
     }
   }

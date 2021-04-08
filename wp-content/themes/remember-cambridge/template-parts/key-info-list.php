@@ -1,13 +1,13 @@
 <section class="key-info-list">
     <div class="container-large">
         <div class="col-12">
-            <h2><?php the_field('key_info_heading'); ?></h2>
-            <?php if (have_rows('key_info_list')): ?>
+            <h2 class="spacer-left-white"><?php the_field('key_info_heading'); ?></h2>
+            <?php if (have_rows('key_info_list')) : ?>
             <ul>
-                <?php while ( have_rows('key_info_list') ) : the_row();?>
-                <?php 
-                $bold_text = get_sub_field('bold_text');
-                $regular_text = get_sub_field('regular_text');?>
+                <?php while (have_rows('key_info_list')) : the_row(); ?>
+                <?php
+                        $bold_text = get_sub_field('bold_text');
+                        $regular_text = get_sub_field('regular_text'); ?>
                 <li>
                     <strong> <?php echo $bold_text ?> </strong> <?php echo $regular_text ?>
                 </li>
@@ -15,10 +15,10 @@
             </ul>
             <?php endif; ?>
             <!-- 
-            <?php 
+            <?php
             $link = get_field('link');
-            if( $link ): ?>
-            <a class="btn-primary-outline" href="<?php echo esc_url( $link ); ?>">Visit Site</a>
+            if ($link) : ?>
+            <a class="btn-primary-outline" href="<?php echo esc_url($link); ?>">Visit Site</a>
             <?php endif; ?> -->
         </div>
     </div>
