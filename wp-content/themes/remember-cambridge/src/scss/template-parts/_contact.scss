@@ -1,57 +1,57 @@
-.contact{
-    background:$primary-1;
-    height: auto;
-    box-sizing: border-box;
-    padding:2rem;
-    .container-large{
-        .text{
-            align-self: center;
-            justify-content: center;   
-            h2{
-                color:$white;
-                text-align: left;    
-            }
-        }
-        .wpcf7{
-            form{
-                padding-top:3rem;
-                p{   
-                    width: 50% !important;
-                    label{
-                        color:$white;
-                        font-family: $paragraph-font;
-                    }
-                    input, textarea{
-                        background:none;
-                        border:none;
-                        border-bottom: 1px solid $white;
-                        width: 100%;
-                    }
-                    textarea{
-                        resize: none;
-                        height: 10vh;
-                        margin-bottom: 3rem;
-                    }
-                    input[type="submit"]{
-                        @extend .btn-primary-outline;     
-                    }   
-                }
-            }
-        }
+.contact-form {
+  background: $primary-1;
+  height: auto;
+  box-sizing: border-box;
+  padding: 2rem;
+  .container-large {
+    .text {
+      align-self: center;
+      justify-content: center;
+      h2 {
+        color: $white;
+        text-align: left;
+      }
     }
-
-    @include breakpoint-down(tablet-port){
-        padding:2rem 0 0 0.5rem;
-
-        .container-large{
-            .wpcf7{
-                form{
-                    p{
-                        width: 100% !important;
-                    }
-    
-                }
-            }
+    .wpcf7 {
+      form {
+        padding-top: 3rem;
+        p {
+          width: 50% !important;
+          label {
+            color: $white;
+            font-family: $paragraph-font;
+          }
+          input,
+          textarea {
+            background: none;
+            border: none;
+            border-bottom: 1px solid $white;
+            width: 100%;
+          }
+          textarea {
+            resize: none;
+            height: 10vh;
+            margin-bottom: 3rem;
+          }
+          input[type="submit"] {
+            @extend .btn-primary-outline;
+          }
         }
+      }
     }
+  }
+
+  @include breakpoint-down(tablet-port) {
+    padding: 2rem 0 0 0.5rem;
+
+    .container-large {
+      .wpcf7 {
+        form {
+          p {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
 }

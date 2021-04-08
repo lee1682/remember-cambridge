@@ -557,6 +557,20 @@ if (function_exists('acf_add_options_page')) {
 }
 
 
+//insta feed
+
+//function to refresh token
+add_action('wp_ajax_nopriv_request_token_action', 'request_token_action');
+add_action('wp_ajax_request_token_action', 'request_token_action');
+function request_token_action()
+{
+    $requestToken = 'https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' . get_field('instagram_token', 'option');
+    $json = file_get_contents($requestToken);
+    $obj = json_decode($json);
+    update_field('instagram_token', $obj->access_token, 'option');
+}
+
+
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/

@@ -1003,7 +1003,7 @@ button {
   font-size: 1.7em;
 }
 
-.btn-primary-outline, .contact .container-large .wpcf7 form p input[type=submit] {
+.btn-primary-outline, .contact-form .container-large .wpcf7 form p input[type=submit] {
   background: inherit;
   border: 1px solid white;
   color: white;
@@ -1012,7 +1012,7 @@ button {
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
 }
-.btn-primary-outline:hover, .contact .container-large .wpcf7 form p input[type=submit]:hover {
+.btn-primary-outline:hover, .contact-form .container-large .wpcf7 form p input[type=submit]:hover {
   border-color: #cbe0e0;
   color: #cbe0e0;
 }
@@ -1254,12 +1254,12 @@ button {
 
 .full-width-cta-banner {
   height: 100%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .full-width-cta-banner_wrapper {
   background-color: #03526a;
-  min-height: 25vh;
+  min-height: 17.5vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1473,46 +1473,47 @@ button {
   padding: 0 !important;
 }
 
-.contact {
+.contact-form {
   background: #03526a;
   height: auto;
   box-sizing: border-box;
   padding: 2rem;
 }
-.contact .container-large .text {
+.contact-form .container-large .text {
   align-self: center;
   justify-content: center;
 }
-.contact .container-large .text h2 {
+.contact-form .container-large .text h2 {
   color: white;
   text-align: left;
 }
-.contact .container-large .wpcf7 form {
+.contact-form .container-large .wpcf7 form {
   padding-top: 3rem;
 }
-.contact .container-large .wpcf7 form p {
+.contact-form .container-large .wpcf7 form p {
   width: 50% !important;
 }
-.contact .container-large .wpcf7 form p label {
+.contact-form .container-large .wpcf7 form p label {
   color: white;
   font-family: #2e2d2d;
 }
-.contact .container-large .wpcf7 form p input, .contact .container-large .wpcf7 form p textarea {
+.contact-form .container-large .wpcf7 form p input,
+.contact-form .container-large .wpcf7 form p textarea {
   background: none;
   border: none;
   border-bottom: 1px solid white;
   width: 100%;
 }
-.contact .container-large .wpcf7 form p textarea {
+.contact-form .container-large .wpcf7 form p textarea {
   resize: none;
   height: 10vh;
   margin-bottom: 3rem;
 }
 @media (max-width: 576px) {
-  .contact {
+  .contact-form {
     padding: 2rem 0 0 0.5rem;
   }
-  .contact .container-large .wpcf7 form p {
+  .contact-form .container-large .wpcf7 form p {
     width: 100% !important;
   }
 }
@@ -1521,6 +1522,7 @@ footer {
   background: #2e2d2d;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-top: 1rem;
 }
 footer .footer-content .left .logo-social {
   display: flex;
@@ -1542,7 +1544,8 @@ footer .footer-content .left .logo-social .social {
   width: 50px;
   background: coral;
 }
-footer .footer-content .left .copyright-info p, footer .footer-content .left .company-info p {
+footer .footer-content .left .copyright-info p,
+footer .footer-content .left .company-info p {
   font-size: 0.8em;
   color: white;
 }
@@ -1728,6 +1731,8 @@ footer .footer-content .right ul li a {
 .contact-and-address {
   height: auto;
   background-color: #f6f2f2;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .contact-and-address > div {
   padding: 0;
@@ -1742,15 +1747,17 @@ footer .footer-content .right ul li a {
   align-items: flex-start;
   padding: 0;
 }
-.contact-and-address_contact > div:nth-child(2), .contact-and-address_contact div:nth-child(3) {
+.contact-and-address_contact > div:nth-child(2),
+.contact-and-address_contact div:nth-child(3) {
   justify-content: flex-start;
 }
 .contact-and-address_map {
   height: 500px;
   width: 100%;
   border: 1px solid #cbe0e0;
-  background: red;
   display: flex;
+  background: #03526a;
+  padding: 1rem;
 }
 .contact-and-address_map img {
   height: 100%;
