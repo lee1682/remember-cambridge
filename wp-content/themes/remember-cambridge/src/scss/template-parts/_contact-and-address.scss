@@ -3,20 +3,24 @@
   background-color: $light-grey;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
   & > div {
     padding: 0;
   }
 
+  h2 {
+    margin-bottom: 1rem;
+  }
+
   &_contact {
-    h2 {
-      text-align: center;
+    p {
+      margin: 0;
+      margin-bottom: 1rem;
     }
 
     & > div {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
       padding: 0;
     }
     & > div:nth-child(2),
@@ -26,7 +30,7 @@
   }
 
   &_map {
-    height: 500px;
+    height: 350px;
     width: 100%;
     border: 1px solid $primary-2;
     display: flex;

@@ -1,12 +1,13 @@
-.key-info-list {
+.additional-info-list {
   height: auto;
-  background: $primary-1;
+  background: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   h2,
+  p,
   li {
-    color: $light-grey;
+    color: $primary-1;
   }
 
   h2 {
@@ -24,17 +25,19 @@
       width: 50%;
       margin-bottom: 1.5rem;
       padding-right: 1rem;
+      color: $darker-grey;
 
       strong {
         display: block;
         font-weight: bolder;
-        color: $darker-grey;
-        font-size: 1em;
+        color: $primary-1;
       }
     }
   }
 
   a {
     display: inline-block;
+    font-size: inherit;
+    color: $secondary;
   }
 }

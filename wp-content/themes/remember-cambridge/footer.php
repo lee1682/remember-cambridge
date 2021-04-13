@@ -30,8 +30,7 @@
                 </p>
             </div>
             <div class="company-info">
-                <p> Registered Company No. 12222737 Remember Cambridge Ltd, 12 Fulbourn Old Drift,
-                    Cambridge,Cambridgeshire, CB1 9NE
+                <p> Registered Company No. 12222737 Remember Cambridge Ltd
                 </p>
             </div>
         </div>

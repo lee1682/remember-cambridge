@@ -2,9 +2,66 @@
 .archive-college .colleges {
   background-color: #f6f2f2;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
 }
-.archive-college .colleges h2 a {
-  font-size: inherit;
+@media (max-width: 992px) {
+  .archive-college .colleges {
+    padding: 0;
+  }
+}
+.archive-college .colleges p,
+.archive-college .colleges strong {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+.archive-college .colleges p {
+  margin-bottom: 2rem;
+}
+.archive-college .colleges ul li {
+  font-size: 1em;
+  padding: 0;
+}
+.archive-college .colleges_image-wrapper, .archive-college .colleges_text-wrapper, .archive-college .colleges_highlights-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.archive-college .colleges_image-wrapper .image {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .archive-college .colleges_image-wrapper .image {
+    width: 100%;
+  }
+}
+.archive-college .colleges_image-wrapper .image img {
+  height: 80%;
+  width: 100%;
+  background: pink;
+  object-fit: cover;
+}
+.archive-college .colleges_image-wrapper .image a {
+  background: #03526a;
+  width: 100%;
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 2.5;
+}
+.archive-college .colleges_highlights {
+  padding-left: 5rem;
+}
+@media (max-width: 992px) {
+  .archive-college .colleges_highlights {
+    padding-left: 1rem;
+  }
+}
+.archive-college .colleges_highlights ul li {
+  margin-bottom: 1.5rem;
 }
 
 html {
@@ -937,11 +994,6 @@ a img:hover {
     font-size: 14px;
   }
 }
-@media (max-width: 992px) {
-  * {
-    font-size: 11px;
-  }
-}
 h1,
 h2,
 h3,
@@ -960,7 +1012,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 1.8em;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -970,7 +1022,7 @@ h2 a {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -1149,7 +1201,7 @@ button {
 }
 .hero .container-large .heading h1 {
   padding-bottom: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   max-width: 400px;
 }
 
@@ -1652,13 +1704,15 @@ footer .footer-content .right ul li a {
 }
 .full-width-image_img {
   width: 100%;
-  height: 35vw;
+  height: 400px;
   margin: 2rem auto;
   margin-bottom: 0;
   overflow: hidden;
 }
 .full-width-image_img img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .full-width-image_caption {
   margin: 0 auto;
@@ -1698,9 +1752,8 @@ footer .footer-content .right ul li a {
   padding-bottom: 2rem;
 }
 .key-info-list h2,
-.key-info-list p,
 .key-info-list li {
-  color: white;
+  color: #f6f2f2;
 }
 .key-info-list h2 {
   margin-bottom: 1rem;
@@ -1717,15 +1770,54 @@ footer .footer-content .right ul li a {
   width: 50%;
   margin-bottom: 1.5rem;
   padding-right: 1rem;
-  color: #bbb7b7;
 }
 .key-info-list ul li strong {
   display: block;
   font-weight: bolder;
-  color: white;
+  color: #bbb7b7;
+  font-size: 1em;
 }
 .key-info-list a {
   display: inline-block;
+}
+
+.additional-info-list {
+  height: auto;
+  background: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.additional-info-list h2,
+.additional-info-list p,
+.additional-info-list li {
+  color: #03526a;
+}
+.additional-info-list h2 {
+  margin-bottom: 1rem;
+}
+.additional-info-list ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  flex-wrap: wrap;
+}
+.additional-info-list ul li {
+  margin-bottom: 1rem;
+  width: 50%;
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
+  color: #bbb7b7;
+}
+.additional-info-list ul li strong {
+  display: block;
+  font-weight: bolder;
+  color: #03526a;
+}
+.additional-info-list a {
+  display: inline-block;
+  font-size: inherit;
+  color: #ff9999;
 }
 
 .contact-and-address {
@@ -1737,14 +1829,16 @@ footer .footer-content .right ul li a {
 .contact-and-address > div {
   padding: 0;
 }
-.contact-and-address_contact h2 {
-  text-align: center;
+.contact-and-address h2 {
+  margin-bottom: 1rem;
+}
+.contact-and-address_contact p {
+  margin: 0;
+  margin-bottom: 1rem;
 }
 .contact-and-address_contact > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   padding: 0;
 }
 .contact-and-address_contact > div:nth-child(2),
@@ -1752,7 +1846,7 @@ footer .footer-content .right ul li a {
   justify-content: flex-start;
 }
 .contact-and-address_map {
-  height: 500px;
+  height: 350px;
   width: 100%;
   border: 1px solid #cbe0e0;
   display: flex;

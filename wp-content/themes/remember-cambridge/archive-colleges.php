@@ -15,45 +15,51 @@
             <div class="col-12">
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <!-- <?php if (have_rows('text_and_image')) : ?>
+                    <?php while (have_rows('text_and_image')) : the_row();
+                                            $image = get_sub_field('image');
+                                            $heading = get_sub_field('heading');
+                                            $text = get_sub_field('text');
+                                            $link = get_sub_field('link');
+                                            $link_text = get_sub_field('link_text'); ?>
+                    <?php endwhile; ?>
+                    <?php endif; ?> -->
 
-                    <?php if (has_post_thumbnail()) :  ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        <?php the_post_thumbnail(array(120, 120)); // Declare pixel size you need inside the array 
-                                    ?>
-                    </a>
-                    <?php endif; ?>
+                    <div class="container-row">
+                        <div class="col-12 col-lg-4 colleges_image-wrapper">
+                            <div class="image">
+                                <img src="<?php echo $image ?>" alt="">
+                                <a href="<?php the_permalink() ?>">More Info</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 colleges_text-wrapper">
+                            <h2> <?php the_field('title'); ?> </h2>
+                            <p> <?php the_excerpt() ?> </p>
+                            <!-- 
+                            <ul>
+                                <li><strong>Address</strong> Kings Parade CB1 2ND</li>
+                                <li><strong>Telephone</strong> 01233 321 123</li>
+                            </ul> 
+                            -->
 
-
-                    <h2>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                    </h2>
-
-                    <!-- 
-                    <span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span> -->
-                    <!-- <span class="author"><?php _e('Published by', 'html5blank'); ?>
-                        <?php the_author_posts_link(); ?></span> -->
-                    <!-- <span
-                        class="comments"><?php if (comments_open(get_the_ID())) comments_popup_link(__('Leave your thoughts', 'html5blank'), __('1 Comment', 'html5blank'), __('% Comments', 'html5blank')); ?></span> -->
-
-
-                    <?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php 
-                            ?>
-
-                    <!-- <?php edit_post_link(); ?> -->
-
-                </article>
-
+                        </div>
+                        <div class="col-12 col-lg-2 colleges_highlights">
+                            <!-- 
+                            <h2> highlights</h2>
+                            <ul>
+                                <li>highlight</li>
+                                <li>highlight</li>
+                                <li>highlight</li>
+                            </ul> 
+                            -->
+                        </div>
+                    </div>
+                </div>
                 <?php endwhile; ?>
-                <?php else : ?>
-
-                <article>
-                    <h2><?php _e('Sorry, nothing to display.', 'html5blank'); ?></h2>
-                </article>
-
                 <?php endif; ?>
-                <?php get_template_part('pagination'); ?>
+
             </div>
 
         </div>

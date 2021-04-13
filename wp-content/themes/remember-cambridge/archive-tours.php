@@ -21,8 +21,6 @@
             <?php endif; ?>
         </div>
     </section>
-
-
     <section class="content-items">
         <?php if (have_rows('item', 34)) : ?>
         <?php while (have_rows('item', 34)) : the_row(); ?>
