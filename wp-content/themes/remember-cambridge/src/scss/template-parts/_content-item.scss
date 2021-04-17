@@ -46,8 +46,17 @@
     &_text {
       width: 100%;
       padding-left: 1rem;
-      margin-bottom: 5rem;
-      padding: 0 3rem;
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+
+      a {
+        margin-bottom: 2rem;
+      }
+
+      p {
+        margin-bottom: 3rem;
+      }
     }
     &_image {
       padding: 0;

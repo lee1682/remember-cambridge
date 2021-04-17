@@ -21,10 +21,9 @@
                              <img src="<?php echo $image ?>" alt="">
                          </div>
                          <h3> <?php echo $item_heading ?></h3>
-                         <p>
-                             <?php echo $text ?>
-                         </p>
+                         <p><?php echo $text ?></p>
                          <a href=" <?php echo $link ?>"> <?php echo $link_text ?> </a>
+
                      </div>
                  </a>
              </div>

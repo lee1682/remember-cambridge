@@ -11,7 +11,7 @@
 
 
         <div class="col-12 col-lg-6 right">
-            <?php wp_nav_menu(array('theme_location' => 'footer-menu',)); ?>
+            <!-- <?php wp_nav_menu(array('theme_location' => 'footer-menu',)); ?> -->
         </div>
 
         <div class="col-12 col-lg-6 left">

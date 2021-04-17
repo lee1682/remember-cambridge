@@ -1,69 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans&display=swap");
-.archive-college .colleges {
-  background-color: #f6f2f2;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  padding: 1rem;
-}
-@media (max-width: 992px) {
-  .archive-college .colleges {
-    padding: 0;
-  }
-}
-.archive-college .colleges p,
-.archive-college .colleges strong {
-  font-size: 1em;
-  padding: 0;
-  margin: 0;
-}
-.archive-college .colleges p {
-  margin-bottom: 2rem;
-}
-.archive-college .colleges ul li {
-  font-size: 1em;
-  padding: 0;
-}
-.archive-college .colleges_image-wrapper, .archive-college .colleges_text-wrapper, .archive-college .colleges_highlights-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.archive-college .colleges_image-wrapper .image {
-  height: 200px;
-  width: 200px;
-  margin: 0 auto;
-}
-@media (max-width: 992px) {
-  .archive-college .colleges_image-wrapper .image {
-    width: 100%;
-  }
-}
-.archive-college .colleges_image-wrapper .image img {
-  height: 80%;
-  width: 100%;
-  background: pink;
-  object-fit: cover;
-}
-.archive-college .colleges_image-wrapper .image a {
-  background: #03526a;
-  width: 100%;
-  display: block;
-  color: white;
-  text-align: center;
-  line-height: 2.5;
-}
-.archive-college .colleges_highlights {
-  padding-left: 5rem;
-}
-@media (max-width: 992px) {
-  .archive-college .colleges_highlights {
-    padding-left: 1rem;
-  }
-}
-.archive-college .colleges_highlights ul li {
-  margin-bottom: 1.5rem;
-}
-
 html {
   box-sizing: border-box;
   padding: 0;
@@ -1509,11 +1444,6 @@ button {
 .post-thumbs_single p {
   padding: 0 2rem 0 2rem;
 }
-@media (max-width: 576px) {
-  .post-thumbs_single p {
-    padding: 0 0.5rem 0 0.5rem;
-  }
-}
 .post-thumbs_single a {
   margin-bottom: 2rem;
   text-align: left;
@@ -1667,8 +1597,15 @@ footer .footer-content .right ul li a {
   .content-item_text {
     width: 100%;
     padding-left: 1rem;
-    margin-bottom: 5rem;
-    padding: 0 3rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+  .content-item_text a {
+    margin-bottom: 2rem;
+  }
+  .content-item_text p {
+    margin-bottom: 3rem;
   }
   .content-item_image {
     padding: 0;
