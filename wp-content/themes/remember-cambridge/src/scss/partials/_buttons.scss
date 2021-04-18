@@ -1,15 +1,17 @@
-.btn-primary-outline{
-    background:inherit;
-    border:1px solid $white;
-    color:$white;
-    padding:0.5rem 2rem 0.5rem 2rem;
-    font-size: 1em;
-    letter-spacing: $letter-spacing-rg;
-    margin-bottom: 1rem;
+.btn-primary-outline {
+  background: inherit;
+  border: 1px solid $white;
+  color: $white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1em;
+  letter-spacing: $letter-spacing-rg;
+  margin-bottom: 1rem;
 
-    &:hover{
-        border-color: $primary-2;
-        color:$primary-2;
+  &:hover {
+    border-color: $primary-2;
+    color: $primary-2;
+  }
+}
 
-    }
+.btn-outline-green {
 }
