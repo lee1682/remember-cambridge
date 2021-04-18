@@ -1,8 +1,7 @@
 .content-items {
-  margin-top: 2rem;
+  // margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 .content-item {
   display: block;
   background: $light-grey;
@@ -24,6 +23,12 @@
     }
     p {
       width: 85%;
+      margin-bottom: 3rem;
+    }
+    a {
+      border: 1px solid $primary-1;
+      width: fit-content;
+      padding: 1rem 2rem;
     }
   }
   &_image {
@@ -48,7 +53,7 @@
       padding-left: 1rem;
       padding: 0 2rem;
       margin-bottom: 2rem;
-      margin-top: 4rem;
+      margin-top: 2rem;
 
       a {
         margin-bottom: 2rem;

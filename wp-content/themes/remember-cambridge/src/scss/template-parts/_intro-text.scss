@@ -3,20 +3,22 @@
   display: flex;
   align-items: center;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   width: 80%;
-
   @include breakpoint-down(tablet-port) {
     text-align: left;
     width: 90%;
   }
+
   p {
     width: 80%;
     margin: 0 auto;
+
     @include breakpoint-down(tablet-port) {
       text-align: left;
       width: 100%;
+      margin-bottom: 0;
     }
   }
 }

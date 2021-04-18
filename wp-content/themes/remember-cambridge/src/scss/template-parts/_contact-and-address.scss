@@ -5,7 +5,7 @@
   padding-bottom: 2rem;
 
   & > div {
-    padding: 0;
+    padding: 0 2rem;
   }
 
   h2 {
@@ -13,6 +13,8 @@
   }
 
   &_contact {
+    @include breakpoint-down(tablet-port) {
+    }
     p {
       margin: 0;
       margin-bottom: 1rem;

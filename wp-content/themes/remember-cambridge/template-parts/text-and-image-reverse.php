@@ -14,7 +14,7 @@
                 <img src="<?php echo $image ?>" />
             </div>
             <?php   } else { ?>
-            <a href="<?php echo $link ?>">
+            <a class="btn-outline-green" href=" <?php echo $link ?>">
                 <div class="text-and-image_img">
                     <img src="<?php echo $image ?>" />
                 </div>
@@ -25,7 +25,7 @@
             <div class="text-and-image_text">
                 <h2 class="spacer-left"> <?php echo $heading ?></h2>
                 <p> <?php echo $text ?></p>
-                <a href="<?php echo $link ?>"> <?php echo $link_text ?> </a>
+                <a class="btn-outline-green" href="<?php echo $link ?>"> <?php echo $link_text ?> </a>
             </div>
         </div>
     </div>

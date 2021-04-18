@@ -21,9 +21,27 @@
                 <?php $web = get_sub_field('web') ?>
 
                 <h3>Contact</h3>
+
+                <?php if (have_rows('phone')) { ?>
                 <h4>Phone</h4>
                 <p><?php echo $phone ?></p>
+                <?php } ?>
+                <h4>Phone</h4>
+                <p><?php echo $phone ?></p>
+
+
+
+                <?php if (have_rows('web')) { ?>
                 <a href="<?php echo $web ?>"> Visit Online</a>
+
+                sdfsd
+                <?php } ?>
+
+
+
+
+
+
                 <?php endwhile; ?>
                 <?php endif; ?>
             </div>

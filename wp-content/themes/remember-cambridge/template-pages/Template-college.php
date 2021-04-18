@@ -17,5 +17,6 @@
 
     <?php get_template_part("template-parts/contact-and-address"); ?>
 
-
 </main>
+
+<?php get_footer(); ?>

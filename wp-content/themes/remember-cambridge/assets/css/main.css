@@ -964,7 +964,7 @@ h3 {
 
 p {
   color: #2e2d2d;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -975,7 +975,7 @@ strong {
 }
 
 ul li {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 li,
@@ -1115,6 +1115,10 @@ button {
   height: 40vh;
 }
 
+.archive-college .content-item {
+  margin-bottom: 1rem;
+}
+
 .hero {
   background: #03526a;
   height: 45vh;
@@ -1171,8 +1175,8 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   width: 80%;
 }
 @media (max-width: 576px) {
@@ -1189,6 +1193,7 @@ button {
   .intro-text p {
     text-align: left;
     width: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -1227,15 +1232,18 @@ button {
 .text-and-image-reverse .container-large .text p {
   padding-left: 0;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+  .text-and-image, .text-and-image-reverse {
+    padding-bottom: 0rem;
+  }
   .text-and-image_text {
-    padding: 1rem;
+    padding: 0;
   }
   .text-and-image_img {
-    height: 200px;
+    height: 400px;
   }
   .text-and-image_img img {
-    padding: 0 0 1rem 0;
+    padding: 0 0 2rem 0;
   }
 }
 
@@ -1263,7 +1271,6 @@ button {
 @media (max-width: 576px) {
   .full-width-cta-banner {
     background: #03526a;
-    padding-bottom: 2rem;
   }
   .full-width-cta-banner button {
     padding-left: 3rem;
@@ -1323,6 +1330,17 @@ button {
 .highlights .container-large {
   width: 1700px;
 }
+.highlights_header h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (max-width: 576px) {
+  .highlights_header h2 {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
 @media (max-width: 576px) {
   .highlights {
     padding-top: 2rem;
@@ -1331,11 +1349,6 @@ button {
   .highlights_single p {
     padding: 0;
   }
-}
-.highlights_header h2 {
-  color: white;
-  text-align: center;
-  margin-bottom: 2rem;
 }
 .highlights_single {
   margin-left: 3rem;
@@ -1551,7 +1564,6 @@ footer .footer-content .right ul li a {
 }
 
 .content-items {
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -1574,6 +1586,14 @@ footer .footer-content .right ul li a {
 }
 .content-item_text p {
   width: 85%;
+  margin-bottom: 3rem;
+}
+.content-item_text a {
+  border: 1px solid #03526a;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
 }
 .content-item_image {
   padding: 0;
@@ -1599,7 +1619,7 @@ footer .footer-content .right ul li a {
     padding-left: 1rem;
     padding: 0 2rem;
     margin-bottom: 2rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .content-item_text a {
     margin-bottom: 2rem;
@@ -1675,8 +1695,8 @@ footer .footer-content .right ul li a {
 
 .full-width-text {
   min-height: auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .full-width-text h2 + p {
   margin-top: 0;
@@ -1764,7 +1784,7 @@ footer .footer-content .right ul li a {
   padding-bottom: 2rem;
 }
 .contact-and-address > div {
-  padding: 0;
+  padding: 0 2rem;
 }
 .contact-and-address h2 {
   margin-bottom: 1rem;

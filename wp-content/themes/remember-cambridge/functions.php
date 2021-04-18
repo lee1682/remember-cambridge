@@ -570,6 +570,14 @@ function request_token_action()
     update_field('instagram_token', $obj->access_token, 'option');
 }
 
+//Google Maps
+
+function my_acf_init()
+{
+    acf_update_setting('google_api_key', 'AIzaSyCtuDR_8Oc6T9LyO4Ws5JWQyaaR_Ru-rfk');
+}
+add_action('acf/init', 'my_acf_init');
+
 
 /*------------------------------------*\
 	ShortCode Functions

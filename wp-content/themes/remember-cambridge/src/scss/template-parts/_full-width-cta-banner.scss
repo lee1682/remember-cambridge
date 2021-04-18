@@ -22,7 +22,6 @@
   }
   @include breakpoint-down(tablet-port) {
     background: $primary-1;
-    padding-bottom: 2rem;
 
     button {
       padding-left: 3rem;

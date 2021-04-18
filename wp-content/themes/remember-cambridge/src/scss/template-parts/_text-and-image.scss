@@ -40,14 +40,15 @@
       }
     }
   }
-  @include breakpoint-down(tablet-port) {
+  @include breakpoint-down(laptop) {
+    padding-bottom: 0rem;
     &_text {
-      padding: 1rem;
+      padding: 0;
     }
     &_img {
-      height: 200px;
+      height: 400px;
       img {
-        padding: 0 0 1rem 0;
+        padding: 0 0 2rem 0;
       }
     }
   }

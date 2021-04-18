@@ -4,7 +4,7 @@
 @import "modules/mixins";
 
 //Partials
-@import "partials/archive-college";
+
 @import "partials/base";
 @import "partials/grids";
 @import "partials/typography";
@@ -14,6 +14,9 @@
 
 // @import 'partials/nav';
 // @import 'partials/grid';
+
+//Template Pages
+@import "template-pages/archive-college";
 
 //Template Parts
 @import "template-parts/hero";
