@@ -2,31 +2,28 @@
  ______________________
 |       GENERAL       |
  ----------------------
-
+ [ ] Update links to new domain
  [ ] Set up Google API for maps
  [ ] Set up Merchant Account
- [ ] Set up booking system 
- [ ] Set up new domain
- [ ] Set up GA / GSC
- [ ] Pictures for each college
+ [ ] Pictures for each college (KEADY)
  [ ] Set consistant padding on text
- [ ] add white outline button to more information CTA with class
+ [ ] Add white outline button to more information CTA with class
 
+ [X] Set up new domain
+ [X] Set up GA / GSC / GTM
+ [X] SSL
 
  ______________________
 |       HOMEPAGE       |
  ----------------------
 
-
 [ ] Intro paragraph for blog thumb nails
 [ ] Featured banner text content
 [X] Spacing on green banner
 
-
   ____________________
 |       COLLEGES        |
   ---------------------
-
 
 [X] Add margin bottom between each college 
 
@@ -50,27 +47,25 @@ ___________________
 .....................................
 ............Mid Priority.............
 .....................................
+
  ______________________
 |       GENERAL       |
  ----------------------
 
-
+[ ] CWV / Lighthouse Check
 [ ] SVG Graphis
-
+[ ] Set up booking system
 [X] Intro text spacing
-
-
+[X] Add bold to nav text on hover
 
 **  Mobile  **
 [X] Increase key info h3 font size
 [ ] Remove footer top margin
 
-
  ______________________
 |       HOMEPAGE       |
  ----------------------
 [X] Key info h3 to left and fix Spacing
-
 
  ______________________
 |       TOURS     |

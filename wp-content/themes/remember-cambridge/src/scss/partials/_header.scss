@@ -27,6 +27,11 @@
         font-size: 1em;
         margin: 1rem;
         justify-self: flex-start;
+
+        &:hover {
+          font-weight: bolder;
+          color: $primary-1;
+        }
       }
     }
   }

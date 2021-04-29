@@ -3,15 +3,12 @@
   background-color: $light-grey;
   padding-top: 2rem;
   padding-bottom: 2rem;
-
   & > div {
     padding: 0 2rem;
   }
-
   h2 {
     margin-bottom: 1rem;
   }
-
   &_contact {
     @include breakpoint-down(tablet-port) {
     }
@@ -19,7 +16,6 @@
       margin: 0;
       margin-bottom: 1rem;
     }
-
     & > div {
       display: flex;
       flex-direction: column;
@@ -30,15 +26,13 @@
       justify-content: flex-start;
     }
   }
-
   &_map {
     height: 350px;
     width: 100%;
     border: 1px solid $primary-2;
     display: flex;
     background: $primary-1;
-    padding: 1rem;
-
+    padding: 0;
     img {
       height: 100%;
       width: 100%;
@@ -49,7 +43,6 @@
   @include breakpoint-down(laptop) {
     &_contact {
       margin-bottom: 3rem;
-
       & > div {
         align-items: flex-start;
       }

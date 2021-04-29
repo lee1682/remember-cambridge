@@ -21,14 +21,22 @@
     a {
       color: $primary-1;
     }
+
     p {
       width: 85%;
       margin-bottom: 3rem;
     }
+
     a {
       border: 1px solid $primary-1;
       width: fit-content;
       padding: 1rem 2rem;
+
+      &:hover {
+        background-color: $primary-1;
+        border-color: white;
+        color: white;
+      }
     }
   }
   &_image {

@@ -43,7 +43,7 @@
   @include breakpoint-down(laptop) {
     padding-bottom: 0rem;
     &_text {
-      padding: 0;
+      padding: 0 0 2rem 0;
     }
     &_img {
       height: 400px;
