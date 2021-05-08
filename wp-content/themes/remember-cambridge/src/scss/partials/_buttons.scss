@@ -14,4 +14,26 @@
 }
 
 .btn-outline-green {
+  border: 1px solid $primary-1;
+  width: fit-content;
+  padding: 1rem 2rem;
+
+  &:hover {
+    background-color: $primary-1;
+    border-color: white;
+    color: white;
+  }
+}
+
+.btn-outline-green-sm {
+  background-color: $primary-1;
+  color: white;
+  width: 2rem;
+  padding: 1rem 2rem;
+
+  // &:hover {
+  //   background-color: $primary-2;
+  //   border-color: white;
+  //   color: white;
+  // }
 }

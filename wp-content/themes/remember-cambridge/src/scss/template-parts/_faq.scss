@@ -1,32 +1,26 @@
 .faq {
   min-height: 750px;
-
   h2 {
     text-align: left;
     margin-top: 3rem;
     padding-bottom: 3rem;
   }
-
   &__content {
     @include breakpoint-down(laptop) {
       flex-direction: column-reverse;
     }
   }
-
   .accordion-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-
     &__item {
       border-bottom: 2px solid black;
       width: 75%;
-
       @include breakpoint-down(laptop) {
         width: 100%;
       }
-
       &.active {
         .accordion-wrapper__question {
           svg {
@@ -49,7 +43,7 @@
 
       h3 {
         margin-right: 2rem;
-        font-size: 1.4em;
+        font-size: 1.1em;
         width: 80%;
       }
 

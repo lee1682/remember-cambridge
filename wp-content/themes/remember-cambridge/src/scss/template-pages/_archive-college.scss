@@ -1,5 +1,16 @@
 .archive-college {
   .content-item {
     margin-bottom: 1rem;
+
+    .container-row {
+      @include breakpoint-up(laptop) {
+        flex-direction: row-reverse;
+      }
+    }
+    &_image {
+      @include breakpoint-up(laptop) {
+        height: 350px;
+      }
+    }
   }
 }

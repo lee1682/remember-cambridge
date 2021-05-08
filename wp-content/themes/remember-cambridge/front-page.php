@@ -18,7 +18,7 @@
 
 <?php get_template_part("template-parts/post-thumbs"); ?>
 
-<!-- <?php get_template_part("template-parts/insta-feed"); ?> -->
+<?php get_template_part("template-parts/insta-feed"); ?>
 
 <?php get_template_part("template-parts/contact"); ?>
 

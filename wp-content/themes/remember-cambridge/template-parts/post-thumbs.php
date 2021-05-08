@@ -22,8 +22,7 @@
                          </div>
                          <h3> <?php echo $item_heading ?></h3>
                          <p><?php echo $text ?></p>
-                         <a href=" <?php echo $link ?>"> <?php echo $link_text ?> </a>
-
+                         <a href=" <?php echo $link ?>" class="btn-outline-green-sm"> <?php echo $link_text ?> </a>
                      </div>
                  </a>
              </div>

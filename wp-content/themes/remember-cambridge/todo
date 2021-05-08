@@ -2,16 +2,28 @@
  ______________________
 |       GENERAL       |
  ----------------------
- [ ] Update links to new domain
- [ ] Set up Google API for maps
- [ ] Set up Merchant Account
- [ ] Pictures for each college (KEADY)
- [ ] Set consistant padding on text
- [ ] Add white outline button to more information CTA with class
 
+
+ [ ] Pictures for each college
+ [ ] Favicon
+ [ ] Order of college archive
+ [X] Update links to new domain
+ [X] Set up Google API for maps
+ [X] Set up Merchant Account
+
+ [X] Set consistant padding on text
+ [X] Add white outline button to more information CTA with class
+ [X] Intro Text 
+ [X] Image Size of college archive
  [X] Set up new domain
  [X] Set up GA / GSC / GTM
  [X] SSL
+  ______________________
+|       NAV           |
+ ----------------------
+
+[X] color on click 
+[X] ham drop down
 
  ______________________
 |       HOMEPAGE       |
@@ -27,6 +39,13 @@
 
 [X] Add margin bottom between each college 
 
+
+  ____________________
+|       WALKING TOURS        |
+  ---------------------
+
+[ ] Image hover Bug
+
  _______________________
 |   COLLEGES SINGLE     |
  -----------------------
@@ -41,7 +60,7 @@ ___________________
 |       Contact    |
 -------------------
 
-[ ] Add real map
+[X] Add real map
 [ ] Add phone number, email and instagram
 
 .....................................
@@ -55,6 +74,10 @@ ___________________
 [ ] CWV / Lighthouse Check
 [ ] SVG Graphis
 [ ] Set up booking system
+[ ] Instagram API
+[ ] SEO Audits
+
+
 [X] Intro text spacing
 [X] Add bold to nav text on hover
 

@@ -14,7 +14,7 @@
                 <img src="<?php echo $image ?>" />
             </div>
             <?php   } else { ?>
-            <a class="btn-outline-green" href=" <?php echo $link ?>">
+            <a class="" href=" <?php echo $link ?>">
                 <div class="text-and-image_img">
                     <img src="<?php echo $image ?>" />
                 </div>

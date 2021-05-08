@@ -1015,6 +1015,26 @@ button {
   color: #cbe0e0;
 }
 
+.btn-outline-green {
+  border: 1px solid #03526a;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+}
+.btn-outline-green:hover {
+  background-color: #03526a;
+  border-color: white;
+  color: white;
+}
+
+.btn-outline-green-sm {
+  background-color: #03526a;
+  color: white;
+  width: 2rem;
+  padding: 1rem 2rem;
+}
+
 .header_wrapper .header_top-bar {
   height: 10vh;
   background: white;
@@ -1106,11 +1126,11 @@ button {
     height: 100%;
     width: 100%;
   }
-  .header .menu-item a {
-    font-size: 4em;
-  }
   .header #menu-main-nav li a {
     font-size: 2em;
+  }
+  .header #menu-main-nav li a:hover {
+    color: #cbe0e0;
   }
   .header_button {
     display: block;
@@ -1132,6 +1152,16 @@ button {
 
 .archive-college .content-item {
   margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .archive-college .content-item .container-row {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 992px) {
+  .archive-college .content-item_image {
+    height: 350px;
+  }
 }
 
 .hero {
@@ -1357,10 +1387,12 @@ button {
 .highlights .container-large {
   width: 1700px;
 }
+.highlights .container-large .col-12 {
+  padding: 0.5rem;
+}
 .highlights_header h2 {
   color: white;
   text-align: center;
-  margin-bottom: 2rem;
 }
 @media (max-width: 576px) {
   .highlights_header h2 {
@@ -1452,6 +1484,9 @@ button {
   margin: 0 1rem 1rem 1rem;
   background: #f6f2f2;
 }
+.post-thumbs_single p {
+  margin-bottom: 2rem;
+}
 @media (max-width: 576px) {
   .post-thumbs_single {
     margin: 0;
@@ -1464,7 +1499,7 @@ button {
 }
 .post-thumbs_single .image img {
   object-fit: cover;
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 .post-thumbs_single .image img:hover {
@@ -1486,10 +1521,11 @@ button {
 }
 .post-thumbs_single a {
   margin-bottom: 2rem;
-  text-align: left;
-  width: 100%;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
   padding-left: 1rem;
-  display: inline-block;
+  display: block;
 }
 .post-thumbs_wrapper {
   padding: 0 !important;
@@ -1964,7 +2000,7 @@ footer .footer-content .right ul li a {
 }
 .faq .accordion-wrapper__question h3 {
   margin-right: 2rem;
-  font-size: 1.4em;
+  font-size: 1.1em;
   width: 80%;
 }
 .faq .accordion-wrapper__question svg {

@@ -62,8 +62,8 @@
             <div class="header_wrapper container-row">
                 <div class="header_top-bar container-row col-12 col-lg-5">
                     <div class="header_logo">
-                        <a href="http://www.remembercambridgetours.co.uk/"><img
-                                src="<?php the_field('logo', 'option'); ?>" alt=""></a>
+                        <a href="https://www.remember-cambridge.co.uk"><img src="<?php the_field('logo', 'option'); ?>"
+                                alt=""></a>
                     </div>
                     <button class="header_button">
                         <div class="line"></div>

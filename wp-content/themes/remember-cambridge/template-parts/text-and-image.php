@@ -14,21 +14,22 @@
                 <img src="<?php echo $image ?>" />
             </div>
             <?php
-
                     } else { ?>
-            <a href="<?php echo $link ?>">
+            <a href="<?php echo $link ?>" class="">
                 <div class="text-and-image_img">
                     <img src="<?php echo $image ?>" />
                 </div>
             </a>
             <?php } ?>
-
         </div>
         <div class="col-12 col-lg-6">
             <div class="text-and-image_text">
                 <h2 class="spacer-left"> <?php echo $heading ?></h2>
                 <p> <?php echo $text ?></p>
-                <a href=" <?php echo $link ?>"><?php echo $link_text ?></a>
+
+                <?php if ($link) {  ?> <a href="<?php echo $link ?>"
+                    class="btn-outline-green"><?php echo $link_text ?></a>
+                <?php } ?>
             </div>
         </div>
     </div>
