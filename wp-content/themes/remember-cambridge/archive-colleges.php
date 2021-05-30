@@ -23,6 +23,18 @@
     </section>
 
     <section class="content-items archive-college ">
+        <?php
+        $args = array(
+            'posts_per_page'      => -1,
+            'post_type'     => 'colleges',
+            'orderby', 'date',
+            'order'    => 'ASC',
+        ); ?>
+
+        <!-- refactor later to improve performance -->
+        <?php query_posts($args); ?>
+        <!-- refactor later to improve performance -->
+
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div class="content-item">

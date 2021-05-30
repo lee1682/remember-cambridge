@@ -3,12 +3,15 @@
   background-color: $light-grey;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  & > div {
-    padding: 0 2rem;
-  }
+
   h2 {
     margin-bottom: 1rem;
   }
+
+  &_left {
+    padding: 0;
+  }
+
   &_contact {
     @include breakpoint-down(tablet-port) {
     }

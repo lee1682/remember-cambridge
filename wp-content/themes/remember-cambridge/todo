@@ -1,3 +1,15 @@
+.......
+
+
+
+
+
+
+
+
+
+
+
 ............High Priority............
  ______________________
 |       GENERAL       |
@@ -6,7 +18,7 @@
 
  [ ] Pictures for each college
  [ ] Favicon
- [ ] Order of college archive
+ [X] Order of college archive
  [X] Update links to new domain
  [X] Set up Google API for maps
  [X] Set up Merchant Account

@@ -1855,11 +1855,11 @@ footer .footer-content .right ul li a {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.contact-and-address > div {
-  padding: 0 2rem;
-}
 .contact-and-address h2 {
   margin-bottom: 1rem;
+}
+.contact-and-address_left {
+  padding: 0;
 }
 .contact-and-address_contact p {
   margin: 0;
