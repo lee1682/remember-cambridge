@@ -1,5 +1,6 @@
 .faq {
-  min-height: 750px;
+  min-height: 550px;
+  padding-bottom: 5rem;
   h2 {
     text-align: left;
     margin-top: 3rem;
@@ -13,7 +14,7 @@
   .accordion-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
     &__item {
       border-bottom: 2px solid black;

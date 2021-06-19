@@ -39,11 +39,6 @@ body {
   padding: 0;
 }
 
-a img:hover {
-  filter: grayscale(0.25);
-  cursor: pointer;
-}
-
 @media screen and (max-width: -1) {
   .hidden-xs-down {
     display: none !important;
@@ -1158,6 +1153,17 @@ button {
     flex-direction: row-reverse;
   }
 }
+.archive-college .content-item_image {
+  position: relative;
+}
+.archive-college .content-item_image h2 {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  font-size: 3em;
+  color: white;
+}
 @media (min-width: 992px) {
   .archive-college .content-item_image {
     height: 350px;
@@ -1191,6 +1197,15 @@ button {
 
 .full-page {
   height: 95vh;
+}
+
+.booking:hover {
+  cursor: pointer;
+}
+.booking h2 {
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 .breadcrumb-nav {
@@ -1703,6 +1718,7 @@ footer .footer-content .right ul li a {
     padding: 0;
     position: relative;
     height: 150px;
+    overflow: hidden;
   }
   .content-item_image img {
     width: 100%;
@@ -1720,6 +1736,7 @@ footer .footer-content .right ul li a {
 @media (max-width: 992px) {
   .reverse .content-item_image {
     position: relative;
+    overflow: hidden;
   }
 }
 
@@ -1782,7 +1799,7 @@ footer .footer-content .right ul li a {
 }
 .key-info-list h2,
 .key-info-list li {
-  color: #f6f2f2;
+  color: white;
 }
 .key-info-list h2 {
   margin-bottom: 1rem;
@@ -1852,8 +1869,7 @@ footer .footer-content .right ul li a {
 .contact-and-address {
   height: auto;
   background-color: #f6f2f2;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 .contact-and-address h2 {
   margin-bottom: 1rem;
@@ -1865,6 +1881,13 @@ footer .footer-content .right ul li a {
   margin: 0;
   margin-bottom: 1rem;
 }
+.contact-and-address_contact a {
+  color: #2e2d2d;
+  margin-bottom: 1rem;
+}
+.contact-and-address_contact h4 {
+  font-weight: bold;
+}
 .contact-and-address_contact > div {
   display: flex;
   flex-direction: column;
@@ -1873,6 +1896,10 @@ footer .footer-content .right ul li a {
 .contact-and-address_contact > div:nth-child(2),
 .contact-and-address_contact div:nth-child(3) {
   justify-content: flex-start;
+}
+.contact-and-address_contact .phone p {
+  color: #2e2d2d;
+  font-size: 1.2em;
 }
 .contact-and-address_map {
   height: 350px;
@@ -1957,7 +1984,8 @@ footer .footer-content .right ul li a {
 }
 
 .faq {
-  min-height: 750px;
+  min-height: 550px;
+  padding-bottom: 5rem;
 }
 .faq h2 {
   text-align: left;
@@ -1972,7 +2000,7 @@ footer .footer-content .right ul li a {
 .faq .accordion-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
 }
 .faq .accordion-wrapper__item {

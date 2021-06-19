@@ -1,12 +1,5 @@
 <footer>
-    <!-- <div class="lower-nav">
-        <ul class="container-row">
-            <li> <a href=""> Link</a></li>
-            <li> <a href=""> Link</a></li>
-            <li> <a href=""> Link</a></li>
-            <li> <a href=""> Link</a></li>
-        </ul>
-    </div> -->
+
     <div class="footer-content container-large container-row">
 
 

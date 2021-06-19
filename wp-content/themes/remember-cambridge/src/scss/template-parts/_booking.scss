@@ -1,0 +1,12 @@
+.booking {
+  &:hover {
+    cursor: pointer;
+    h2 {
+    }
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+}

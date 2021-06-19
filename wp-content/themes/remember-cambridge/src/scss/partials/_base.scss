@@ -38,14 +38,14 @@ body {
 }
 
 //Hover
-a {
-  img {
-    &:hover {
-      filter: grayscale(0.25);
-      cursor: pointer;
-    }
-  }
-}
+// a {
+//   img {
+//     &:hover {
+//       filter: grayscale(0.25);
+//       cursor: pointer;
+//     }
+//   }
+// }
 
 //Global Classes
 // .spacer {

@@ -1,5 +1,5 @@
-<?php /* Template Name: featured_article' */ ?>
-<?php /*Template Post Type: featured_article'*/ ?>
+<?php /* Template Name: blog */ ?>
+<?php /*Template Post Type: blog*/ ?>
 
 <?php get_header(); ?>
 

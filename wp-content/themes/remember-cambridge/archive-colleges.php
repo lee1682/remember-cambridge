@@ -48,12 +48,13 @@
                                     $link_text = get_sub_field('link_text');
                                 ?>
                     <div class="content-item_text col-12 col-lg-6">
-                        <h2 class="spacer-left"> <?php the_title() ?>
-                        </h2>
+
                         <p><?php the_excerpt() ?></p>
                         <a href="<?php echo get_post_permalink() ?>"> More Information </a>
                     </div>
                     <div class="content-item_image col-12 col-lg-6">
+                        <h2 class="spacer-left"> <?php the_title() ?>
+                        </h2>
                         <a href="<?php echo get_sub_field('link') ?>">
                             <img src="<?php echo get_sub_field('image') ?> ">
                         </a>

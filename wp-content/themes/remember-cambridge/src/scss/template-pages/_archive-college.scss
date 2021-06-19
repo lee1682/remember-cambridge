@@ -8,6 +8,15 @@
       }
     }
     &_image {
+      position: relative;
+      h2 {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        font-size: 3em;
+        color: white;
+      }
       @include breakpoint-up(laptop) {
         height: 350px;
       }

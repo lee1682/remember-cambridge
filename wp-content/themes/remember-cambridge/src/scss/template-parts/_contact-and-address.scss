@@ -1,8 +1,7 @@
 .contact-and-address {
   height: auto;
   background-color: $light-grey;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 
   h2 {
     margin-bottom: 1rem;
@@ -13,11 +12,18 @@
   }
 
   &_contact {
-    @include breakpoint-down(tablet-port) {
-    }
     p {
       margin: 0;
       margin-bottom: 1rem;
+    }
+
+    a {
+      color: #2e2d2d;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-weight: bold;
     }
     & > div {
       display: flex;
@@ -28,7 +34,18 @@
     div:nth-child(3) {
       justify-content: flex-start;
     }
+
+    .location {
+    }
+
+    .phone {
+      p {
+        color: #2e2d2d;
+        font-size: 1.2em;
+      }
+    }
   }
+
   &_map {
     height: 350px;
     width: 100%;

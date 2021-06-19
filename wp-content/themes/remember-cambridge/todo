@@ -15,14 +15,20 @@
 |       GENERAL       |
  ----------------------
 
-
+ [X]Collage archive titles and images
+ [ ]featured article url and headings
+ [ ]social icons need to be added
+ [ ]gallery  / instagram feed needs to be added
+ [ ]Link to QR code needs to be added
+ [ ]Lighthouse fixes
+ [ ]add link to TA reviews
  [ ] Pictures for each college
  [ ] Favicon
+ [ ] Change on hover to pink
  [X] Order of college archive
  [X] Update links to new domain
  [X] Set up Google API for maps
  [X] Set up Merchant Account
-
  [X] Set consistant padding on text
  [X] Add white outline button to more information CTA with class
  [X] Intro Text 
@@ -73,7 +79,8 @@ ___________________
 -------------------
 
 [X] Add real map
-[ ] Add phone number, email and instagram
+[ ]add contact form 
+[X] Add phone number, email and instagram
 
 .....................................
 ............Mid Priority.............

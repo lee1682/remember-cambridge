@@ -75,6 +75,7 @@
       padding: 0;
       position: relative;
       height: 150px;
+      overflow: hidden;
       img {
         width: 100%;
       }
@@ -90,6 +91,7 @@
     padding: 0;
     @include breakpoint-down(laptop) {
       position: relative;
+      overflow: hidden;
     }
   }
 }
