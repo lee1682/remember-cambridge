@@ -940,7 +940,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #03526a;
+  color: #0b3d61;
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
@@ -988,7 +988,7 @@ li,
 a,
 button {
   font-family: "Open Sans", sans-serif;
-  color: #03526a;
+  color: #0b3d61;
 }
 
 .article .lead {
@@ -1011,20 +1011,20 @@ button {
 }
 
 .btn-outline-green {
-  border: 1px solid #03526a;
+  border: 1px solid #0b3d61;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 2rem;
 }
 .btn-outline-green:hover {
-  background-color: #03526a;
+  background-color: #0b3d61;
   border-color: white;
   color: white;
 }
 
 .btn-outline-green-sm {
-  background-color: #03526a;
+  background-color: #0b3d61;
   color: white;
   width: 2rem;
   padding: 1rem 2rem;
@@ -1057,7 +1057,7 @@ button {
 }
 .header #menu-main-nav li a:hover {
   font-weight: bolder;
-  color: #03526a;
+  color: #0b3d61;
 }
 .header_logo {
   text-align: center;
@@ -1077,7 +1077,7 @@ button {
 }
 .header_button .line {
   height: 2px;
-  background: #03526a;
+  background: #0b3d61;
   width: 40px;
   left: 0;
   position: absolute;
@@ -1087,7 +1087,7 @@ button {
   position: absolute;
   height: 2px;
   width: 40px;
-  background: #03526a;
+  background: #0b3d61;
   top: 10px;
   left: 0;
 }
@@ -1100,7 +1100,7 @@ button {
   }
   .header nav {
     height: 105vh;
-    background: #03526a;
+    background: #0b3d61;
     position: absolute;
     flex-direction: column;
     justify-content: center;
@@ -1117,7 +1117,7 @@ button {
   .header #menu-main-nav {
     flex-direction: column;
     z-index: 10;
-    background-color: #03526a;
+    background-color: #0b3d61;
     height: 100%;
     width: 100%;
   }
@@ -1171,7 +1171,7 @@ button {
 }
 
 .hero {
-  background: #03526a;
+  background: #0b3d61;
   height: 45vh;
   filter: grayscale(0.125);
 }
@@ -1192,24 +1192,27 @@ button {
 .hero .container-large .heading h1 {
   padding-bottom: 0;
   margin-bottom: 2rem;
-  max-width: 400px;
+  max-width: 50%;
 }
 
 .full-page {
   height: 95vh;
 }
 
-.booking:hover {
-  cursor: pointer;
+.booking {
+  background: #cbe0e0;
 }
 .booking h2 {
-  width: 100%;
+  color: color;
   text-align: center;
-  color: white;
+  transition-duration: 0.75s;
+}
+.booking h2:hover {
+  color: #022c4b;
 }
 
 .breadcrumb-nav {
-  background-color: #03526a;
+  background-color: #0b3d61;
   height: auto;
   width: 100%;
   padding: 1rem;
@@ -1322,7 +1325,7 @@ button {
   margin-bottom: 2rem;
 }
 .full-width-cta-banner_wrapper {
-  background-color: #03526a;
+  background-color: #0b3d61;
   min-height: 17.5vh;
   width: 100%;
   display: flex;
@@ -1339,7 +1342,7 @@ button {
 }
 @media (max-width: 576px) {
   .full-width-cta-banner {
-    background: #03526a;
+    background: #0b3d61;
   }
   .full-width-cta-banner button {
     padding-left: 3rem;
@@ -1360,7 +1363,7 @@ button {
 }
 .featured-post_text h2,
 .featured-post_text p {
-  color: #03526a;
+  color: #0b3d61;
   text-align: center;
   padding: 1rem;
 }
@@ -1392,7 +1395,7 @@ button {
 }
 
 .highlights {
-  background: #03526a;
+  background: #0b3d61;
   height: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1498,6 +1501,10 @@ button {
 .post-thumbs_single {
   margin: 0 1rem 1rem 1rem;
   background: #f6f2f2;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .post-thumbs_single p {
   margin-bottom: 2rem;
@@ -1523,7 +1530,7 @@ button {
 }
 .post-thumbs_single h3,
 .post-thumbs_single p {
-  color: #03526a;
+  color: #0b3d61;
 }
 .post-thumbs_single h3 {
   padding-top: 2rem;
@@ -1542,12 +1549,22 @@ button {
   padding-left: 1rem;
   display: block;
 }
+.post-thumbs_single button {
+  background-color: #0b3d61;
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  font-size: 1em;
+  padding: 1rem;
+}
 .post-thumbs_wrapper {
   padding: 0 !important;
 }
 
 .contact-form {
-  background: #03526a;
+  background: #0b3d61;
+  background: #022c4b;
   height: auto;
   box-sizing: border-box;
   padding: 2rem;
@@ -1599,7 +1616,6 @@ footer {
   background: #2e2d2d;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-top: 1rem;
 }
 footer .footer-content .left .logo-social {
   display: flex;
@@ -1664,21 +1680,21 @@ footer .footer-content .right ul li a {
 .content-item_text h2,
 .content-item_text p,
 .content-item_text a {
-  color: #03526a;
+  color: #0b3d61;
 }
 .content-item_text p {
   width: 85%;
   margin-bottom: 3rem;
 }
 .content-item_text a {
-  border: 1px solid #03526a;
+  border: 1px solid #0b3d61;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 2rem;
 }
 .content-item_text a:hover {
-  background-color: #03526a;
+  background-color: #0b3d61;
   border-color: white;
   color: white;
 }
@@ -1793,7 +1809,7 @@ footer .footer-content .right ul li a {
 
 .key-info-list {
   height: auto;
-  background: #03526a;
+  background: #0b3d61;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1836,7 +1852,7 @@ footer .footer-content .right ul li a {
 .additional-info-list h2,
 .additional-info-list p,
 .additional-info-list li {
-  color: #03526a;
+  color: #0b3d61;
 }
 .additional-info-list h2 {
   margin-bottom: 1rem;
@@ -1858,7 +1874,7 @@ footer .footer-content .right ul li a {
 .additional-info-list ul li strong {
   display: block;
   font-weight: bolder;
-  color: #03526a;
+  color: #0b3d61;
 }
 .additional-info-list a {
   display: inline-block;
@@ -1906,7 +1922,7 @@ footer .footer-content .right ul li a {
   width: 100%;
   border: 1px solid #cbe0e0;
   display: flex;
-  background: #03526a;
+  background: #0b3d61;
   padding: 0;
 }
 .contact-and-address_map img {
@@ -1961,7 +1977,7 @@ footer .footer-content .right ul li a {
 .article_more-posts h2 {
   text-align: center;
   width: 100%;
-  border-top: 1px solid #03526a;
+  border-top: 1px solid #0b3d61;
   margin-top: 2rem;
 }
 .article_more-posts .post {
@@ -2065,4 +2081,19 @@ footer .footer-content .right ul li a {
 .faq .image-wrapper img {
   height: 100%;
   width: 100%;
+}
+
+.instagram-feed {
+  background-color: #cbe0e0;
+  padding-bottom: 2rem;
+}
+.instagram-feed h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.instagram-feed #sb_instagram {
+  background-color: #cbe0e0;
+}
+.instagram-feed .sb_instagram_header {
+  display: none;
 }

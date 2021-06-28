@@ -1,12 +1,11 @@
 .booking {
-  &:hover {
-    cursor: pointer;
-    h2 {
-    }
-  }
+  background: $primary-2;
   h2 {
-    width: 100%;
+    color: color;
     text-align: center;
-    color: white;
+    transition-duration: 0.75s;
+    &:hover {
+      color: #022c4b;
+    }
   }
 }

@@ -2,33 +2,43 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   height: auto;
+
   .container-row {
     padding: 0;
   }
+
   h2 {
     margin-bottom: 1rem;
   }
+
   &_header {
     h2 {
       text-align: center;
     }
   }
+
   .intro {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 4rem;
     text-align: center;
   }
+
   &_single {
     margin: 0 1rem 1rem 1rem;
     background: $light-grey;
+    padding: 0;
+    height: fit-content;
+
     p {
       margin-bottom: 2rem;
     }
+
     @include breakpoint-down(tablet-port) {
       margin: 0;
       margin-bottom: 1rem;
     }
+
     .image {
       height: 100%;
       width: auto;
@@ -42,6 +52,7 @@
         }
       }
     }
+
     h3,
     p {
       color: $primary-1;
@@ -53,11 +64,13 @@
       width: 80%;
       margin: 0 auto;
     }
+
     p {
       padding: 0 1rem;
       @include breakpoint-down(tablet-port) {
       }
     }
+
     a {
       margin-bottom: 2rem;
       text-align: center;
@@ -66,7 +79,18 @@
       padding-left: 1rem;
       display: block;
     }
+
+    button {
+      background-color: $primary-1;
+      width: 100%;
+      cursor: pointer;
+      border: 0;
+      color: white;
+      font-size: 1em;
+      padding: 1rem;
+    }
   }
+
   &_wrapper {
     padding: 0 !important;
   }

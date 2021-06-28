@@ -537,9 +537,7 @@ function init_remove_support()
 
     remove_post_type_support($post_type, 'editor');
 }
-
 //Add Options Page
-
 if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
@@ -564,38 +562,21 @@ if (function_exists('acf_add_options_page')) {
 }
 
 
-//insta feed
-
-//function to refresh token
-add_action('wp_ajax_nopriv_request_token_action', 'request_token_action');
-add_action('wp_ajax_request_token_action', 'request_token_action');
-function request_token_action()
-{
-    $requestToken = 'https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' . get_field('instagram_token', 'option');
-    $json = file_get_contents($requestToken);
-    $obj = json_decode($json);
-    update_field('instagram_token', $obj->access_token, 'option');
-}
 
 //Google Maps
-
 function my_acf_init()
 {
     acf_update_setting('google_api_key', 'AIzaSyDzHZmtf2fkFzriKDyT9miCrB5fEzymh58');
 }
 add_action('acf/init', 'my_acf_init');
-
-
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
-
 // Shortcode Demo with Nested Capability
 function html5_shortcode_demo($atts, $content = null)
 {
     return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
 }
-
 // Shortcode Demo with simple <h2> tag
 function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {

@@ -12,9 +12,19 @@
         </div>
 
         <div class="article_image">
-            <img src="<?php echo get_field('img')?>" alt="">
+            <img src=" <img src=<?php echo get_the_post_thumbnail()?>">
         </div>
 
+        <?php if (have_rows('hero')) : ?>
+        <?php while (have_rows('hero')) : the_row();
+                          $heading = get_sub_field('title');?>
+        <section class="intro-text container-large container-row ">
+            <div class="col-12">
+                <h2 class="spacer"> <?php echo $heading ?></h2>
+            </div>
+        </section>
+        <?php endwhile; ?>
+        <?php endif; ?>
         <article>
             <?php if( have_rows('article') ): ?>
             <?php while( have_rows('article') ): the_row(); ?>
@@ -32,29 +42,4 @@
             <?php endwhile ?>
             <?php endif; ?>
         </article>
-
-
-
-        <!-- <div class="article_more-posts container-row">
-
-            <h2> Read More From Our Blogs</h2>
-            <div class="post col-4">
-                <img src="<?php echo get_field('img')?>" alt="">
-                <h3> Post Title</h3>
-            </div>
-
-            <div class="post col-4">
-                <img src="<?php echo get_field('img')?>" alt="">
-                <h3> Post Title</h3>
-            </div>
-
-            <div class="post col-4">
-                <img src="<?php echo get_field('img')?>" alt="">
-                <h3> Post Title</h3>
-            </div>
-        </div> -->
-
-
-    </div>
-
 </section>

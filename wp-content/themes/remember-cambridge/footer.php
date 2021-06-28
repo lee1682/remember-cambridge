@@ -8,7 +8,7 @@
         </div>
 
         <div class="col-12 col-lg-6 left">
-            <!-- <div class="logo-social">
+            <div class="logo-social">
                 <div class="logo">
                     <img src="" alt="">
                 </div>
@@ -17,7 +17,7 @@
                     <a href=""></a>
                     <a href=""></a>
                 </div>
-            </div> -->
+            </div>
             <div class="copyright-info">
                 <p> © Copyright 2021 Remember Cambridge Ltd.
                 </p>
@@ -39,3 +39,4 @@
 </body>
 
 </html>
+
